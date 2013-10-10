@@ -1,0 +1,24 @@
+.peBox{
+	border: 3px solid black;
+	padding: 10px;
+	margin: 20px;
+}
+.peHeader{
+	font-size: 2.0em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.peSection{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.peQuestion{
+	border-color: orange;
+}
+.peWork{
+	border-color: blue;
+}
+.peAnswer{
+	border-color: red;
+}
