@@ -98,6 +98,17 @@ ul{
 	text-decoration: none;
 	width: 60%;
 }
+.demoHeader{
+	border-bottom: solid 10px #39c;
+	border-left: solid 18px transparent;
+	border-right: solid 18px transparent;
+	font-size: 2.0em;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+	width: 85%;
+	margin: 0 auto;
+}
 .demoBorder{
 	border: solid 3px #39c;
 	margin: 12px;
@@ -108,3 +119,6 @@ ul{
 	font-weight: bold;
 	margin-bottom: 5px;
 }
+
+
+
