@@ -68,6 +68,9 @@ a.sticky:hover{
 	color: #FFF;
 	text-decoration: underline;
 }
+p{
+	margin-bottom: 5px;
+}
 ul{
 	list-style: normal;
 }
