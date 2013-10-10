@@ -1,0 +1,9 @@
+.border {
+	border: 10px solid red;
+	border-top: 10px solid green;
+}
+.box {
+	width: 100px;
+	height: 200px;
+	margin:100 auto;
+}
