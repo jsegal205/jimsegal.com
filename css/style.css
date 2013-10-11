@@ -119,6 +119,16 @@ ul{
 	font-weight: bold;
 	margin-bottom: 5px;
 }
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.projectHeaderContainer{
+	margin-bottom: 30px;
+}
+
 
 
 
