@@ -128,7 +128,9 @@ ul{
 .projectHeaderContainer{
 	margin-bottom: 30px;
 }
-
+.leftPaddingMid{
+	padding-left: 10px;
+}
 
 
 
