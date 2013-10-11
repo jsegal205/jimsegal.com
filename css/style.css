@@ -71,8 +71,9 @@ a.sticky:hover{
 p{
 	margin-bottom: 5px;
 }
-ul{
-	list-style: normal;
+li{
+	margin-top: 5px;
+	margin-left: 12px;
 }
 .sticky{
 	top: 0;
