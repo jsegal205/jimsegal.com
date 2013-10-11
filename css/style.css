@@ -100,8 +100,8 @@ li{
 	text-decoration: none;
 	z-index: 1001;
 }
-.stickyBumper{
-	height: 30px;
+.wrapper{
+	margin-top: 30px;
 }
 .project{
 	border-bottom: solid 3px #bbb;
