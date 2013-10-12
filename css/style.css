@@ -76,7 +76,12 @@ a{
 a:hover{
 	color:#39c;
 }
-a.sticky:hover{
+a.stickyLink{
+	color: #FFF;
+	text-align: center;	
+	text-decoration: none;
+}
+a.stickyLink:hover{
 	color: #FFF;
 	text-decoration: underline;
 }
@@ -87,6 +92,10 @@ li{
 	margin-top: 5px;
 	margin-left: 12px;
 }
+.stickyWrapper{
+	text-align: center;
+	width: 100%;
+}
 .sticky{
 	top: 0;
 	left: 0;
@@ -96,12 +105,16 @@ li{
 	color: #FFF;
 	padding: 6px;
 	position: fixed;
-	text-align: center;
 	text-decoration: none;
 	z-index: 1001;
 }
+.stickyRightReset{
+	margin-top: -15px;
+}
 .wrapper{
-	margin-top: 30px;
+	width: 960px;
+	margin: 30px auto 0 auto;
+	padding: 0;
 }
 .project{
 	border-bottom: solid 3px #bbb;
@@ -143,6 +156,9 @@ li{
 }
 .leftPaddingMid{
 	padding-left: 10px;
+}
+.rightPaddingLarge{
+	padding-right: 30px;
 }
 
 
