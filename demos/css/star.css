@@ -1,0 +1,43 @@
+.starWrapper{
+	padding-top: 75px;
+	padding-left: 35%;
+	padding-bottom: 95px;
+}
+
+.line {
+	width: 150px;
+	border: 5px solid;
+}
+
+.rot1{
+	color: green;
+	margin-top: 12px;
+	margin-left: 21px;
+	transform:rotate(72deg);
+	-ms-transform:rotate(72deg); /* IE 9 */
+	-webkit-transform:rotate(72deg); /* Safari and Chrome */
+}
+.rot2{
+	color: red;	
+	margin-top: 15px;
+	margin-left: 18px;
+	transform:rotate(144deg);
+	-ms-transform:rotate(144deg); /* IE 9 */
+	-webkit-transform:rotate(144deg); /* Safari and Chrome */
+}
+.rot3{
+	color: blue;
+	margin-top: -10px;
+	margin-left: -19px;
+	transform:rotate(216deg);
+	-ms-transform:rotate(216deg); /* IE 9 */
+	-webkit-transform:rotate(216deg); /* Safari and Chrome */
+}
+.rot4{
+	color: yellow;
+	margin-top: -34px;
+	margin-left: -27px;
+	transform:rotate(288deg);
+	-ms-transform:rotate(288deg); /* IE 9 */
+	-webkit-transform:rotate(288deg); /* Safari and Chrome */
+}
