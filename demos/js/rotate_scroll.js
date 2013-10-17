@@ -4,7 +4,7 @@
 		var _degToRotate = 10;
 		var _fullCircle = 360;
 
-	$(document).on('mousewheel DOMMouseScroll', function(evt){
+	$(document).on('mousewheel DOMMouseScroll', '#rotate_scroll_demo', function(evt){
 
 			if (extractDelta(evt) / 120 > 0){
 				//scroll up
@@ -15,6 +15,7 @@
 				_deg += _degToRotate;
 			}
 			rotate(_deg);
+			evt.preventDefault();
 		});
 
 		function extractDelta(evt)
