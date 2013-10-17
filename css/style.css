@@ -146,6 +146,7 @@ li{
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-bottom: 5px;
+	width: 85%;
 }
 .left{
 	float: left;
@@ -154,7 +155,9 @@ li{
 	float: right;
 }
 .projectHeaderContainer{
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+	display: block;
+	overflow: auto;
 }
 .leftPaddingMid{
 	padding-left: 10px;
