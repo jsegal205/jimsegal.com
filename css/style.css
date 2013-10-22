@@ -145,6 +145,7 @@ li{
 	padding: 5px;
 	width: 85%;
 	margin: 0 auto;
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 }
 .demoBorder{
 	border: solid 3px #39c;
