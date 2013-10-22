@@ -109,6 +109,16 @@ li{
 	position: fixed;
 	text-decoration: none;
 	z-index: 1001;
+	opacity: .95;
+
+	  /* offset left, top, thickness, color with alpha */
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+	  /* IE */
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray');
+	  /* slightly different syntax for IE8 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray')";
 }
 .stickyRightReset{
 	margin-top: -15px;
@@ -168,6 +178,5 @@ li{
 .githubLink{
 	font-size: 1.1em;
 }
-
 
 
