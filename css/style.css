@@ -6,7 +6,7 @@
 	#bbb - light grey for project separators
 	#39c - light blue
 	#fff - white
-	#ffd - background color
+	#ffe - background color
 
 */
 
@@ -70,7 +70,7 @@ body{
 	padding: 0;
 	font-family: Lucida Sans, Helvetica, Arial, sans-serif;
 	color: #444;
-	background-color: #FFD;
+	background-color: #FFE;
 }
 a{
 	color:#444;
