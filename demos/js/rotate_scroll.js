@@ -4,19 +4,23 @@
 		var _degToRotate = 10;
 		var _fullCircle = 360;
 
+	$(document).on('click', '#rotate_reset', function(){
+		_deg = _fullCircle;
+		rotate();
+	});
+
 	$(document).on('mousewheel DOMMouseScroll', '#rotate_scroll_demo', function(evt){
 
-			if (extractDelta(evt) / 120 > 0){
-				//scroll up
-				_deg -= _degToRotate;
-			}
-			else {
-				//scroll down
-				_deg += _degToRotate;
-			}
-			rotate(_deg);
-			evt.preventDefault();
-		});
+		if (extractDelta(evt) / 120 > 0){
+			//scroll up
+			_deg -= _degToRotate;
+		}	else {
+			//scroll down
+			_deg += _degToRotate;
+		}
+		rotate(_deg);
+		evt.preventDefault();
+	});
 
 		function extractDelta(evt)
 		{
@@ -30,7 +34,7 @@
 		    	return evt.originalEvent.wheelDelta;
 		    }
 		}
-		function rotate(deg){
+		function rotate(){
 			if (_deg === _fullCircle){
 				_deg = 0;	
 			} 
