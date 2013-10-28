@@ -69,7 +69,7 @@
 			_hourlbl = _zero;
 		}
 		
-		$secondhand.css('transform','rotate(' + (_second - _hourdeg) + 'deg)');
+		$secondhand.css('transform','rotate(' + (_second - _minute - _hourdeg) + 'deg)');
 		$minutehand.css('transform','rotate(' + (_minute -_hourdeg) + 'deg)');
 		$hourhand.css('transform','rotate(' + _hourdeg + 'deg)');
 		
