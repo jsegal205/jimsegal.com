@@ -88,7 +88,7 @@ a.stickyLink:hover{
 	text-decoration: underline;
 }
 p{
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 }
 li{
 	margin-top: 5px;
@@ -179,5 +179,11 @@ li{
 .githubLink{
 	font-size: 1.1em;
 }
-
+.xmp{
+	border: 5px solid #bbb;
+	background-color: #fff;
+	font-family: Courier New, monospace;
+	padding: 0 10px; 
+	white-space: pre-wrap;
+}
 
