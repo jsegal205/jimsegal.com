@@ -1,11 +1,7 @@
 ;(function(){
 	function doWork(){
- 		
- 		var fib = loadFib();
+ 		var fib = loadFib(), sum = 0, work = '', evenWork = '';
 
-		var sum = 0;
-		var work = '';
-		var evenWork = '';
 		for(var i = 1; i < fib.length; i++) {
 			if (fib[i] < 4000000) {
 				work += fib[i] + ', ';
@@ -23,8 +19,8 @@
 	}
 
 	function loadFib(){
-		var run = true;
-		var fib = [];
+		var run = true, fib = [];
+		
 		fib.push(1);
 		fib.push(1);
 		

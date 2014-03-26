@@ -1,12 +1,6 @@
 ;(function(){
 	function doWork(){
-		var answer = '';
-		var fib = '';
-		var current = 1;
-		var prev = 0;
-		var evenFib = '';
-		var evenFibSum = 0;
-		var running = true;
+		var answer = '', fib = '', current = 1, prev = 0, evenFib = '', evenFibSum = 0, running = true;
 		
 		do {
 			answer = prev + current;

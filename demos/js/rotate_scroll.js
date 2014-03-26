@@ -1,8 +1,6 @@
 ;(function($){
 
-		var _deg = 0;
-		var _degToRotate = 10;
-		var _fullCircle = 360;
+		var _deg = 0, _degToRotate = 10, _fullCircle = 360;
 
 	$(document).on('click', '#rotate_reset', function(){
 		_deg = _fullCircle;
