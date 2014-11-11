@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="sticky"> 
+			<div class="info">
+				This project was inspired by <a href="">this project</a>
+				<a href="https://github.com/bamos/reading-list">
+					<img class="github" />
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="top">
+				Books I have read
+			</h1>
+			<hr />
+			<div id="books">
+			</div>
+		</div>
+		<script id="booktmpl" type="text/template">
+		    {{#bookCollection}}
+		    	<h2>
+		    		{{year}}
+		    	</h2>
+		    	{{#books}}
+			    	<div>
+			    		<a href="{{link}}">{{title}}</a>
+			    		<span>
+			    			by {{author}}
+			    		</span>
+			    	</div>
+		    	{{/books}}
+		    {{/bookCollection}}
+	    </script>
+
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/handlebars-v2.0.0.js"></script>
+		<script src="js/ReadingList.js"></script>
+	</body>
+</html>

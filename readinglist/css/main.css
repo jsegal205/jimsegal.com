@@ -1,0 +1,36 @@
+a {
+	color: #77F;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.container {
+	padding: 20px;
+}
+.sticky {
+	background: #EEF;
+	border: 2px solid #999;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+.sticky .info {
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.top {
+	margin-top:50px;
+	padding:0;
+}
+.github{
+	background-image: url("../asset/github.png");
+	display: inline-block;
+	height: 32px;
+	margin-top: 5px;
+	position: relative;
+	width: 32px;
+}
