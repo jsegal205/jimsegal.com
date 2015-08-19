@@ -22,6 +22,10 @@ a:hover {
 	padding-bottom: 10px;
 	text-align: center;
 }
+.back{
+	float: left;
+	margin-top: 20px;
+}
 .top {
 	margin-top:50px;
 	padding:0;
