@@ -1,16 +1,3 @@
-/*
-	Colors Used
-	-----------
-
-	#444 - light grey for text
-	#bbb - light grey for project separators
-	#39c - light blue
-	#fff - white
-	#ffe - background color
-
-*/
-
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,8 +37,7 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -65,125 +51,45 @@ table {
    License: none (public domain)
 */
 
-body{
+body {
 	margin: 0;
 	padding: 0;
-	font-family: Lucida Sans, Helvetica, Arial, sans-serif;
+	font-family: Consolas, monaco, monospace;
 	color: #444;
-	background-color: #FFE;
+	line-height: 40px;
+	font-size: 26px;
 }
 a{
 	color:#444;
 }
-a:hover{
+a:hover {
 	color:#39c;
 }
-a.stickyLink{
-	color: #FFF;
-	text-align: center;	
+h1{
+	font-size: 3em;
+	margin-bottom: .33em;
+	margin-top: 2em;
+}
+.about{
+	margin-bottom: 1em;
+}
+.avatar{
+	border-radius: 50%;
+	height: 230;
+	position: absolute;
+    right: 235px;
+    width: 230;
+}
+.links{
+	margin-bottom: 1em;
+}
+.links a{
+	font-size: 1.5em;
 	text-decoration: none;
-}
-a.stickyLink:hover{
-	color: #FFF;
-	text-decoration: underline;
-}
-p{
-	margin-bottom: 15px;
-}
-li{
-	margin-top: 5px;
-	margin-left: 12px;
-}
-.stickyWrapper{
-	text-align: center;
-	width: 100%;
-}
-.sticky{
-	top: 0;
-	left: 0;
-	border: 0;
-	background-color: #39c;
-	width: 100%;
-	color: #FFF;
-	padding: 6px;
-	position: fixed;
-	text-decoration: none;
-	z-index: 1001;
-	opacity: .95;
-
-	  /* offset left, top, thickness, color with alpha */
-	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-	  /* IE */
-	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray');
-	  /* slightly different syntax for IE8 */
-	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray')";
-}
-.stickyRightReset{
-	margin-top: -15px;
 }
 .wrapper{
 	width: 960px;
 	margin: 45px auto 0 auto;
 	padding: 0;
+	position: relative;
 }
-.project{
-	border-bottom: solid 3px #bbb;
-	margin: 0 auto;
-	padding: 15px;
-	text-decoration: none;
-	width: 60%;
-}
-.demoHeader{
-	border-bottom: solid 10px #39c;
-	border-left: solid 18px transparent;
-	border-right: solid 18px transparent;
-	font-size: 2.0em;
-	text-align: center;
-	font-weight: bold;
-	padding-bottom: 12px;
-	width: 85%;
-	margin: 0 auto;
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-}
-.demoBorder{
-	border: solid 3px #39c;
-	margin: 12px;
-	padding: 10px;
-	background-color: #FFF;
-}
-.projectHeader{
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-bottom: 5px;
-	width: 85%;
-}
-.left{
-	float: left;
-}
-.right{
-	float: right;
-}
-.projectHeaderContainer{
-	margin-bottom: 15px;
-	display: block;
-	overflow: auto;
-}
-.leftPaddingMid{
-	padding-left: 10px;
-}
-.rightPaddingLarge{
-	padding-right: 30px;
-}
-.githubLink{
-	font-size: 1.1em;
-}
-.xmp{
-	border: 5px solid #bbb;
-	background-color: #fff;
-	font-family: Courier New, monospace;
-	padding: 0 10px; 
-	white-space: pre-wrap;
-}
-
