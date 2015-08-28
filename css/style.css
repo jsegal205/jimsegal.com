@@ -56,8 +56,9 @@ body {
 	padding: 0;
 	font-family: Consolas, monaco, monospace;
 	color: #444;
-	line-height: 40px;
-	font-size: 26px;
+	/*line-height: 40px;*/
+	font-size: 3.5vw;
+	/*position: absolute;*/
 }
 a{
 	color:#444;
@@ -66,30 +67,33 @@ a:hover {
 	color:#39c;
 }
 h1{
-	font-size: 3em;
-	margin-bottom: .33em;
+	font-size: 8.5vw;
+	/*margin-bottom: .33em;*/
 	margin-top: 2em;
 }
 .about{
 	margin-bottom: 1em;
 }
 .avatar{
+	display:inline-block;
+	float:right;
 	border-radius: 50%;
-	height: 230;
-	position: absolute;
-    right: 235px;
-    width: 230;
+	/*height: 230;*/
+	/*position: absolute;*/
+    /*right: 235px;*/
+    max-width: 25vw;
 }
 .links{
 	margin-bottom: 1em;
+	vertical-align: top;
 }
 .links a{
-	font-size: 1.5em;
+	font-size: 4.5vw;
 	text-decoration: none;
 }
 .wrapper{
-	width: 960px;
-	margin: 45px auto 0 auto;
+	width: 70vw;
+	margin: 45px auto 0;
 	padding: 0;
 	position: relative;
 }
