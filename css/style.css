@@ -16,11 +16,11 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -52,47 +52,47 @@ table {
 */
 
 body {
+	color: #444;
+	font-family: Consolas, monaco, monospace;
+	font-size: 3.5vw;
 	margin: 0;
 	padding: 0;
-	font-family: Consolas, monaco, monospace;
-	color: #444;
-	font-size: 3.5vw;
 }
-a{
-	color:#444;
+a {
+	color: #444;
 }
 a:hover {
-	color:#39c;
+	color: #39c;
 }
-h1{
+h1 {
 	font-size: 8.5vw;
 	margin-top: 2em;
 }
-.about{
+.about {
 	margin-bottom: 1em;
 }
-.avatar{
+.avatar {
+	border-radius: 50%;
 	display:inline-block;
 	float:right;
-	border-radius: 50%;
     max-width: 25vw;
 }
-.links{
+.links {
 	margin-bottom: 1em;
 	vertical-align: top;
 }
-.links a{
+.links a {
 	font-size: 4.5vw;
 	text-decoration: none;
 }
-.wrapper{
-	width: 70vw;
+.wrapper {
 	margin: 45px auto 0;
 	padding: 0;
 	position: relative;
+	width: 70vw;
 }
-.banner{
-	border:5px solid #700;
-	padding:10px; 
-	text-align:center;
+.banner {
+	border: 5px solid #700;
+	padding: 10px; 
+	text-align: center;
 }
