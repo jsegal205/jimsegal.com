@@ -73,8 +73,8 @@ h1 {
 }
 .avatar {
 	border-radius: 50%;
-	display:inline-block;
-	float:right;
+	display: inline-block;
+	float: right;
     max-width: 25vw;
 }
 .links {
@@ -94,4 +94,23 @@ h1 {
 	border: 5px solid #700;
 	padding: 10px; 
 	text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+
+	body {
+		font-size: 2.5vw;
+	}
+	h1 {
+		font-size: 5.5vw;
+	}
+	.wrapper{
+		max-width: 45vw;
+	}
+	.avatar{
+		max-width: 15vw;
+	}
+	.links a {
+		font-size: 3vw;
+	}
 }
