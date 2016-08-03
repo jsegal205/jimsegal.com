@@ -1,2 +1,2 @@
-jimsegal.com
+[jimsegal.com](http://jimsegal.com)
 ============
