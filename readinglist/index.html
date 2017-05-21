@@ -1,15 +1,15 @@
 <html>
 	<head>
 		<title>jimsegal.com reading list</title>
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="https://avatars1.githubusercontent.com/u/1733595?s=16" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		<div class="sticky"> 
+		<div class="sticky">
 			<div class="info">
 				<a class="back" href="http://jimsegal.com">back</a>
-				This project was inspired by 
+				This project was inspired by
 				<a href="https://github.com/bamos/reading-list">this project
 					<img class="github" />
 				</a>
@@ -24,20 +24,20 @@
 			</div>
 		</div>
 		<script id="booktmpl" type="text/template">
-		    {{#bookCollection}}
-		    	<h2>
-		    		{{year}}
-		    	</h2>
-		    	{{#books}}
-			    	<div>
-			    		<a href="{{link}}">{{title}}</a>
-			    		<span>
-			    			by {{author}}
-			    		</span>
-			    	</div>
-		    	{{/books}}
-		    {{/bookCollection}}
-	    </script>
+	    {{#bookCollection}}
+	    	<h2>
+	    		{{year}}
+	    	</h2>
+	    	{{#books}}
+		    	<div>
+		    		<a href="{{link}}">{{title}}</a>
+		    		<span>
+		    			by {{author}}
+		    		</span>
+		    	</div>
+	    	{{/books}}
+	    {{/bookCollection}}
+    </script>
 
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/handlebars-v2.0.0.js"></script>
