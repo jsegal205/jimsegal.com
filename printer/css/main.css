@@ -2,8 +2,14 @@
   max-width: none;
 }
 
-.wrapper > h2 {
+.wrapper > h2,
+.wrapper > .project-links {
   margin: 20px 0;
+}
+
+a {
+  display: inline-block;
+  font-size: 14px;
 }
 
 .container {
@@ -16,8 +22,4 @@
   border: 2px solid #444;
   height: inherit;
   width: inherit;
-}
-
-a.back {
-  font-size: 14px;
 }
