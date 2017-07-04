@@ -2,6 +2,16 @@
 ;(function($){
 	var seventeen = [
 		{
+			"title": "Neverwhere - Audiobook",
+			"author": "Neil Gaiman",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Neverwhere-Audiobook/B00354ZSS2",
+		},
+		{
+			"title": "American Gods - Audiobook",
+			"author": "Neil Gaiman",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/American-Gods-The-Tenth-Anniversary-Edition-A-Full-Cast-Production-Audiobook/B0055274U2",
+		},
+		{
 			"title": "The Story of God: A Biblical Comedy about Love (and Hate) - Audiobook",
 			"author": "Chris Matheson",
 			"link": "https://www.audible.com/pd/The-Story-of-God-A-Biblical-Comedy-about-Love-and-Hate-Audiobook/B017T4ZYR8",
