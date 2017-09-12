@@ -1,6 +1,21 @@
 //ReadingList
 ;(function($){
 	var seventeen = [
+    {
+			"title": "All These Worlds: Bobiverse, Book 3 - Audiobook",
+			"author": "Dennis E. Taylor",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/All-These-Worlds-Audiobook/B07341FZDC",
+		},
+    {
+			"title": "For We Are Many: Bobiverse, Book 2 - Audiobook",
+			"author": "Dennis E. Taylor",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/For-We-Are-Many-Audiobook/B01N17THEO",
+		},
+    {
+			"title": "We Are Legion (We Are Bob): Bobiverse, Book 1 - Audiobook",
+			"author": "Dennis E. Taylor",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/We-Are-Legion-We-Are-Bob-Audiobook/B01L082HJ2",
+		},
 		{
 			"title": "Neverwhere - Audiobook",
 			"author": "Neil Gaiman",
