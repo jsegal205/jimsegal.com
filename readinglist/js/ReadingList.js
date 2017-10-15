@@ -2,6 +2,16 @@
 ;(function($){
 	var seventeen = [
     {
+			"title": "Sleeping Giants - Audiobook",
+			"author": "Sylvain Neuvel",
+			"link": "https://www.audible.com/pd/Fiction/Sleeping-Giants-Audiobook/B01A98UKAC",
+		},
+    {
+			"title": "Dungeon Born - Audiobook",
+			"author": "Dakota Prout",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Born-Audiobook/B06XQ78XLP",
+		},
+    {
 			"title": "All These Worlds: Bobiverse, Book 3 - Audiobook",
 			"author": "Dennis E. Taylor",
 			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/All-These-Worlds-Audiobook/B07341FZDC",
