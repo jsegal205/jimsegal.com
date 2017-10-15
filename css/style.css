@@ -130,6 +130,7 @@ a:hover {
     -webkit-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 3em 0;
     text-align: center;
 	}
 
