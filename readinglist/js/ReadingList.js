@@ -2,12 +2,27 @@
 ;(function($){
 	var seventeen = [
     {
-			"title": "Sleeping Giants - Audiobook",
+			"title": "Old Man's War - Audiobook",
+			"author": "John Scalzi",
+			"link": "https://www.audible.com/pd/Old-Mans-War-Part-1-Audiobook/B002V1O7D2",
+		},
+    {
+			"title": "Dungeon Madness: Divine Dungeon Series, Book 1 - Audiobook",
+			"author": "Dakota Prout",
+			"link": "https://www.audible.com/pd/Dungeon-Madness-Part-1-Divine-Dungeon-Series-Book-2-Audiobook/B0764H7Y83",
+		},
+    {
+			"title": "Waking Gods: The Themis Files, Book 2 - Audiobook",
+			"author": "Sylvain Neuvel",
+			"link": "https://www.audible.com/pd/Waking-Gods-The-Themis-Files-Book-2-Audiobook/B01NGUBLBW",
+		},
+    {
+			"title": "Sleeping Giants: The Themis Files, Book 1 - Audiobook",
 			"author": "Sylvain Neuvel",
 			"link": "https://www.audible.com/pd/Fiction/Sleeping-Giants-Audiobook/B01A98UKAC",
 		},
     {
-			"title": "Dungeon Born - Audiobook",
+			"title": "Dungeon Born: Divine Dungeon Series, Book 1 - Audiobook",
 			"author": "Dakota Prout",
 			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Born-Audiobook/B06XQ78XLP",
 		},
