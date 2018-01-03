@@ -107,6 +107,8 @@ a:hover {
 
 .avatar:hover{
   content:url("https://images.vice.com/noisey/content-images/contentimage/96940/potato-013.jpg");
+  max-width: 460px;
+  max-height: 460px;
 }
 
 .link-row {
