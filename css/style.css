@@ -99,9 +99,14 @@ a:hover {
 }
 
 .avatar {
+  content:url("https://avatars1.githubusercontent.com/u/1733595?v=4");
   border-radius: 50%;
   max-width: 33%;
   min-width: 300px;
+}
+
+.avatar:hover{
+  content:url("https://images.vice.com/noisey/content-images/contentimage/96940/potato-013.jpg");
 }
 
 .link-row {
