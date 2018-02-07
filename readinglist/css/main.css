@@ -1,40 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
 a {
 	color: #77F;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
 }
+
 .container {
+  margin-top: 40px;
 	padding: 20px;
 }
+
 .sticky {
 	background: #EEF;
 	border: 2px solid #999;
-	left: 0;
+  left: 0;
+	padding: 20px;
 	position: fixed;
-	top: 0;
+  top: 0;
 	width: 100%;
 	z-index: 100;
-}
-.sticky .info {
-	font-size: 20px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-.back{
-	float: left;
-	margin-top: 20px;
-}
-.top {
-	margin-top:50px;
-	padding:0;
-}
-.github{
-	background-image: url("../asset/github.png");
-	display: inline-block;
-	height: 32px;
-	margin-top: 5px;
-	position: relative;
-	width: 32px;
 }
