@@ -1,5 +1,12 @@
 //ReadingList
 ;(function($){
+  var eighteen = [
+    {
+			"title": "Area X - The Southern Reach Trilogy - Audiobook",
+			"author": "Jeff VanderMeer",
+			"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Area-X-Audiobook/B00Q78O86G",
+		},
+  ]
 	var seventeen = [
     {
 			"title": "Artemis - Audiobook",
@@ -257,6 +264,10 @@
 	];
 
 	var data = { bookCollection: [
+    {
+      year: 2018,
+      books: eighteen,
+    },
 		{
 			year: 2017,
 			books: seventeen,
