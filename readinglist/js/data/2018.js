@@ -5,9 +5,19 @@ const eighteen = [
 		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Calamity-Audiobook/B0799RFCCK",
 	},
 	{
-		"title": "Area X - The Southern Reach Trilogy - Audiobook",
+		"title": "Acceptance - The Southern Reach Trilogy, Book 3 - Audiobook",
 		"author": "Jeff VanderMeer",
-		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Area-X-Audiobook/B00Q78O86G",
+		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Acceptance-Audiobook/B00MX3Q2BS",
+	},
+	{
+		"title": "Authority - The Southern Reach Trilogy, Book 2 - Audiobook",
+		"author": "Jeff VanderMeer",
+		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Authority-Audiobook/B00J8KWFOM",
+	},
+	{
+		"title": "Annihilation - The Southern Reach Trilogy, Book 1 - Audiobook",
+		"author": "Jeff VanderMeer",
+		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Annihilation-Audiobook/B00HYG9KMC",
 	},
 ];
 
