@@ -10,8 +10,8 @@ const seventeen = [
     "link": "https://www.audible.com/pd/Old-Mans-War-Part-1-Audiobook/B002V1O7D2",
   },
   {
-    "title": "Dungeon Madness: Divine Dungeon Series, Book 1 - Audiobook",
-    "author": "Dakota Prout",
+    "title": "Dungeon Madness: Divine Dungeon Series, Book 2 - Audiobook",
+    "author": "Dakota Krout",
     "link": "https://www.audible.com/pd/Dungeon-Madness-Part-1-Divine-Dungeon-Series-Book-2-Audiobook/B0764H7Y83",
   },
   {
@@ -26,7 +26,7 @@ const seventeen = [
   },
   {
     "title": "Dungeon Born: Divine Dungeon Series, Book 1 - Audiobook",
-    "author": "Dakota Prout",
+    "author": "Dakota Krout",
     "link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Born-Audiobook/B06XQ78XLP",
   },
   {
