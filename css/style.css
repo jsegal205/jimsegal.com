@@ -116,12 +116,12 @@ a:hover {
 }
 
 .link-row > a {
-  font-size: 2em;
+  font-size: 2.1em;
   text-decoration: none;
 }
 
 .about {
-  margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .projects-banner, .projects li {
