@@ -8,6 +8,10 @@ import books from './data/books.js';
     listEle.appendChild(container);
   });
 
+  function anchorTmpl(link, desc) {
+    return `<a href="${link}" target="_blank" rel="noopener">${desc}</a>`
+  }
+
   function yearTmpl(year) {
     const books = Object.values(year)[0];
     return `
@@ -22,13 +26,23 @@ import books from './data/books.js';
   function bookTmpl(books) {
     return books.map(book => {
       return `
-        <div>
-          <a href="${book.link}" target="_blank" rel="noopener">${book.title}</a>
+        <div class="book">
+          ${anchorTmpl(book.link, book.title)}
           <span>
             by ${book.author}
           </span>
+          ${book.series ? seriesTmpl(book.series) : ''}
         </div>
       `;
     }).join('');
+  };
+
+  function seriesTmpl(series) {
+    return `
+      <div class="series">
+        ${anchorTmpl(series.link, series.title)}
+        <span> - Book ${series.bookNum}</span>
+      </div>
+    `;
   };
 })();

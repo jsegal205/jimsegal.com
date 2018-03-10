@@ -26,3 +26,11 @@ a:hover {
 	width: 100%;
 	z-index: 100;
 }
+
+.book {
+	margin-bottom: 5px;
+}
+
+.series {
+	padding-left: 20px;
+}
