@@ -9,30 +9,30 @@ import books from './data/books.js';
   });
 
   function anchorTmpl(link, desc) {
-    return `<a href="${link}" target="_blank" rel="noopener">${desc}</a>`
+    return `<a href="${link}" target="_blank" rel="noopener">${desc}</a>`;
   }
 
   function yearTmpl(year) {
     const books = Object.values(year)[0];
     return `
-      <div>
+      <section>
         <h2>${Object.keys(year)[0]}</h2>
         <h3>Books read: ${books.length}</h3>
-        ${bookTmpl(books)}
-      </div>
+        <ul>
+          ${bookTmpl(books)}
+        </ul>
+      </section>
     `;
   }
 
   function bookTmpl(books) {
     return books.map(book => {
       return `
-        <div class="book">
+        <li class="book">
           ${anchorTmpl(book.link, book.title)}
-          <span>
-            by ${book.author}
-          </span>
+          <span> by ${book.author}</span>
           ${book.series ? seriesTmpl(book.series) : ''}
-        </div>
+        </li>
       `;
     }).join('');
   };
@@ -40,8 +40,8 @@ import books from './data/books.js';
   function seriesTmpl(series) {
     return `
       <div class="series">
+        <span>Book ${series.bookNum} of </span>
         ${anchorTmpl(series.link, series.title)}
-        <span> - Book ${series.bookNum}</span>
       </div>
     `;
   };
