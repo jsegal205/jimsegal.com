@@ -39,7 +39,7 @@ import books from './data/books.js';
       return `
         <li class="book">
           ${anchorTmpl(book.link, book.title)}
-          ${book.type ? <i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i> : ''}
+          ${book.type ? `<i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i>` : ''}
           <span> by ${book.author}</span>
           ${book.series ? seriesTmpl(book.series) : ''}
         </li>
