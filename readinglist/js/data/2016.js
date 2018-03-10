@@ -7,7 +7,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 7,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Half-Blood Prince",
@@ -17,7 +18,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 6,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Order of the Phoenix",
@@ -27,7 +29,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 5,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Goblet of Fire",
@@ -37,7 +40,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 4,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Prisoner of Azkaban",
@@ -47,7 +51,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 3,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Chamber of Secrets",
@@ -57,7 +62,8 @@ const sixteen = [
 			title: "Harry Potter",
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 2,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Harry Potter and the Sorcerer's Stone",
@@ -68,6 +74,7 @@ const sixteen = [
 			link: "https://www.audible.com/series?asin=B0182NWM9I",
 			bookNum: 1,
     },
+    type: 'headphones',
   },
 ];
 

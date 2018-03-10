@@ -8,6 +8,15 @@ import books from './data/books.js';
     listEle.appendChild(container);
   });
 
+  function mapBookType(type) {
+    switch(type) {
+      case 'headphones':
+        return 'audiobook';
+      default:
+        return type;
+    }
+  }
+
   function anchorTmpl(link, desc) {
     return `<a href="${link}" target="_blank" rel="noopener">${desc}</a>`;
   }
@@ -30,6 +39,7 @@ import books from './data/books.js';
       return `
         <li class="book">
           ${anchorTmpl(book.link, book.title)}
+          ${book.type ? <i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i> : ''}
           <span> by ${book.author}</span>
           ${book.series ? seriesTmpl(book.series) : ''}
         </li>

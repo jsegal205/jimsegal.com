@@ -8,6 +8,7 @@ const eighteen = [
 			link: "https://www.audible.com/series?asin=B01N9CUGHG",
 			bookNum: 1,
 		},
+		type: 'headphones',
 	},
 	{
 		title: "Dungeon Calamity",
@@ -18,6 +19,7 @@ const eighteen = [
 			link: "https://www.audible.com/series?asin=B0765D8MCN",
 			bookNum: 3,
 		},
+		type: 'headphones',
 	},
 	{
 		"title": "Acceptance",
@@ -28,6 +30,7 @@ const eighteen = [
 			link: "https://www.audible.com/series/?asin=B00HZ3TT3Y",
 			bookNum: 3,
 		},
+		type: 'headphones',
 	},
 	{
 		"title": "Authority",
@@ -38,6 +41,7 @@ const eighteen = [
 			link: "https://www.audible.com/series/?asin=B00HZ3TT3Y",
 			bookNum: 2,
 		},
+		type: 'headphones',
 	},
 	{
 		"title": "Annihilation",
@@ -48,6 +52,7 @@ const eighteen = [
 			link: "https://www.audible.com/series/?asin=B00HZ3TT3Y",
 			bookNum: 1,
 		},
+		type: 'headphones',
 	},
 ];
 

@@ -3,11 +3,13 @@ const seventeen = [
     title: "Artemis",
     author: "Andy Weir",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Artemis-Audiobook/B072R1CY4P",
+    type: 'headphones',
   },
   {
     title: "Old Man's War",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Old-Mans-War-Part-1-Audiobook/B002V1O7D2",
+    type: 'headphones',
   },
   {
     title: "Dungeon Madness",
@@ -17,7 +19,8 @@ const seventeen = [
 			title: "Divine Dungeon Series",
 			link: "https://www.audible.com/series?asin=B0765D8MCN",
 			bookNum: 2,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Waking Gods",
@@ -27,7 +30,8 @@ const seventeen = [
 			title: "Themis Files",
 			link: "https://www.audible.com/series?asin=B01MQVC588",
 			bookNum: 2,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Sleeping Giants",
@@ -37,17 +41,19 @@ const seventeen = [
 			title: "Themis Files",
 			link: "https://www.audible.com/series?asin=B01MQVC588",
 			bookNum: 1,
-		},
+    },
+    type: 'headphones',
   },
   {
-    title: "Dungeon Born: Divine Dungeon Series, Book 1",
+    title: "Dungeon Born",
     author: "Dakota Krout",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Born-Audiobook/B06XQ78XLP",
     series: {
 			title: "Divine Dungeon Series",
 			link: "https://www.audible.com/series?asin=B0765D8MCN",
 			bookNum: 1,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "All These Worlds",
@@ -57,7 +63,8 @@ const seventeen = [
 			title: "Bobiverse",
 			link: "https://www.audible.com/series?asin=B01M1RDL6W",
 			bookNum: 3,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "For We Are Many",
@@ -67,7 +74,8 @@ const seventeen = [
 			title: "Bobiverse",
 			link: "https://www.audible.com/series?asin=B01M1RDL6W",
 			bookNum: 2,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "We Are Legion (We Are Bob)",
@@ -77,22 +85,26 @@ const seventeen = [
 			title: "Bobiverse",
 			link: "https://www.audible.com/series?asin=B01M1RDL6W",
 			bookNum: 1,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Neverwhere",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Neverwhere-Audiobook/B00354ZSS2",
+    type: 'headphones',
   },
   {
     title: "American Gods",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/American-Gods-The-Tenth-Anniversary-Edition-A-Full-Cast-Production-Audiobook/B0055274U2",
+    type: 'headphones',
   },
   {
     title: "The Story of God: A Biblical Comedy about Love (and Hate)",
     author: "Chris Matheson",
     link: "https://www.audible.com/pd/The-Story-of-God-A-Biblical-Comedy-about-Love-and-Hate-Audiobook/B017T4ZYR8",
+    type: 'headphones',
   },
   {
     title: "Inheritance",
@@ -102,7 +114,8 @@ const seventeen = [
 			title: "Inheritance Cycle",
 			link: "https://www.audible.com/series?asin=B005NAKJLW",
 			bookNum: 4,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Brisingr",
@@ -112,7 +125,8 @@ const seventeen = [
 			title: "Inheritance Cycle",
 			link: "https://www.audible.com/series?asin=B005NAKJLW",
 			bookNum: 3,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Eldest",
@@ -122,7 +136,8 @@ const seventeen = [
 			title: "Inheritance Cycle",
 			link: "https://www.audible.com/series?asin=B005NAKJLW",
 			bookNum: 2,
-		},
+    },
+    type: 'headphones',
   },
   {
     title: "Eragon",
@@ -132,7 +147,8 @@ const seventeen = [
 			title: "Inheritance Cycle",
 			link: "https://www.audible.com/series?asin=B005NAKJLW",
 			bookNum: 1,
-		},
+    },
+    type: 'headphones',
   },
 ];
 
