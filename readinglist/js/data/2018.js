@@ -1,5 +1,10 @@
 const eighteen = [
 	{
+		"title": "Columbus Day - Expeditionary Force, Book 1 - Audiobook",
+		"author": "Craig Alanson",
+		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Columbus-Day-Audiobook/B01N48VJFJ",
+	},
+	{
 		"title": "Dungeon Calamity - Divine Dungeon Series, Book 3 - Audiobook",
 		"author": "Dakota Krout",
 		"link": "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Calamity-Audiobook/B0799RFCCK",
