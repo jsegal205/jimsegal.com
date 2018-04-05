@@ -1,5 +1,49 @@
 const eighteen = [
 	{
+		title: "Black Ops",
+		author: "Craig Alanson",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Black-Ops-Audiobook/B075NMRZTR",
+		series: {
+			title: "Expeditionary Force",
+			link: "https://www.audible.com/series?asin=B01N9CUGHG",
+			bookNum: 4,
+		},
+		type: 'headphones',
+	},
+	{
+		title: "Trouble on Paradise",
+		author: "Craig Alanson",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Trouble-on-Paradise-Audiobook/B072YT17GJ",
+		series: {
+			title: "Expeditionary Force",
+			link: "https://www.audible.com/series?asin=B01N9CUGHG",
+			bookNum: 3.5,
+		},
+		type: 'headphones',
+	},
+	{
+		title: "Paradise",
+		author: "Craig Alanson",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Paradise-Audiobook/B071438NCM",
+		series: {
+			title: "Expeditionary Force",
+			link: "https://www.audible.com/series?asin=B01N9CUGHG",
+			bookNum: 3,
+		},
+		type: 'headphones',
+	},
+	{
+		title: "SpecOps",
+		author: "Craig Alanson",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/SpecOps-Audiobook/B06W5861HP",
+		series: {
+			title: "Expeditionary Force",
+			link: "https://www.audible.com/series?asin=B01N9CUGHG",
+			bookNum: 2,
+		},
+		type: 'headphones',
+	},
+	{
 		title: "Columbus Day",
 		author: "Craig Alanson",
 		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Columbus-Day-Audiobook/B01N48VJFJ",
