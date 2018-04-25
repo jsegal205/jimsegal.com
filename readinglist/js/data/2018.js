@@ -1,5 +1,16 @@
 const eighteen = [
 	{
+		title: "Zero Hour",
+		author: "Craig Alanson",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zero-Hour-Audiobook/B078RV7BWR",
+		series: {
+			title: "Expeditionary Force",
+			link: "https://www.audible.com/series?asin=B01N9CUGHG",
+			bookNum: 5,
+		},
+		type: 'headphones',
+	},
+	{
 		title: "Black Ops",
 		author: "Craig Alanson",
 		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Black-Ops-Audiobook/B075NMRZTR",
