@@ -1,5 +1,11 @@
 const eighteen = [
 	{
+		title: "Children of Time",
+		author: "Adrian Tchaikovsky",
+		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Children-of-Time-Audiobook/B071Y9TTHC",
+		type: 'headphones',
+	},
+	{
 		title: "Zero Hour",
 		author: "Craig Alanson",
 		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zero-Hour-Audiobook/B078RV7BWR",
