@@ -4,6 +4,7 @@ import sixteen from './2016.js';
 import fourteen from './2014.js';
 import thirteen from './2013.js';
 import twelve from './2012.js';
+import prior from './prior.js';
 
 const books = [
   { 2018: eighteen },
@@ -12,7 +13,8 @@ const books = [
   { 2015: [] },
   { 2014: fourteen },
   { 2013: thirteen },
-  { 2012: twelve }
+  { 2012: twelve },
+  { "2011 and prior": prior }
 ];
 
 export default books;
