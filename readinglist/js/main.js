@@ -3,7 +3,7 @@ import books from './data/books.js';
 (() => {
   const listEle = document.getElementById('book-list');
   books.forEach((year) => {
-    const container = document.createElement('div');
+    const container = document.createElement('section');
     container.innerHTML = yearTmpl(year);
     listEle.appendChild(container);
   });
@@ -24,13 +24,11 @@ import books from './data/books.js';
   function yearTmpl(year) {
     const books = Object.values(year)[0];
     return `
-      <section>
-        <h2>${Object.keys(year)[0]}</h2>
-        <h3>Books read: ${books.length}</h3>
-        <ul>
-          ${bookTmpl(books)}
-        </ul>
-      </section>
+      <h2>${Object.keys(year)[0]}</h2>
+      <h3>Books read: ${books.length}</h3>
+      <ul>
+        ${bookTmpl(books)}
+      </ul>
     `;
   }
 
