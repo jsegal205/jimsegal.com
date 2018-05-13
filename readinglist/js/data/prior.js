@@ -1,14 +1,14 @@
 const prior = [
   {
-    title: "Invisible Monsters",
+    title: "Haunted",
     author: "Chuck Palahniuk",
-    link: "https://smile.amazon.com/Invisible-Monsters-Novel-Chuck-Palahniuk-ebook/dp/B004SO5SD8/",
+    link: "https://smile.amazon.com/Haunted-Novel-Chuck-Palahniuk-ebook/dp/B000FCK40O/",
     type: "book",
   },
   {
     title: "Invisible Monsters",
     author: "Chuck Palahniuk",
-    link: "https://smile.amazon.com/Haunted-Novel-Chuck-Palahniuk-ebook/dp/B000FCK40O/",
+    link: "https://smile.amazon.com/Invisible-Monsters-Novel-Chuck-Palahniuk-ebook/dp/B004SO5SD8/",
     type: "book",
   },
   {
