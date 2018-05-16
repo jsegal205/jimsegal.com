@@ -19,7 +19,7 @@
 	const chicagoTemp = await getTemp(41.8369, -87.6847);
 	const anchorageTemp = await getTemp(61.2175, -149.8584);
 
-	setElementContent('well-is-it', anchorageTemp > chicagoTemp ? "YES" : "NO");
+	setElementContent('well-is-it', anchorageTemp > chicagoTemp ? 'YES' : 'NO');
 	setElementContent('chicagoTemp', chicagoTemp);
 	setElementContent('anchorageTemp', anchorageTemp);
 
