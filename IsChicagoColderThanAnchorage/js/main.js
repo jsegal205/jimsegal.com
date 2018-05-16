@@ -1,20 +1,11 @@
 (async () => {
-	const API_URL = 'https://api.forecast.io/forecast/a895a7c5256b7eadc3074f3485db9406/';
+
 	const getTemp = async (lat, long) => {
-		// fetch(`${API_URL}${lat},${long}`)
-		// 	.then(response => {
-		// 		if (!response.ok) {
-		// 			throw new error('something happened');
-		// 		}
+		const API_URL = 'https://api.darksky.net/forecast/a895a7c5256b7eadc3074f3485db9406/';
+		const response = await fetch(`${API_URL}${lat},${long}`);
+		const json = await response.json();
 
-		// 		return response.data;
-		// 	})
-		// 	.then(json => json.currently.temperature)
-		// 	.catch(error => {
-		// 		// do something fun with no connection. maybe weird emoji or something
-		// 	});
-
-		return parseFloat(lat > 50 ? "12.345" : "23.456");
+		return parseFloat(json.currently.temperature);
 	};
 
 	const setElementContent = (eleId, content) => {
