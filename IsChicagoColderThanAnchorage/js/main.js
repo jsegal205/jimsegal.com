@@ -2,7 +2,7 @@
 
 	const getTemp = async (lat, long) => {
 		const API_URL = 'https://api.darksky.net/forecast/a895a7c5256b7eadc3074f3485db9406/';
-		const response = await fetch(`${API_URL}${lat},${long}`);
+		const response = await fetch(`${API_URL}${lat},${long}?lang=en&units=us&exclude=minutely,hourly,daily,alerts,flags`);
 		const json = await response.json();
 
 		return parseFloat(json.currently.temperature);
