@@ -1,26 +1,28 @@
-body{
+body {
 	font-family: sans-serif;
 }
-h1{
-	font-size: 100px;
-	margin: 0 auto;
-	width: 100%;
+
+h1 {
+	font-size: 7em;
+	margin: 0;
 }
+
 .banner {
-	top:75px;
-	right:-75px;
+	bottom: 0;
+	left: 0;
 	padding: 15px;
 	position: absolute;
 	background:#ccc;
-	width: 300px;
-	transform:rotate(45deg);
+	width: 100%;
 	text-align: center;
 }
-#main{
-	margin: 0 auto;
+
+.main {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	width:600px;
 }
-.back{
+
+.back {
 	float: left;
 }
