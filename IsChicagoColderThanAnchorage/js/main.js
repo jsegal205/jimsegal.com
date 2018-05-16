@@ -1,37 +1,37 @@
-(function($){
-	var chicago = '',
-		anch = ''
-		url = 'https://api.forecast.io/forecast/a895a7c5256b7eadc3074f3485db9406/';
+(async () => {
+	const API_URL = 'https://api.forecast.io/forecast/a895a7c5256b7eadc3074f3485db9406/';
+	const getTemp = async (lat, long) => {
+		// fetch(`${API_URL}${lat},${long}`)
+		// 	.then(response => {
+		// 		if (!response.ok) {
+		// 			throw new error('something happened');
+		// 		}
 
-	function getChicagoTemp(){
-		return $.ajax({
-			type:'POST',
-			url: url + '41.8369,-87.6847',
-			dataType: 'jsonp',
-			success:function(data){
-				chicago = data.currently.temperature;
-				$('#chiTemp').text(chicago);
-			}
-		});
-	}
-	
-	function getAnchTemp(){
-		return $.ajax({
-			type:'POST',
-			url: url + '61.2175,-149.8584',
-			dataType: 'jsonp',
-			success:function(data){
-				anch = data.currently.temperature;
-				$('#anchTemp').text(anch);
-			}
-		});
-	}
-	
-	function compare(){
-		var isColder = (parseInt(anch) > parseInt(chicago)) ? 'YES' : 'NO';
-		$('#content').text(isColder);
-	}
+		// 		return response.data;
+		// 	})
+		// 	.then(json => json.currently.temperature)
+		// 	.catch(error => {
+		// 		// do something fun with no connection. maybe weird emoji or something
+		// 	});
 
-	getChicagoTemp().then(getAnchTemp).then(compare);
+		return parseFloat(lat > 50 ? "12.345" : "23.456");
+	};
 
-})(jQuery);
+	const setElementContent = (eleId, content) => {
+		document.getElementById(eleId).innerHTML = content;
+	};
+
+	const toggleElementVisible = (eleId, isVisible) => {
+		document.getElementById(eleId).hidden = !isVisible;
+	};
+
+	const chicagoTemp = await getTemp(41.8369, -87.6847);
+	const anchorageTemp = await getTemp(61.2175, -149.8584);
+
+	setElementContent('well-is-it', anchorageTemp > chicagoTemp ? "YES" : "NO");
+	setElementContent('chicagoTemp', chicagoTemp);
+	setElementContent('anchorageTemp', anchorageTemp);
+
+	toggleElementVisible('chicago', true);
+	toggleElementVisible('anchorage', true);
+})();
