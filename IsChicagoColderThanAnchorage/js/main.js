@@ -12,18 +12,12 @@
 		return parseFloat(json.currently.temperature);
 	};
 
-	const getElementById = (eleId) => {
-		return document.getElementById(eleId);
-	}
-
 	const setElementContent = (eleId, content) => {
-		getElementById(eleId).innerHTML = content;
+		document.getElementById(eleId).innerHTML = content;
 	};
 
 	const toggleElementVisible = (eleId, isVisible) => {
-		ele = getElementById(eleId);
-		ele.hidden = !isVisible;
-		ele.setAttribute('aria-hidden', !isVisible);
+		document.getElementById(eleId).hidden = !isVisible;
 	};
 
 	const chicagoTemp = await getTemp(41.8369, -87.6847);
