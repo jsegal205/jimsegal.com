@@ -34,7 +34,7 @@ const destinations = [
 function initMap() {
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 3,
-    center: window.matchMedia("(min-width: 400px)").matches ? { lat: 39.594096, lng: -52.767187 } : chicago
+    center: window.matchMedia("(min-width: 420px)").matches ? { lat: 39.594096, lng: -52.767187 } : chicago
   });
 
   let activeInfoWindow = null;
