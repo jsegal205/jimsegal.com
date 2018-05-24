@@ -1,5 +1,22 @@
 const eighteen = [
 	{
+    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions",
+    author: "Randall Munroe",
+    link: "https://smile.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994",
+    type: 'book',
+  },
+	{
+    title: "Only Human",
+    author: "Sylvain Neuvel",
+    link: "https://www.audible.com/pd/Mysteries-Thrillers/Only-Human-Audiobook/B07B41P3D6",
+    series: {
+			title: "Themis Files",
+			link: "https://www.audible.com/series?asin=B01MQVC588",
+			bookNum: 3,
+    },
+    type: 'headphones',
+  },
+	{
 		title: "Children of Time",
 		author: "Adrian Tchaikovsky",
 		link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Children-of-Time-Audiobook/B071Y9TTHC",
