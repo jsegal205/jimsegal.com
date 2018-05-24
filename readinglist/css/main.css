@@ -3,58 +3,58 @@ body {
 }
 
 a {
-	color: #77F;
+  color: #77f;
 }
 
 ul {
-	list-style-type: none;
-	-webkit-padding-start: 0;
+  list-style-type: none;
+  -webkit-padding-start: 0;
 }
 
 .container {
   margin-top: 40px;
-	padding: 20px;
+  padding: 20px;
 }
 
 .sticky {
-	background: #EEF;
-	border: 2px solid #999;
+  background: #eef;
+  border: 2px solid #999;
   left: 0;
-	padding: 20px;
-	position: fixed;
+  padding: 20px;
+  position: fixed;
   top: 0;
-	width: 100%;
-	z-index: 100;
+  width: 100%;
+  z-index: 100;
 }
 
 .github {
-	float: right;
-	font-size: 1.5em;
-	padding-right: 40px;
+  float: right;
+  font-size: 1.5em;
+  padding-right: 40px;
 }
 
 .book {
-	line-height: 1.5em;
-	margin-bottom: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
 .series {
-	padding-left: 1.5em;
+  padding-left: 1.5em;
 }
 
 /* phone only */
-@media only screen and (max-width : 420px) {
-	body {
-		font-size: 1.3em;
-	}
+@media only screen and (max-width: 420px) {
+  body {
+    font-size: 1.3em;
+  }
 
-	.series {
-		padding-left: 1em;
-	}
+  .series {
+    padding-left: 1em;
+  }
 }
 
-@media only screen and (min-width : 420px) {
-	ul {
-		padding-left: 30px;
-	}
+@media only screen and (min-width: 420px) {
+  ul {
+    padding-left: 30px;
+  }
 }

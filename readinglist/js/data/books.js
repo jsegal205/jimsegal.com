@@ -1,10 +1,10 @@
-import eighteen from './2018.js';
-import seventeen from './2017.js';
-import sixteen from './2016.js';
-import fourteen from './2014.js';
-import thirteen from './2013.js';
-import twelve from './2012.js';
-import prior from './prior.js';
+import eighteen from "./2018.js";
+import seventeen from "./2017.js";
+import sixteen from "./2016.js";
+import fourteen from "./2014.js";
+import thirteen from "./2013.js";
+import twelve from "./2012.js";
+import prior from "./prior.js";
 
 const books = [
   { 2018: eighteen },

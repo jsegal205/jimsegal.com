@@ -1,41 +1,42 @@
-html, body {
-	height: 100%;
-	margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 body {
-	background: rgba(100, 150, 255, 1);
-	font-family: sans-serif;
-	display: flex;
-	flex-direction: column;
+  background: rgba(100, 150, 255, 1);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-	font-size: 7em;
-	margin: 0;
+  font-size: 7em;
+  margin: 0;
 }
 
 h1.error {
-	font-size: 4em;
+  font-size: 4em;
 }
 
 .banner {
-	background:#ccc;
-	flex-shrink: 0;
-	padding: 15px 0;
-	text-align: center;
+  background: #ccc;
+  flex-shrink: 0;
+  padding: 15px 0;
+  text-align: center;
 }
 
 .main {
-	flex: 1 0 auto;
-	flex-direction: column;
-	position: relative;
-	text-align: center;
+  flex: 1 0 auto;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
 }
 
 .back {
-	float: left;
-	padding: 10px;
+  float: left;
+  padding: 10px;
 }
 
 .clouds {
@@ -45,40 +46,46 @@ h1.error {
   border-radius: 50%;
   position: absolute;
   top: 15%;
-	left: calc(50% - 35px);
-	z-index: -1;
+  left: calc(50% - 35px);
+  z-index: -1;
 }
 
 .clouds:after,
 .clouds:before {
-	content: '';
-	position: absolute;
-	top: 40px;
-	left: 20px;
-	background: rgba(250, 250, 250, 1);
-	display: block;
-	width: 50px;
-	height: 40px;
-	border-radius: 50%;
-	animation: cloud1 2.5s ease-in-out infinite alternate;
-	box-shadow: 20px -15px 0 rgba(250, 250, 250, 1),
-							40px 10px 0 rgba(250, 250, 250, 1),
-							55px -15px 0 rgba(250, 250, 250, 1),
-							75px 0px 0 rgba(250, 250, 250, 1);
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background: rgba(250, 250, 250, 1);
+  display: block;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  animation: cloud1 2.5s ease-in-out infinite alternate;
+  box-shadow: 20px -15px 0 rgba(250, 250, 250, 1), 40px 10px 0 rgba(250, 250, 250, 1),
+    55px -15px 0 rgba(250, 250, 250, 1), 75px 0px 0 rgba(250, 250, 250, 1);
 }
 
 .clouds:before {
-	left: -80px;
-	top: 0;
-	animation-name: cloud2;
+  left: -80px;
+  top: 0;
+  animation-name: cloud2;
 }
 
 @keyframes cloud1 {
-  from {  margin-left: 0; }
-  to {  margin-left: 50px; }
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 50px;
+  }
 }
 
 @keyframes cloud2 {
-  from {  margin-left: 0; }
-  to {  margin-left: -50px; }
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -50px;
+  }
 }

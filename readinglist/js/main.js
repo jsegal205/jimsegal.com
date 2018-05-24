@@ -1,17 +1,17 @@
-import books from './data/books.js';
+import books from "./data/books.js";
 
 (() => {
-  const listEle = document.getElementById('book-list');
-  books.forEach((year) => {
-    const container = document.createElement('section');
+  const listEle = document.getElementById("book-list");
+  books.forEach(year => {
+    const container = document.createElement("section");
     container.innerHTML = yearTmpl(year);
     listEle.appendChild(container);
   });
 
   function mapBookType(type) {
-    switch(type) {
-      case 'headphones':
-        return 'audiobook';
+    switch (type) {
+      case "headphones":
+        return "audiobook";
       default:
         return type;
     }
@@ -33,17 +33,19 @@ import books from './data/books.js';
   }
 
   function bookTmpl(books) {
-    return books.map(book => {
-      return `
+    return books
+      .map(book => {
+        return `
         <li class="book">
           ${anchorTmpl(book.link, book.title)}
-          ${book.type ? `<i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i>` : ''}
+          ${book.type ? `<i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i>` : ""}
           <span> by ${book.author}</span>
-          ${book.series ? seriesTmpl(book.series) : ''}
+          ${book.series ? seriesTmpl(book.series) : ""}
         </li>
       `;
-    }).join('');
-  };
+      })
+      .join("");
+  }
 
   function seriesTmpl(series) {
     return `
@@ -52,5 +54,5 @@ import books from './data/books.js';
         ${anchorTmpl(series.link, series.title)}
       </div>
     `;
-  };
+  }
 })();

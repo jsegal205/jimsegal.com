@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   border: 0;
   font: inherit;
   font-size: 100%;
@@ -24,21 +92,35 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 body {
   line-height: 1;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none;
 }
 table {
@@ -51,12 +133,13 @@ table {
    License: none (public domain)
 */
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  background: #EFEFEF;
+  background: #efefef;
   color: #444;
   font-family: Consolas, monaco, monospace;
   margin: 0;
@@ -105,7 +188,7 @@ a:hover {
 }
 
 .link-row {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .link-row > a {
@@ -117,7 +200,8 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.projects-banner, .projects li {
+.projects-banner,
+.projects li {
   margin-bottom: 10px;
 }
 
@@ -126,23 +210,23 @@ a:hover {
 }
 
 @media screen and (max-width: 730px) {
-	.container {
+  .container {
     -webkit-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 1em 0;
     text-align: center;
-	}
+  }
 
-	.title {
+  .title {
     font-size: 3em;
-	}
+  }
 
-	.projects-banner {
+  .projects-banner {
     font-size: 2em;
-	}
+  }
 
-	.link-row > a {
+  .link-row > a {
     font-size: 1.8em;
-	}
+  }
 }
