@@ -9,6 +9,11 @@ const seventeen = [
     title: "Old Man's War",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Old-Mans-War-Part-1-Audiobook/B002V1O7D2",
+    series: {
+      title: "Old Man's War",
+      link: "https://www.audible.com/series?asin=B0073XG3JE",
+      bookNum: 1
+    },
     type: "headphones"
   },
   {

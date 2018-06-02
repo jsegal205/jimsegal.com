@@ -1,5 +1,16 @@
 const eighteen = [
   {
+    title: "The Ghost Brigades",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Ghost-Brigades-Audiobook/B002V9ZFSK",
+    series: {
+      title: "Old Man's War",
+      link: "https://www.audible.com/series?asin=B0073XG3JE",
+      bookNum: 2
+    },
+    type: "headphones"
+  },
+  {
     title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions",
     author: "Randall Munroe",
     link: "https://smile.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994",
