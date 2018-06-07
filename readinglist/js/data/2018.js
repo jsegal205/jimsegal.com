@@ -1,5 +1,11 @@
 const eighteen = [
   {
+    title: "Redshirts",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Redshirts-Audiobook/B007SP2LPM",
+    type: "headphones"
+  },
+  {
     title: "The Ghost Brigades",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Ghost-Brigades-Audiobook/B002V9ZFSK",
