@@ -1,3 +1,5 @@
+import { oldMansWar, divineDungeon, themisFiles, bobiverse, inheritanceCycle } from "./series.js";
+
 const seventeen = [
   {
     title: "Artemis",
@@ -10,8 +12,7 @@ const seventeen = [
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Old-Mans-War-Part-1-Audiobook/B002V1O7D2",
     series: {
-      title: "Old Man's War",
-      link: "https://www.audible.com/series?asin=B0073XG3JE",
+      ...oldMansWar,
       bookNum: 1
     },
     type: "headphones"
@@ -21,8 +22,7 @@ const seventeen = [
     author: "Dakota Krout",
     link: "https://www.audible.com/pd/Dungeon-Madness-Part-1-Divine-Dungeon-Series-Book-2-Audiobook/B0764H7Y83",
     series: {
-      title: "Divine Dungeon Series",
-      link: "https://www.audible.com/series?asin=B0765D8MCN",
+      ...divineDungeon,
       bookNum: 2
     },
     type: "headphones"
@@ -32,8 +32,7 @@ const seventeen = [
     author: "Sylvain Neuvel",
     link: "https://www.audible.com/pd/Waking-Gods-The-Themis-Files-Book-2-Audiobook/B01NGUBLBW",
     series: {
-      title: "Themis Files",
-      link: "https://www.audible.com/series?asin=B01MQVC588",
+      ...themisFiles,
       bookNum: 2
     },
     type: "headphones"
@@ -43,8 +42,7 @@ const seventeen = [
     author: "Sylvain Neuvel",
     link: "https://www.audible.com/pd/Fiction/Sleeping-Giants-Audiobook/B01A98UKAC",
     series: {
-      title: "Themis Files",
-      link: "https://www.audible.com/series?asin=B01MQVC588",
+      ...themisFiles,
       bookNum: 1
     },
     type: "headphones"
@@ -54,8 +52,7 @@ const seventeen = [
     author: "Dakota Krout",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Born-Audiobook/B06XQ78XLP",
     series: {
-      title: "Divine Dungeon Series",
-      link: "https://www.audible.com/series?asin=B0765D8MCN",
+      ...divineDungeon,
       bookNum: 1
     },
     type: "headphones"
@@ -65,8 +62,7 @@ const seventeen = [
     author: "Dennis E. Taylor",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/All-These-Worlds-Audiobook/B07341FZDC",
     series: {
-      title: "Bobiverse",
-      link: "https://www.audible.com/series?asin=B01M1RDL6W",
+      ...bobiverse,
       bookNum: 3
     },
     type: "headphones"
@@ -76,8 +72,7 @@ const seventeen = [
     author: "Dennis E. Taylor",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/For-We-Are-Many-Audiobook/B01N17THEO",
     series: {
-      title: "Bobiverse",
-      link: "https://www.audible.com/series?asin=B01M1RDL6W",
+      ...bobiverse,
       bookNum: 2
     },
     type: "headphones"
@@ -87,8 +82,7 @@ const seventeen = [
     author: "Dennis E. Taylor",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/We-Are-Legion-We-Are-Bob-Audiobook/B01L082HJ2",
     series: {
-      title: "Bobiverse",
-      link: "https://www.audible.com/series?asin=B01M1RDL6W",
+      ...bobiverse,
       bookNum: 1
     },
     type: "headphones"
@@ -117,8 +111,7 @@ const seventeen = [
     author: "Christopher Paolini",
     link: "https://www.audible.com/pd/Inheritance-Part-1-The-Inheritance-Cycle-Book-4-Audiobook/B005ZWA2P6",
     series: {
-      title: "Inheritance Cycle",
-      link: "https://www.audible.com/series?asin=B005NAKJLW",
+      ...inheritanceCycle,
       bookNum: 4
     },
     type: "headphones"
@@ -128,8 +121,7 @@ const seventeen = [
     author: "Christopher Paolini",
     link: "https://www.audible.com/pd/Brisingr-Part-1-The-Inheritance-Cycle-Book-3-Audiobook/B002V0A444",
     series: {
-      title: "Inheritance Cycle",
-      link: "https://www.audible.com/series?asin=B005NAKJLW",
+      ...inheritanceCycle,
       bookNum: 3
     },
     type: "headphones"
@@ -139,8 +131,7 @@ const seventeen = [
     author: "Christopher Paolini",
     link: "https://www.audible.com/pd/Eldest-The-Inheritance-Cycle-Book-2-Part-1-Audiobook/B003WVNWU4",
     series: {
-      title: "Inheritance Cycle",
-      link: "https://www.audible.com/series?asin=B005NAKJLW",
+      ...inheritanceCycle,
       bookNum: 2
     },
     type: "headphones"
@@ -150,8 +141,7 @@ const seventeen = [
     author: "Christopher Paolini",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Eragon-Audiobook/B002UZKL7A",
     series: {
-      title: "Inheritance Cycle",
-      link: "https://www.audible.com/series?asin=B005NAKJLW",
+      ...inheritanceCycle,
       bookNum: 1
     },
     type: "headphones"

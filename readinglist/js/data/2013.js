@@ -1,3 +1,5 @@
+import { dresdenFiles, foundation } from "./series.js";
+
 const thirteen = [
   {
     title: "The Design of Everyday Things",
@@ -22,8 +24,7 @@ const thirteen = [
     author: "Jim Butcher",
     link: "http://www.amazon.com/Fool-Moon-Dresden-Files-Book-ebook/dp/B001BPYD2O/",
     series: {
-      title: "Dresden Files",
-      link: "https://www.amazon.com/gp/product/B00O3HD47C",
+      ...dresdenFiles,
       bookNum: 2
     },
     type: "book"
@@ -33,8 +34,7 @@ const thirteen = [
     author: "Jim Butcher",
     link: "http://www.amazon.com/Storm-Front-Dresden-Files-Book-ebook/dp/B000WH7PLS/",
     series: {
-      title: "Dresden Files",
-      link: "https://www.amazon.com/gp/product/B00O3HD47C",
+      ...dresdenFiles,
       bookNum: 1
     },
     type: "book"
@@ -44,8 +44,7 @@ const thirteen = [
     author: "Isaac Asimov",
     link: "http://www.amazon.com/Foundation-Empire-Isaac-Asimov-ebook/dp/B000FC1PWK/",
     series: {
-      title: "Foundation",
-      link: "https://www.amazon.com/gp/product/B011M97Y5G",
+      ...foundation,
       bookNum: 2
     },
     type: "book"

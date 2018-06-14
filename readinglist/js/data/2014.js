@@ -1,3 +1,5 @@
+import { mazeRunner } from "./series.js";
+
 const fourteen = [
   {
     title: "The Lean Startup",
@@ -10,8 +12,7 @@ const fourteen = [
     author: "James Dashner",
     link: "https://www.amazon.com/gp/product/B004JN1CW4",
     series: {
-      title: "Maze Runner",
-      link: "https://www.amazon.com/gp/product/B01LZDNDDQ",
+      ...mazeRunner,
       bookNum: 3
     },
     type: "book"
@@ -21,8 +22,7 @@ const fourteen = [
     author: "James Dashner",
     link: "https://www.amazon.com/gp/product/B003F3FJQO",
     series: {
-      title: "Maze Runner",
-      link: "https://www.amazon.com/gp/product/B01LZDNDDQ",
+      ...mazeRunner,
       bookNum: 2
     },
     type: "book"
@@ -32,8 +32,7 @@ const fourteen = [
     author: "James Dashner",
     link: "https://www.amazon.com/gp/product/B002QE3CTY",
     series: {
-      title: "Maze Runner",
-      link: "https://www.amazon.com/gp/product/B01LZDNDDQ",
+      ...mazeRunner,
       bookNum: 1
     },
     type: "book"

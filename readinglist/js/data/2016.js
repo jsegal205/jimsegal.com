@@ -1,11 +1,12 @@
+import { harryPotter } from "./series.js";
+
 const sixteen = [
   {
     title: "Harry Potter and the Deathly Hallows",
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Deathly-Hallows-Book-7-Audiobook/B017WJ5ZK6/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 7
     },
     type: "headphones"
@@ -15,8 +16,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Half-Blood-Prince-Book-6-Audiobook/B017V4NOZ0/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 6
     },
     type: "headphones"
@@ -26,8 +26,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Order-of-the-Phoenix-Book-5-Audiobook/B017V4NMX4/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 5
     },
     type: "headphones"
@@ -37,8 +36,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Goblet-of-Fire-Book-4-Audiobook/B017V4NUPO/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 4
     },
     type: "headphones"
@@ -48,8 +46,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Prisoner-of-Azkaban-Book-3-Audiobook/B017V4JA2Q/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 3
     },
     type: "headphones"
@@ -59,8 +56,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Chamber-of-Secrets-Book-2-Audiobook/B017V4IWVG/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 2
     },
     type: "headphones"
@@ -70,8 +66,7 @@ const sixteen = [
     author: "J.K. Rowling",
     link: "http://www.audible.com/pd/Kids/Harry-Potter-and-the-Sorcerers-Stone-Book-1-Audiobook/B017V4IM1G/",
     series: {
-      title: "Harry Potter",
-      link: "https://www.audible.com/series?asin=B0182NWM9I",
+      ...harryPotter,
       bookNum: 1
     },
     type: "headphones"

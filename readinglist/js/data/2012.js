@@ -1,11 +1,12 @@
+import { foundation, percyJackson, hungerGames } from "./series.js";
+
 const twelve = [
   {
     title: "Foundation",
     author: "Isaac Asimov",
     link: "http://www.amazon.com/Foundation-Isaac-Asimov-ebook/dp/B000FC1PWA/",
     series: {
-      title: "Foundation",
-      link: "https://www.amazon.com/gp/product/B011M97Y5G",
+      ...foundation,
       bookNum: 1
     },
     type: "book"
@@ -27,8 +28,7 @@ const twelve = [
     author: "Rick Riordan",
     link: "http://www.amazon.com/Percy-Jackson-Last-Olympian-Riordan-ebook/dp/B00280LYHS/",
     series: {
-      title: "Percy Jackson and the Olympians",
-      link: "https://www.amazon.com/gp/product/B0787YQHW3",
+      ...percyJackson,
       bookNum: 5
     },
     type: "book"
@@ -38,8 +38,7 @@ const twelve = [
     author: "Rick Riordan",
     link: "http://www.amazon.com/Percy-Jackson-Battle-Labyrinth-Olympians-ebook/dp/B00280LYIM/",
     series: {
-      title: "Percy Jackson and the Olympians",
-      link: "https://www.amazon.com/gp/product/B0787YQHW3",
+      ...percyJackson,
       bookNum: 4
     },
     type: "book"
@@ -49,8 +48,7 @@ const twelve = [
     author: "Rick Riordan",
     link: "http://www.amazon.com/Percy-Jackson-Titans-Curse-Riordan-ebook/dp/B00280LYI2/",
     series: {
-      title: "Percy Jackson and the Olympians",
-      link: "https://www.amazon.com/gp/product/B0787YQHW3",
+      ...percyJackson,
       bookNum: 3
     },
     type: "book"
@@ -60,8 +58,7 @@ const twelve = [
     author: "Rick Riordan",
     link: "http://www.amazon.com/Percy-Jackson-Monsters-Rick-Riordan-ebook/dp/B00280LYHI/",
     series: {
-      title: "Percy Jackson and the Olympians",
-      link: "https://www.amazon.com/gp/product/B0787YQHW3",
+      ...percyJackson,
       bookNum: 2
     },
     type: "book"
@@ -71,8 +68,7 @@ const twelve = [
     author: "Rick Riordan",
     link: "http://www.amazon.com/Percy-Jackson-Lightning-Thief-Olympians-ebook/dp/B00280LYIC/",
     series: {
-      title: "Percy Jackson and the Olympians",
-      link: "https://www.amazon.com/gp/product/B0787YQHW3",
+      ...percyJackson,
       bookNum: 1
     },
     type: "book"
@@ -94,9 +90,8 @@ const twelve = [
     author: "Suzanne Collins",
     link: "http://www.amazon.com/Mockingjay-Hunger-Games-Book-Trilogy-ebook/dp/B003XF1XOQ/",
     series: {
-      title: "Hunger Games Trilogy",
-      link: "https://www.amazon.com/gp/product/B00PMGUR7S",
-      bookNum: 1
+      ...hungerGames,
+      bookNum: 3
     },
     type: "book"
   },
@@ -105,9 +100,8 @@ const twelve = [
     author: "Suzanne Collins",
     link: "http://www.amazon.com/Catching-Fire-Hunger-Games-Trilogy-ebook/dp/B003O86FMW/",
     series: {
-      title: "Hunger Games Trilogy",
-      link: "https://www.amazon.com/gp/product/B00PMGUR7S",
-      bookNum: 1
+      ...hungerGames,
+      bookNum: 2
     },
     type: "book"
   },
@@ -116,8 +110,7 @@ const twelve = [
     author: "Suzanne Collins",
     link: "http://www.amazon.com/Hunger-Games-Book-Trilogy-ebook/dp/B002MQYOFW/",
     series: {
-      title: "Hunger Games Trilogy",
-      link: "https://www.amazon.com/gp/product/B00PMGUR7S",
+      ...hungerGames,
       bookNum: 1
     },
     type: "book"
