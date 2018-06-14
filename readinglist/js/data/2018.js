@@ -1,5 +1,11 @@
 const eighteen = [
   {
+    title: "Will Save the Galaxy for Food",
+    author: "Yahtzee Croshaw",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Will-Save-the-Galaxy-for-Food-Audiobook/B06X3QQTFH",
+    type: "headphones"
+  },
+  {
     title: "Redshirts",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Redshirts-Audiobook/B007SP2LPM",
