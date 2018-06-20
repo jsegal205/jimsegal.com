@@ -2,6 +2,16 @@ import { oldMansWar, themisFiles, expeditionaryForce, divineDungeon, southernRea
 
 const eighteen = [
   {
+    title: "The Last Colony",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Last-Colony-Audiobook/B002VA9CAQ",
+    series: {
+      ...oldMansWar,
+      bookNum: 3
+    },
+    type: "headphones"
+  },
+  {
     title: "Will Save the Galaxy for Food",
     author: "Yahtzee Croshaw",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Will-Save-the-Galaxy-for-Food-Audiobook/B06X3QQTFH",
