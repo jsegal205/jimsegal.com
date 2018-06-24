@@ -2,6 +2,16 @@ import { oldMansWar, themisFiles, expeditionaryForce, divineDungeon, southernRea
 
 const eighteen = [
   {
+    title: "Zoe's Tale",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zoes-Tale-Audiobook/B002V5D4PA",
+    series: {
+      ...oldMansWar,
+      bookNum: 4
+    },
+    type: "headphones"
+  },
+  {
     title: "The Last Colony",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Last-Colony-Audiobook/B002VA9CAQ",
