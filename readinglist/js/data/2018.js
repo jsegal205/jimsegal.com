@@ -2,6 +2,16 @@ import { oldMansWar, themisFiles, expeditionaryForce, divineDungeon, southernRea
 
 const eighteen = [
   {
+    title: "The Human Division",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Human-Division-Audiobook/B00CPPQZJI",
+    series: {
+      ...oldMansWar,
+      bookNum: 5
+    },
+    type: "headphones"
+  },
+  {
     title: "Zoe's Tale",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zoes-Tale-Audiobook/B002V5D4PA",
