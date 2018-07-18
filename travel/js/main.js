@@ -28,7 +28,9 @@ const destinations = [
   { lat: 41.385064, lng: 2.173403, city: "Barcelona, Spain", visit: ["May 2018"] },
   { lat: 37.389092, lng: -5.984459, city: "Seville, Spain", visit: ["May 2018"] },
   { lat: 26.122439, lng: -80.137317, city: "Fort Lauderdale, FL", visit: ["November 2016"] },
-  { lat: 38.627003, lng: -90.199404, city: "St. Louis, MO", visit: ["July 2009"] }
+  { lat: 38.627003, lng: -90.199404, city: "St. Louis, MO", visit: ["July 2009"] },
+  { lat: 38.955603, lng: -90.186776, city: "Godfrey, IL", visit: ["July 2018"] },
+  { lat: 36.685863, lng: -93.330578, city: "West Branson, MO", visit: ["July 2018"] }
 ];
 
 function initMap() {
