@@ -2,6 +2,16 @@ import { oldMansWar, themisFiles, expeditionaryForce, divineDungeon, southernRea
 
 const eighteen = [
   {
+    title: "The End of All Things",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-End-of-All-Things-Audiobook/B0118MY6JE",
+    series: {
+      ...oldMansWar,
+      bookNum: 6
+    },
+    type: "headphones"
+  },
+  {
     title: "The Human Division",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Human-Division-Audiobook/B00CPPQZJI",
