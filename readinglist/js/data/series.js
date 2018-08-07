@@ -38,6 +38,11 @@ export const inheritanceCycle = {
   link: "https://www.audible.com/series?asin=B005NAKJLW"
 };
 
+export const magic20 = {
+  title: "Magic 2.0",
+  link: "https://www.audible.com/series?asin=B00MQ2WZIK"
+};
+
 export const mazeRunner = {
   title: "Maze Runner",
   link: "https://www.amazon.com/gp/product/B01LZDNDDQ"

@@ -1,6 +1,16 @@
-import { oldMansWar, themisFiles, expeditionaryForce, divineDungeon, southernReach } from "./series.js";
+import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, themisFiles } from "./series.js";
 
 const eighteen = [
+  {
+    title: "Off to Be the Wizard",
+    author: "Scott Meyer",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Off-to-Be-the-Wizard-Audiobook/B00IIS32NI",
+    series: {
+      ...magic20,
+      bookNum: 1
+    },
+    type: "headphones"
+  },
   {
     title: "Dark Matter",
     author: "Blake Crouch",
