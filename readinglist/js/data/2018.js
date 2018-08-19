@@ -2,6 +2,16 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Spell or High Water",
+    author: "Scott Meyer",
+    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Spell-or-High-Water-Audiobook/B00KHEK842",
+    series: {
+      ...magic20,
+      bookNum: 2
+    },
+    type: "headphones"
+  },
+  {
     title: "Off to Be the Wizard",
     author: "Scott Meyer",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Off-to-Be-the-Wizard-Audiobook/B00IIS32NI",
