@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Fuzzy Nation",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Fuzzy-Nation-Audiobook/B004YXLK7G",
+    type: "headphones"
+  },
+  {
     title: "Mogworld",
     author: "Yahtzee Croshaw",
     link: "https://www.audible.com/pd/Mogworld-Audiobook/B009EVGGEK",
