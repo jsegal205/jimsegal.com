@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "The Android's Dream",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/The-Androids-Dream-Audiobook/B004FGDVUG",
+    type: "headphones"
+  },
+  {
     title: "The Graveyard Book",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/The-Graveyard-Book-Full-Cast-Production-Audiobook/B00LXHQO22",
