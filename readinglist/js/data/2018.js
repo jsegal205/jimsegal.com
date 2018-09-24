@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Armada",
+    author: "Ernest Cline",
+    link: "https://www.audible.com/pd/Armada-Audiobook/B00VN0Q8XY",
+    type: "headphones"
+  },
+  {
     title: "The Android's Dream",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/The-Androids-Dream-Audiobook/B004FGDVUG",
