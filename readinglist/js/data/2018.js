@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "One Second After",
+    author: "William R. Forstchen",
+    link: "https://www.audible.com/pd/One-Second-After-Audiobook/B002V1O7UU",
+    type: "headphones"
+  },
+  {
     title: "Armada",
     author: "Ernest Cline",
     link: "https://www.audible.com/pd/Armada-Audiobook/B00VN0Q8XY",
