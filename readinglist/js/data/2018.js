@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "The Singularity Trap",
+    author: "Dennis E. Taylor",
+    link: "https://www.audible.com/pd/The-Singularity-Trap-Audiobook/B07BHVWFSM",
+    type: "headphones"
+  },
+  {
     title: "One Second After",
     author: "William R. Forstchen",
     link: "https://www.audible.com/pd/One-Second-After-Audiobook/B002V1O7UU",
