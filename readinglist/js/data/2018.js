@@ -2,6 +2,16 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Mavericks",
+    author: "Craig Alanson",
+    link: "https://www.audible.com/pd/Mavericks-Audiobook/1772306932",
+    series: {
+      ...expeditionaryForce,
+      bookNum: 6
+    },
+    type: "headphones"
+  },
+  {
     title: "The Singularity Trap",
     author: "Dennis E. Taylor",
     link: "https://www.audible.com/pd/The-Singularity-Trap-Audiobook/B07BHVWFSM",
