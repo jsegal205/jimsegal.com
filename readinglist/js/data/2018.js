@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Good Omens",
+    author: "Neil Gaiman",
+    link: "https://www.audible.com/pd/Good-Omens-Audiobook/B0036KV7Y4",
+    type: "headphones"
+  },
+  {
     title: "Mavericks",
     author: "Craig Alanson",
     link: "https://www.audible.com/pd/Mavericks-Audiobook/1772306932",
