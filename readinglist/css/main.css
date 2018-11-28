@@ -2,6 +2,11 @@ body {
   font-family: sans-serif;
 }
 
+*:focus {
+  color: #39c;
+  outline-color: #c500ff;
+}
+
 a {
   color: #77f;
 }
@@ -30,9 +35,8 @@ ul {
 }
 
 .github {
-  float: right;
   font-size: 1.5em;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 .book {

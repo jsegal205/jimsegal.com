@@ -133,6 +133,11 @@ table {
    License: none (public domain)
 */
 
+*:focus {
+  color: #39c;
+  outline-color: #c500ff;
+}
+
 html,
 body {
   height: 100%;
@@ -189,6 +194,9 @@ a:hover {
 
 .link-row {
   margin-bottom: 20px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link-row > a {
