@@ -33,7 +33,7 @@
     getElementById("well-is-it").className = "";
     toggleElementVisible("loading", false);
 
-    setElementContent("well-is-it", anchorageTemp > chicagoTemp ? "YES" : "NO");
+    setElementContent("well-is-it", anchorageTemp > chicagoTemp ? "YUP" : "NOPE");
     setElementContent("chicagoTemp", chicagoTemp);
     setElementContent("anchorageTemp", anchorageTemp);
 
