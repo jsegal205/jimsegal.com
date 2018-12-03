@@ -26,6 +26,18 @@
     getElementById(eleId).hidden = !isVisible;
   };
 
+  const verdictText = (anchorageTemp, chicagoTemp) => {
+    if (anchorageTemp > chicagoTemp) {
+      return "YUP";
+    }
+
+    if (anchorageTemp > chicagoTemp - 5) {
+      return "ALMOST";
+    }
+
+    return "NOPE";
+  };
+
   const chicagoTemp = await getTemp(41.8369, -87.6847);
   const anchorageTemp = await getTemp(61.2175, -149.8584);
 
@@ -33,7 +45,7 @@
     getElementById("well-is-it").className = "";
     toggleElementVisible("loading", false);
 
-    setElementContent("well-is-it", anchorageTemp > chicagoTemp ? "YUP" : "NOPE");
+    setElementContent("well-is-it", verdictText(anchorageTemp, chicagoTemp));
     setElementContent("chicagoTemp", chicagoTemp);
     setElementContent("anchorageTemp", anchorageTemp);
 
