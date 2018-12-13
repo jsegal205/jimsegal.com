@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Managing Humans: Biting and Humorous Tales of a Software Engineering Manager",
+    author: "Michael Lopp",
+    link: "https://smile.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575",
+    type: "book"
+  },
+  {
     title: "14",
     author: "Peter Clines",
     link: "https://www.audible.com/pd/14-Audiobook/B0089Y7K0M",
