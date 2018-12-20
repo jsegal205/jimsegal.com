@@ -2,6 +2,12 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
+    title: "Remote: Office Not Required",
+    author: "Jason Fried and David Heinemeier Hansson",
+    link: "https://smile.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501",
+    type: "book"
+  },
+  {
     title: "Managing Humans: Biting and Humorous Tales of a Software Engineering Manager",
     author: "Michael Lopp",
     link: "https://smile.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575",
