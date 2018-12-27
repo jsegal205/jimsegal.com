@@ -2,28 +2,36 @@ import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, 
 
 const eighteen = [
   {
-    title: "Remote: Office Not Required",
+    title: "Remote",
+    subtitle: "Office Not Required",
     author: "Jason Fried and David Heinemeier Hansson",
     link: "https://smile.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501",
-    type: "book"
+    type: "book",
+    pages: 256
   },
   {
-    title: "Managing Humans: Biting and Humorous Tales of a Software Engineering Manager",
+    title: "Managing Humans",
+    subtitle: "Biting and Humorous Tales of a Software Engineering Manager",
     author: "Michael Lopp",
     link: "https://smile.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575",
-    type: "book"
+    type: "book",
+    pages: 348
   },
   {
     title: "14",
     author: "Peter Clines",
     link: "https://www.audible.com/pd/14-Audiobook/B0089Y7K0M",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 12, minutes: 34 },
+    narrator: "Ray Porter"
   },
   {
     title: "Good Omens",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/Good-Omens-Audiobook/B0036KV7Y4",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 12, minutes: 32 },
+    narrator: "Martin Jarvis"
   },
   {
     title: "Mavericks",
@@ -33,49 +41,66 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 6
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 17, minutes: 21 },
+    narrator: "R.C. Bray"
   },
   {
     title: "The Singularity Trap",
     author: "Dennis E. Taylor",
     link: "https://www.audible.com/pd/The-Singularity-Trap-Audiobook/B07BHVWFSM",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 11, minutes: 23 },
+    narrator: "Ray Porter"
   },
   {
     title: "One Second After",
     author: "William R. Forstchen",
     link: "https://www.audible.com/pd/One-Second-After-Audiobook/B002V1O7UU",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 13, minutes: 17 },
+    narrator: "Joe Barrett"
   },
   {
     title: "Armada",
     author: "Ernest Cline",
     link: "https://www.audible.com/pd/Armada-Audiobook/B00VN0Q8XY",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 50 },
+    narrator: "Wil Wheaton"
   },
   {
     title: "The Android's Dream",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/The-Androids-Dream-Audiobook/B004FGDVUG",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 8, minutes: 34 },
+    narrator: "Wil Wheaton"
   },
   {
     title: "The Graveyard Book",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/The-Graveyard-Book-Full-Cast-Production-Audiobook/B00LXHQO22",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 8, minutes: 24 },
+    narrator:
+      "Neil Gaiman, Derek Jacobi, Robert Madge, Clare Corbett, Miriam Margolyes, Andrew Scott, Julian Rhind-Tutt"
   },
   {
     title: "Fuzzy Nation",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Fuzzy-Nation-Audiobook/B004YXLK7G",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 7, minutes: 19 },
+    narrator: "Wil Wheaton"
   },
   {
     title: "Mogworld",
     author: "Yahtzee Croshaw",
     link: "https://www.audible.com/pd/Mogworld-Audiobook/B009EVGGEK",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 13, minutes: 8 },
+    narrator: "Yahtzee Croshaw"
   },
   {
     title: "Spell or High Water",
@@ -85,7 +110,9 @@ const eighteen = [
       ...magic20,
       bookNum: 2
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 12, minutes: 9 },
+    narrator: "Luke Daniels"
   },
   {
     title: "Off to Be the Wizard",
@@ -95,13 +122,17 @@ const eighteen = [
       ...magic20,
       bookNum: 1
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 45 },
+    narrator: "Luke Daniels"
   },
   {
     title: "Dark Matter",
     author: "Blake Crouch",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Dark-Matter-Audiobook/B01CUKULGA",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 8 },
+    narrator: "Jon Lindstrom"
   },
   {
     title: "The End of All Things",
@@ -111,7 +142,9 @@ const eighteen = [
       ...oldMansWar,
       bookNum: 6
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 11, minutes: 25 },
+    narrator: "Tavia Gilbert, William Dufris, John Scalzi"
   },
   {
     title: "The Human Division",
@@ -121,7 +154,9 @@ const eighteen = [
       ...oldMansWar,
       bookNum: 5
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 14, minutes: 53 },
+    narrator: "William Dufris"
   },
   {
     title: "Zoe's Tale",
@@ -131,7 +166,9 @@ const eighteen = [
       ...oldMansWar,
       bookNum: 4
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 0 },
+    narrator: "Tavia Gilbert"
   },
   {
     title: "The Last Colony",
@@ -141,19 +178,25 @@ const eighteen = [
       ...oldMansWar,
       bookNum: 3
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 9, minutes: 51 },
+    narrator: "William Dufris"
   },
   {
     title: "Will Save the Galaxy for Food",
     author: "Yahtzee Croshaw",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Will-Save-the-Galaxy-for-Food-Audiobook/B06X3QQTFH",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 20 },
+    narrator: "Yahtzee Croshaw"
   },
   {
     title: "Redshirts",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Redshirts-Audiobook/B007SP2LPM",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 7, minutes: 41 },
+    narrator: "Wil Wheaton"
   },
   {
     title: "The Ghost Brigades",
@@ -163,13 +206,17 @@ const eighteen = [
       ...oldMansWar,
       bookNum: 2
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 25 },
+    narrator: "William Dufris"
   },
   {
-    title: "What If?: Serious Scientific Answers to Absurd Hypothetical Questions",
+    title: "What If?",
+    subtitle: "Serious Scientific Answers to Absurd Hypothetical Questions",
     author: "Randall Munroe",
     link: "https://smile.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994",
-    type: "book"
+    type: "book",
+    pages: 320
   },
   {
     title: "Only Human",
@@ -179,13 +226,17 @@ const eighteen = [
       ...themisFiles,
       bookNum: 3
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 8, minutes: 43 },
+    narrator: "William Hope, Charlie Anson, Laurence Bouvard, Adna Sablylich"
   },
   {
     title: "Children of Time",
     author: "Adrian Tchaikovsky",
     link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Children-of-Time-Audiobook/B071Y9TTHC",
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 16, minutes: 31 },
+    narrator: "Mel Hudson"
   },
   {
     title: "Zero Hour",
@@ -195,7 +246,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 5
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 17, minutes: 20 },
+    narrator: "R.C. Bray"
   },
   {
     title: "Black Ops",
@@ -205,7 +258,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 4
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 16, minutes: 44 },
+    narrator: "R.C. Bray"
   },
   {
     title: "Trouble on Paradise",
@@ -215,7 +270,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 3.5
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 5, minutes: 48 },
+    narrator: "R.C. Bray"
   },
   {
     title: "Paradise",
@@ -225,7 +282,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 3
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 15, minutes: 53 },
+    narrator: "R.C. Bray"
   },
   {
     title: "SpecOps",
@@ -235,7 +294,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 2
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 15, minutes: 50 },
+    narrator: "R.C. Bray"
   },
   {
     title: "Columbus Day",
@@ -245,7 +306,9 @@ const eighteen = [
       ...expeditionaryForce,
       bookNum: 1
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 16, minutes: 23 },
+    narrator: "R.C. Bray"
   },
   {
     title: "Dungeon Calamity",
@@ -255,7 +318,9 @@ const eighteen = [
       ...divineDungeon,
       bookNum: 3
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 13, minutes: 12 },
+    narrator: "Vikas Adam"
   },
   {
     title: "Acceptance",
@@ -265,7 +330,9 @@ const eighteen = [
       ...southernReach,
       bookNum: 3
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 9, minutes: 38 },
+    narrator: "Carolyn McCormick, Bronson Pinchot, Xe Sands"
   },
   {
     title: "Authority",
@@ -275,7 +342,9 @@ const eighteen = [
       ...southernReach,
       bookNum: 2
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 10, minutes: 35 },
+    narrator: "Bronson Pinchot"
   },
   {
     title: "Annihilation",
@@ -285,7 +354,9 @@ const eighteen = [
       ...southernReach,
       bookNum: 1
     },
-    type: "headphones"
+    type: "headphones",
+    duration: { hours: 6, minutes: 0 },
+    narrator: "Carolyn McCormick"
   }
 ];
 
