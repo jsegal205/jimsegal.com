@@ -1,6 +1,26 @@
-import { divineDungeon, expeditionaryForce, magic20, oldMansWar, southernReach, themisFiles } from "./series.js";
+import {
+  divineDungeon,
+  expeditionaryForce,
+  magic20,
+  oldMansWar,
+  southernReach,
+  themisFiles,
+  thresholdSeries
+} from "./series.js";
 
 const eighteen = [
+  {
+    title: "The Fold",
+    author: "Peter Clines",
+    link: "https://www.audible.com/pd/The-Fold-Audiobook/B00W47P4D0",
+    type: "headphones",
+    duration: { hours: 10, minutes: 52 },
+    narrator: "Ray Porter",
+    series: {
+      ...thresholdSeries,
+      bookNum: 2
+    }
+  },
   {
     title: "Remote",
     subtitle: "Office Not Required",
@@ -23,7 +43,11 @@ const eighteen = [
     link: "https://www.audible.com/pd/14-Audiobook/B0089Y7K0M",
     type: "headphones",
     duration: { hours: 12, minutes: 34 },
-    narrator: "Ray Porter"
+    narrator: "Ray Porter",
+    series: {
+      ...thresholdSeries,
+      bookNum: 1
+    }
   },
   {
     title: "Good Omens",
