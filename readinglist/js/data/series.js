@@ -67,3 +67,8 @@ export const themisFiles = {
   title: "Themis Files",
   link: "https://www.audible.com/series?asin=B01MQVC588"
 };
+
+export const thresholdSeries = {
+  title: "Threshold Series",
+  link: "https://www.audible.com/series?asin=B07CTLQHD4"
+};
