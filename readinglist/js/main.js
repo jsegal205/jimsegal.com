@@ -24,7 +24,9 @@ import * as allSeries from "./data/series.js";
   const yearTmpl = year => {
     const books = Object.values(year)[0];
     return `
-    <h2>${Object.keys(year)[0]}</h2>
+    <h2>${Object.keys(year)[0]} ${
+      year.recap ? `<a href="${year.recap}" target="_blank" rel="noopener">Reading Recap</a>` : ""
+    }</h2>
     <h3>Books read: ${books.length}</h3>
     <p>Listened To: ${listenedToCount(books)} Read: ${readCount(books)}</p>
     <ul>
