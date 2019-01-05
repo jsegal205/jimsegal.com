@@ -28,6 +28,11 @@ export const harryPotter = {
   link: "https://www.audible.com/series?asin=B0182NWM9I"
 };
 
+export const hellDivers = {
+  title: "Hell Divers",
+  link: "https://www.audible.com/series?asin=B01N9XNUYL"
+};
+
 export const hungerGames = {
   title: "Hunger Games Trilogy",
   link: "https://www.amazon.com/gp/product/B00PMGUR7S"
