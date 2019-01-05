@@ -21,14 +21,31 @@ import * as allSeries from "./data/series.js";
   const listenedToCount = books => books.filter(book => book.type === "headphones").length;
   const readCount = books => books.filter(book => book.type === "book").length;
 
+  const listenedToTmpl = books => {
+    const audioCount = listenedToCount(books);
+    const bookCount = readCount(books);
+
+    if (audioCount && bookCount) {
+      return `<p>Listened To: ${audioCount} Read: ${bookCount}</p>`;
+    }
+
+    if (audioCount) {
+      return `<p>Listened To: ${audioCount}</p>`;
+    }
+
+    if (bookCount) {
+      return `<p>Read: ${bookCount}</p>`;
+    }
+  };
+
   const yearTmpl = year => {
     const books = Object.values(year)[0];
     return `
     <h2>${Object.keys(year)[0]} ${
       year.recap ? `<a href="${year.recap}" target="_blank" rel="noopener">Reading Recap</a>` : ""
     }</h2>
-    <h3>Books read: ${books.length}</h3>
-    <p>Listened To: ${listenedToCount(books)} Read: ${readCount(books)}</p>
+    <h3>Total: ${books.length}</h3>
+    ${listenedToTmpl(books)}
     <ul>
     ${bookTmpl(books)}
     </ul>
