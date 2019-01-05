@@ -36,6 +36,8 @@ import * as allSeries from "./data/series.js";
     if (bookCount) {
       return `<p>Read: ${bookCount}</p>`;
     }
+
+    return "";
   };
 
   const yearTmpl = year => {

@@ -14,8 +14,8 @@ const books = [
   { 2016: sixteen },
   { 2015: [] },
   { 2014: fourteen },
-  { 2012: twelve },
   { 2013: thirteen },
+  { 2012: twelve },
   { "2011 and prior": prior }
 ];
 
