@@ -31,7 +31,8 @@ const destinations = [
   { lat: 38.627003, lng: -90.199404, city: "St. Louis, MO", visit: ["July 2009"] },
   { lat: 38.955603, lng: -90.186776, city: "Godfrey, IL", visit: ["July 2018"] },
   { lat: 36.685863, lng: -93.330578, city: "West Branson, MO", visit: ["July 2018"] },
-  { lat: 43.64535, lng: -79.380215, city: "Toronto, Ontario, Canada", visit: ["October 2018"] }
+  { lat: 43.64535, lng: -79.380215, city: "Toronto, Ontario, Canada", visit: ["October 2018"] },
+  { lat: 28.47521, lng: -81.47493, city: "Orlando, FL", visit: ["January 2019"] }
 ];
 
 function initMap() {
