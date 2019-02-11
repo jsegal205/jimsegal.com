@@ -1,6 +1,6 @@
 const getTemp = async (lat, long) => {
   const API_URL =
-    "http://api.openweathermap.org/data/2.5/weather?appid=9bf0ee26559265f94c44015dbce8177d&units=imperial";
+    "https://api.openweathermap.org/data/2.5/weather?appid=9bf0ee26559265f94c44015dbce8177d&units=imperial";
   const response = await fetch(`${API_URL}&lat=${lat}&lon=${long}`);
   if (!response.ok) {
     getElementById("well-is-it").className = "error";
