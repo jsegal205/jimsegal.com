@@ -26,6 +26,14 @@ h2 {
   margin: 0.75em 0;
 }
 
+#check-my-location {
+  background: #fff;
+  border: none;
+  font-size: 1.2rem;
+  font: inherit;
+  padding: 10px;
+}
+
 .banner {
   background: #ccc;
   flex-shrink: 0;
