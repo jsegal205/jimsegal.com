@@ -13,6 +13,17 @@ const getTemp = async (lat, long) => {
   return parseFloat(json.main.temp);
 };
 
+const getLocation = async (lat, long) => {
+  const API_URL = `https://www.mapquestapi.com/geocoding/v1/reverse?key=Y3zmO0lPUXVmIoPrDpMT1H2Nuu18mF5y`;
+  const response = await fetch(`${API_URL}&location=${lat},${long}`);
+  if (!response.ok) {
+    return `${lat}, ${long}`;
+  }
+  const json = await response.json();
+  const locationResults = json.results[0].locations[0];
+  return `${locationResults.adminArea5}, ${locationResults.adminArea3}`;
+};
+
 const getElementById = eleId => {
   return document.getElementById(eleId);
 };
@@ -69,8 +80,9 @@ function browserLocationCompare() {
     const browserLat = position.coords.latitude.toFixed(6);
     const browserLong = position.coords.longitude.toFixed(6);
     const locationTemp = await getTemp(browserLat, browserLong);
+    const locationDesc = await getLocation(browserLat, browserLong);
 
-    setElementContent("location-header", `Is ${browserLat}, ${browserLong} colder than Anchorage??`);
+    setElementContent("location-header", `Is ${locationDesc} colder than Anchorage??`);
     setElementContent("location-is-it", verdictText(anchorageTemp, locationTemp));
     setElementContent("location-temp", locationTemp);
     toggleElementVisible("location", true);
