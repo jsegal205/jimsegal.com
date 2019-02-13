@@ -2,6 +2,18 @@ import { hellDivers } from "./series.js";
 
 const nineteen = [
   {
+    title: "Wolves",
+    author: "Nicholas Sansbury Smith",
+    link: "https://www.audible.com/pd/Hell-Divers-IV-Wolves-Audiobook/1538553414",
+    type: "headphones",
+    duration: { hours: 9, minutes: 25 },
+    narrator: "R. C. Bray",
+    series: {
+      ...hellDivers,
+      bookNum: 4
+    }
+  },
+  {
     title: "Deliverance",
     author: "Nicholas Sansbury Smith",
     link: "https://www.audible.com/pd/Hell-Divers-III-Deliverance-Audiobook/B079NS2WGZ",
