@@ -1,6 +1,18 @@
-import { hellDivers } from "./series.js";
+import { hellDivers, talesFromAlagaesia } from "./series.js";
 
 const nineteen = [
+  {
+    title: "The Fork, the Witch, and the Worm",
+    author: "Christopher Paolini",
+    link: "https://www.audible.com/pd/The-Fork-the-Witch-and-the-Worm-Audiobook/0593103629",
+    type: "headphones",
+    duration: { hours: 4, minutes: 54 },
+    narrator: "Gerard Doyle",
+    series: {
+      ...talesFromAlagaesia,
+      bookNum: 1
+    }
+  },
   {
     title: "Wolves",
     author: "Nicholas Sansbury Smith",

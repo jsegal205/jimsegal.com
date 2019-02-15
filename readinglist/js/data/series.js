@@ -68,6 +68,11 @@ export const southernReach = {
   link: "https://www.audible.com/series/?asin=B00HZ3TT3Y"
 };
 
+export const talesFromAlagaesia = {
+  title: "Tales from Alagaesia",
+  link: "https://www.audible.com/series?asin=B07MR5Z249"
+};
+
 export const themisFiles = {
   title: "Themis Files",
   link: "https://www.audible.com/series?asin=B01MQVC588"
