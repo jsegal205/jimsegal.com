@@ -1,6 +1,18 @@
-import { hellDivers, talesFromAlagaesia } from "./series.js";
+import { hellDivers, talesFromAlagaesia, divineDungeon } from "./series.js";
 
 const nineteen = [
+  {
+    title: "Dungeon Desolation",
+    author: "Dakota Krout",
+    link: "https://www.audible.com/pd/Dungeon-Desolation-Audiobook/1977385885",
+    type: "headphones",
+    duration: { hours: 11, minutes: 55 },
+    narrator: "Vikas Adam",
+    series: {
+      ...divineDungeon,
+      bookNum: 4
+    }
+  },
   {
     title: "The Fork, the Witch, and the Worm",
     author: "Christopher Paolini",
