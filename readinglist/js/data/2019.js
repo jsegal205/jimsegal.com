@@ -2,6 +2,14 @@ import { hellDivers, talesFromAlagaesia, divineDungeon } from "./series.js";
 
 const nineteen = [
   {
+    title: "Agent to the Stars",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Agent-to-the-Stars-Audiobook/B004DR2CNE",
+    type: "headphones",
+    duration: { hours: 8, minutes: 49 },
+    narrator: "Wil Wheaton"
+  },
+  {
     title: "Dungeon Desolation",
     author: "Dakota Krout",
     link: "https://www.audible.com/pd/Dungeon-Desolation-Audiobook/1977385885",
