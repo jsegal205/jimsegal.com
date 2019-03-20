@@ -2,6 +2,14 @@ import { hellDivers, talesFromAlagaesia, divineDungeon } from "./series.js";
 
 const nineteen = [
   {
+    title: "Paradox Bound",
+    author: "Peter Clines",
+    link: "https://www.audible.com/pd/Paradox-Bound-Audiobook/B074WH171J",
+    type: "headphones",
+    duration: { hours: 12, minutes: 31 },
+    narrator: "Ray Porter"
+  },
+  {
     title: "Agent to the Stars",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Agent-to-the-Stars-Audiobook/B004DR2CNE",
