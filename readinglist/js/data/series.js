@@ -3,6 +3,11 @@ export const bobiverse = {
   link: "https://www.audible.com/series?asin=B01M1RDL6W"
 };
 
+export const chaosSeeds = {
+  title: "Chaos Seeds",
+  link: "https://www.audible.com/series?asin=B072YW73X4"
+};
+
 export const divineDungeon = {
   title: "Divine Dungeon Series",
   link: "https://www.audible.com/series?asin=B0765D8MCN"

@@ -1,6 +1,18 @@
-import { hellDivers, talesFromAlagaesia, divineDungeon } from "./series.js";
+import { chaosSeeds, divineDungeon, hellDivers, talesFromAlagaesia } from "./series.js";
 
 const nineteen = [
+  {
+    title: "The Land: Founding",
+    author: "Aleron Kong",
+    link: "https://www.audible.com/pd/The-Land-Founding-A-LitRPG-Saga-Audiobook/B071DNLS1F",
+    type: "headphones",
+    duration: { hours: 9, minutes: 49 },
+    narrator: "Nick Podehl",
+    series: {
+      ...chaosSeeds,
+      bookNum: 1
+    }
+  },
   {
     title: "Paradox Bound",
     author: "Peter Clines",
