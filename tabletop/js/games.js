@@ -1,7 +1,8 @@
 const games = [
   {
     title: "7 Wonders",
-    link: "https://www.amazon.com/Asmodee-5511788-7-Wonders/dp/B0043KJW5M/"
+    link: "https://boardgamegeek.com/boardgame/68448/7-wonders",
+    image: "https://cf.geekdo-images.com/thumb/img/Grz-qM9xwxlvQGK7B-MiljtO9pQ=/fit-in/200x150/pic860217.jpg"
   }
 ];
 

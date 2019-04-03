@@ -1,56 +1,24 @@
 import games from "./games.js";
 
-// Changes XML to JSON
-const xmlToJson = xml => {
-  // Create the return object
-  var obj = {};
+(() => {
+  const gameCardsEle = document.getElementById("game-cards");
 
-  if (xml.nodeType == 1) {
-    // element
-    // do attributes
-    if (xml.attributes.length > 0) {
-      obj["@attributes"] = {};
-      for (var j = 0; j < xml.attributes.length; j++) {
-        var attribute = xml.attributes.item(j);
-        obj["@attributes"][attribute.nodeName] = attribute.nodeValue;
-      }
-    }
-  } else if (xml.nodeType == 3) {
-    // text
-    obj = xml.nodeValue;
-  }
+  const gameCardTemplate = game => {
+    return `<a class="card" href="${game.link}" target="_blank" rel="noopener">
+    <img src="${game.image}" />
+    <h3>${game.title}</h3>
+    </a>`;
+  };
 
-  // do children
-  if (xml.hasChildNodes()) {
-    for (var i = 0; i < xml.childNodes.length; i++) {
-      var item = xml.childNodes.item(i);
-      var nodeName = item.nodeName;
-      if (typeof obj[nodeName] == "undefined") {
-        obj[nodeName] = xmlToJson(item);
-      } else {
-        if (typeof obj[nodeName].push == "undefined") {
-          var old = obj[nodeName];
-          obj[nodeName] = [];
-          obj[nodeName].push(old);
-        }
-        obj[nodeName].push(xmlToJson(item));
-      }
-    }
-  }
-  return obj;
-};
-
-(async () => {
-  debugger;
-  const data = await fetch(`https://www.boardgamegeek.com/xmlapi2/thing?id=68448,54043`)
-    .then(response => {
-      debugger;
-      return response.text();
+  games
+    .sort((a, b) => {
+      if (a.title < b.title) return -1;
+      if (a.title > b.title) return 1;
+      return 0;
     })
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(data => console.log(data));
-
-  // const json = await response.json();
-  console.log(data);
-  const n = 1;
+    .forEach(game => {
+      const container = document.createElement("article");
+      container.innerHTML = gameCardTemplate(game);
+      gameCardsEle.appendChild(container);
+    });
 })();
