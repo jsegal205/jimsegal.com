@@ -1,6 +1,18 @@
-import { chaosSeeds, divineDungeon, hellDivers, talesFromAlagaesia } from "./series.js";
+import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, talesFromAlagaesia } from "./series.js";
 
 const nineteen = [
+  {
+    title: "Renegades",
+    author: "Craig Alanson",
+    link: "https://www.audible.com/pd/Renegades-Audiobook/1772308633",
+    type: "headphones",
+    duration: { hours: 17, minutes: 7 },
+    narrator: "R.C. Bray",
+    series: {
+      ...expeditionaryForce,
+      bookNum: 7
+    }
+  },
   {
     title: "The Land: Founding",
     author: "Aleron Kong",
