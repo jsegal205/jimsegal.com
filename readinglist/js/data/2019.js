@@ -2,6 +2,14 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, talesFromAla
 
 const nineteen = [
   {
+    title: "The Dispatcher",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/The-Dispatcher-Audiobook/B01KKPH1VA",
+    type: "headphones",
+    duration: { hours: 2, minutes: 18 },
+    narrator: "Zachary Quinto"
+  },
+  {
     title: "Renegades",
     author: "Craig Alanson",
     link: "https://www.audible.com/pd/Renegades-Audiobook/1772308633",
