@@ -1,6 +1,18 @@
-import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, talesFromAlagaesia } from "./series.js";
+import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, talesFromAlagaesia } from "./series.js";
 
 const nineteen = [
+  {
+    title: "Steamborn",
+    author: "Eric Asher",
+    link: "https://www.audible.com/pd/Steamborn-Audiobook/B01N27SHMI",
+    type: "headphones",
+    duration: { hours: 8, minutes: 31 },
+    narrator: "Saskia Maarleveld",
+    series: {
+      ...steamborn,
+      bookNum: 1
+    }
+  },
   {
     title: "The Dispatcher",
     author: "John Scalzi",

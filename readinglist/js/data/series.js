@@ -73,6 +73,11 @@ export const southernReach = {
   link: "https://www.audible.com/series/?asin=B00HZ3TT3Y"
 };
 
+export const steamborn = {
+  title: "Steamborn",
+  link: "https://www.audible.com/series/Steamborn-Audiobooks/B073HMK2RX"
+};
+
 export const talesFromAlagaesia = {
   title: "Tales from Alagaesia",
   link: "https://www.audible.com/series?asin=B07MR5Z249"
