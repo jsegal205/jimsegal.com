@@ -2,6 +2,18 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, t
 
 const nineteen = [
   {
+    title: "Steamforged",
+    author: "Eric Asher",
+    link: "https://www.audible.com/pd/Steamforged-Audiobook/B073HBVNCX",
+    type: "headphones",
+    duration: { hours: 8, minutes: 57 },
+    narrator: "Saskia Maarleveld",
+    series: {
+      ...steamborn,
+      bookNum: 2
+    }
+  },
+  {
     title: "Steamborn",
     author: "Eric Asher",
     link: "https://www.audible.com/pd/Steamborn-Audiobook/B01N27SHMI",
