@@ -198,6 +198,16 @@ const games = [
     title: "Livestock Uprising",
     link: "https://boardgamegeek.com/boardgame/153213/livestock-uprising",
     image: "https://cf.geekdo-images.com/itemrep/img/B8w1c-mQr62AuBAjWYimqsbXfXc=/fit-in/246x300/pic2232226.jpg"
+  },
+  {
+    title: "Terraforming Mars",
+    link: "https://boardgamegeek.com/boardgame/167791/terraforming-mars",
+    image: "https://cf.geekdo-images.com/itemrep/img/bhemoxL7PG1a_79L0D9syPTADSY=/fit-in/246x300/pic3536616.jpg"
+  },
+  {
+    title: "The Fox in the Forest",
+    link: "https://boardgamegeek.com/boardgame/221965/fox-forest",
+    image: "https://cf.geekdo-images.com/itemrep/img/VYu3d9_-pmgLdQbykJtp9RKsxZg=/fit-in/246x300/pic3496085.jpg"
   }
 ];
 
