@@ -2,6 +2,18 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, t
 
 const nineteen = [
   {
+    title: "Captives",
+    author: "Nicholas Sansbury Smith",
+    link: "https://www.audible.com/pd/Hell-Divers-V-Captives-Audiobook/1982560487",
+    type: "headphones",
+    duration: { hours: 9, minutes: 50 },
+    narrator: "R. C. Bray",
+    series: {
+      ...hellDivers,
+      bookNum: 5
+    }
+  },
+  {
     title: "Steamsworn",
     author: "Eric Asher",
     link: "https://www.audible.com/pd/Steamsworn-Audiobook/B075GXBNMB",
