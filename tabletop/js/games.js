@@ -208,6 +208,16 @@ const games = [
     title: "The Fox in the Forest",
     link: "https://boardgamegeek.com/boardgame/221965/fox-forest",
     image: "https://cf.geekdo-images.com/itemrep/img/VYu3d9_-pmgLdQbykJtp9RKsxZg=/fit-in/246x300/pic3496085.jpg"
+  },
+  {
+    title: "Star Trek Fluxx",
+    link: "https://boardgamegeek.com/boardgame/246531/star-trek-fluxx",
+    image: "https://cf.geekdo-images.com/itemrep/img/80gEE2Hs6OFWyqOPT2rkK6aUDeg=/fit-in/246x300/pic4167392.jpg"
+  },
+  {
+    title: "Rick and Morty: Total Rickall",
+    link: "https://boardgamegeek.com/boardgame/194232/rick-and-morty-total-rickall-card-game",
+    image: "https://cf.geekdo-images.com/itemrep/img/Wt3peQN1lQ8Cj1WTvdD2of6Iagg=/fit-in/246x300/pic3979905.jpg"
   }
 ];
 
