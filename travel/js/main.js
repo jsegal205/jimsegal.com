@@ -12,7 +12,12 @@ const destinations = [
   { lat: 45.523062, lng: -122.676482, city: "Portland, OR", visit: ["July 2015"] },
   { lat: 44.012122, lng: -92.480199, city: "Rochester, MN", visit: ["June 2015"] },
   { lat: 42.416674, lng: -90.429017, city: "Galena, IL", visit: ["August 2010"] },
-  { lat: 45.822448, lng: -91.889343, city: "Spooner, WI", visit: ["June 2017"] },
+  {
+    lat: 45.822448,
+    lng: -91.889343,
+    city: "Spooner, WI",
+    visit: ["June 2019", "May 2019", "July 2018", "August 2017", "June 2017"]
+  },
   { lat: 43.038902, lng: -87.906474, city: "Milwaukee, WI", visit: ["April 2012"] },
   { lat: 39.768403, lng: -86.158068, city: "Indianapolis, IN", visit: ["2009"] },
   { lat: 42.331427, lng: -83.045754, city: "Detroit, MI", visit: ["April 2012"] },
