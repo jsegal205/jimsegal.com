@@ -88,3 +88,26 @@ function initMap() {
 
   markerClick(chicagoMarker, chicagoInfo);
 }
+
+const frequented = () => {
+  const frequentEle = document.getElementById("frequent");
+  destinations
+    .filter(d => d.visit.length > 1)
+    .sort((curr, next) => {
+      if (curr.visit.length < next.visit.length || (curr.visit.length == next.visit.length && curr.city > next.city)) {
+        return 1;
+      }
+      if (curr.visit.length > next.visit.length || (curr.visit.length == next.visit.length && curr.city < next.city)) {
+        return -1;
+      }
+
+      return 0;
+    })
+    .map(dest => {
+      const listItem = document.createElement("li");
+      listItem.innerHTML = `${dest.city} - Visited <em>${dest.visit.length}</em> times`;
+      frequentEle.appendChild(listItem);
+    });
+};
+
+frequented();
