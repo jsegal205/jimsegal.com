@@ -24,6 +24,11 @@ ol {
   margin-left: 3em;
 }
 
+small {
+  display: block;
+  font-size: 0.35em;
+}
+
 p {
   margin-bottom: 2.5em;
 }
