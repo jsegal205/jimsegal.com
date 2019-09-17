@@ -2,6 +2,14 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, t
 
 const nineteen = [
   {
+    title: "A Man on the Moon: The Voyages of the Apollo Astronauts",
+    author: "Andrew Chaikin",
+    link: "https://www.audible.com/pd/A-Man-on-the-Moon-The-Voyages-of-the-Apollo-Astronauts-Audiobook/B016J1NMR6",
+    type: "headphones",
+    duration: { hours: 23, minutes: 0 },
+    narrator: "Bronson Pinchot"
+  },
+  {
     title: "Captives",
     author: "Nicholas Sansbury Smith",
     link: "https://www.audible.com/pd/Hell-Divers-V-Captives-Audiobook/1982560487",
