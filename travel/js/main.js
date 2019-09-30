@@ -39,7 +39,8 @@ const destinations = [
   { lat: 43.64535, lng: -79.380215, city: "Toronto, Ontario, Canada", visit: ["October 2018"] },
   { lat: 28.47521, lng: -81.47493, city: "Orlando, FL", visit: ["January 2019"] },
   { lat: 21.306944, lng: -157.858337, city: "Honolulu, HI", visit: ["August 2019"] },
-  { lat: 20.92269, lng: -156.69296, city: "Kaanapali, HI", visit: ["August 2019"] }
+  { lat: 20.92269, lng: -156.69296, city: "Kaanapali, HI", visit: ["August 2019"] },
+  { lat: 39.9563, lng: -83.0041, city: "Columbus, OH", visit: ["September 2019"] }
 ];
 
 function initMap() {
