@@ -2,6 +2,14 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, t
 
 const nineteen = [
   {
+    title: "Norse Mythology",
+    author: "Neil Gaiman",
+    link: "https://www.audible.com/pd/Norse-Mythology-Audiobook/B01LWUJKQ7",
+    type: "headphones",
+    duration: { hours: 6, minutes: 29 },
+    narrator: "Neil Gaiman"
+  },
+  {
     title: "A Man on the Moon: The Voyages of the Apollo Astronauts",
     author: "Andrew Chaikin",
     link: "https://www.audible.com/pd/A-Man-on-the-Moon-The-Voyages-of-the-Apollo-Astronauts-Audiobook/B016J1NMR6",
