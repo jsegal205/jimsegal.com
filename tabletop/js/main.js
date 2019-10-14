@@ -1,6 +1,8 @@
 import games from "./games.js";
 
 (() => {
+  document.getElementById("game-count").innerText = games.length;
+
   const gameCardsEle = document.getElementById("game-cards");
 
   const gameCardTemplate = game => {
