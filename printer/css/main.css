@@ -1,25 +1,16 @@
-.wrapper {
-  max-width: none;
+body {
+  background: #efefef;
+  color: #444;
+  font-family: Consolas, monaco, monospace;
+  margin: 0;
+  padding: 20px;
 }
 
-.wrapper > h2,
-.wrapper > .project-links {
-  margin: 20px 0;
+.printer-img {
+  display: flex;
+  justify-content: center;
 }
 
-a {
-  display: inline-block;
-  font-size: 14px;
-}
-
-.container {
-  height: 600px;
-  margin-bottom: 50px;
-  width: 100%;
-}
-
-.container > iframe {
-  border: 2px solid #444;
-  height: inherit;
-  width: inherit;
+img {
+  max-width: 100%;
 }
