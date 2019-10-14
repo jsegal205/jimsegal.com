@@ -218,6 +218,11 @@ const games = [
     title: "Rick and Morty: Total Rickall",
     link: "https://boardgamegeek.com/boardgame/194232/rick-and-morty-total-rickall-card-game",
     image: "https://cf.geekdo-images.com/itemrep/img/Wt3peQN1lQ8Cj1WTvdD2of6Iagg=/fit-in/246x300/pic3979905.jpg"
+  },
+  {
+    title: "Codenames",
+    link: "https://boardgamegeek.com/boardgame/178900/codenames",
+    image: "https://cf.geekdo-images.com/itemrep/img/j3KnNONTvPaOqyY_pwhS9C9s5bk=/fit-in/246x300/pic2582929.jpg"
   }
 ];
 
