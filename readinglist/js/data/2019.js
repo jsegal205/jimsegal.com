@@ -2,6 +2,14 @@ import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, t
 
 const nineteen = [
   {
+    title: "Infinite",
+    author: "Jeremy Robinson",
+    link: "https://www.audible.com/pd/Infinite-Audiobook/B076QGRFGD",
+    type: "headphones",
+    duration: { hours: 10, minutes: 21 },
+    narrator: "R. C. Bray"
+  },
+  {
     title: "Norse Mythology",
     author: "Neil Gaiman",
     link: "https://www.audible.com/pd/Norse-Mythology-Audiobook/B01LWUJKQ7",
