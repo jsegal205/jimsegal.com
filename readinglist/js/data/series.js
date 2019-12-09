@@ -48,6 +48,11 @@ export const inheritanceCycle = {
   link: "https://www.audible.com/series?asin=B005NAKJLW"
 };
 
+export const lockIn = {
+  title: "Lock In",
+  link: "https://www.audible.com/series/Lock-In-Series-Audiobooks/B07BMNY3B9"
+};
+
 export const magic20 = {
   title: "Magic 2.0",
   link: "https://www.audible.com/series?asin=B00MQ2WZIK"

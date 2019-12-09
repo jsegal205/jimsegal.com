@@ -1,6 +1,26 @@
-import { chaosSeeds, divineDungeon, expeditionaryForce, hellDivers, steamborn, talesFromAlagaesia } from "./series.js";
+import {
+  chaosSeeds,
+  divineDungeon,
+  expeditionaryForce,
+  hellDivers,
+  lockIn,
+  steamborn,
+  talesFromAlagaesia
+} from "./series.js";
 
 const nineteen = [
+  {
+    title: "Lock In",
+    author: "John Scalzi",
+    link: "https://www.audible.com/pd/Lock-In-Narrated-by-Wil-Wheaton-Audiobook/B00KYUYM14",
+    type: "headphones",
+    duration: { hours: 9, minutes: 56 },
+    narrator: "Wil Wheaton",
+    series: {
+      ...lockIn,
+      bookNum: 1
+    }
+  },
   {
     title: "Infinite",
     author: "Jeremy Robinson",
