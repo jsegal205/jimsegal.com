@@ -133,8 +133,19 @@ table {
    License: none (public domain)
 */
 
+:root {
+  --background: #efefef;
+  --text-color: #444444;
+  --focus-color: #39c39c;
+}
+
+.dark {
+  --background: #444444;
+  --text-color: #efefef;
+}
+
 *:focus {
-  color: #39c;
+  color: var(--focus-color);
   outline-color: #c500ff;
 }
 
@@ -144,8 +155,8 @@ body {
 }
 
 body {
-  background: #efefef;
-  color: #444;
+  background: var(--background);
+  color: var(--text-color);
   font-family: Consolas, monaco, monospace;
   margin: 0;
 }
@@ -160,11 +171,11 @@ body {
 }
 
 a {
-  color: #444;
+  color: var(--text-color);
 }
 
 a:hover {
-  color: #39c;
+  color: var(--focus-color);
 }
 
 .container {
@@ -188,7 +199,7 @@ a:hover {
 
 .avatar {
   border-radius: 35%/20%;
-  border: 2px solid #555;
+  border: 2px solid var(--text-color);
 }
 .avatar.not-found {
   transform: rotate(180deg);
@@ -218,6 +229,80 @@ a:hover {
 .projects a {
   font-size: 1.3em;
 }
+
+/* dark mode toggle */
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--text-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--background);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--text-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(78px);
+}
+
+.slider:after {
+  content: "DARK?";
+  color: var(--background);
+  display: block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+}
+
+input:checked + .slider:after {
+  content: "LIGHT?";
+}
+
+/* dark mode toggle */
 
 @media screen and (max-width: 740px) {
   .container {
