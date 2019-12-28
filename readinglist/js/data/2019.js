@@ -10,6 +10,18 @@ import {
 
 const nineteen = [
   {
+    title: "Allegiance",
+    author: "Nicholas Sansbury Smith",
+    link: "https://www.audible.com/pd/Hell-Divers-VI-Allegiance-Audiobook/1538553554",
+    type: "headphones",
+    duration: { hours: 11, minutes: 16 },
+    narrator: "R. C. Bray",
+    series: {
+      ...hellDivers,
+      bookNum: 6
+    }
+  },
+  {
     title: "Lock In",
     author: "John Scalzi",
     link: "https://www.audible.com/pd/Lock-In-Narrated-by-Wil-Wheaton-Audiobook/B00KYUYM14",
@@ -107,7 +119,7 @@ const nineteen = [
     link: "https://www.audible.com/pd/Renegades-Audiobook/1772308633",
     type: "headphones",
     duration: { hours: 17, minutes: 7 },
-    narrator: "R.C. Bray",
+    narrator: "R. C. Bray",
     series: {
       ...expeditionaryForce,
       bookNum: 7
