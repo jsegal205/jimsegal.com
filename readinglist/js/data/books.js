@@ -8,7 +8,7 @@ import twelve from "./2012.js";
 import prior from "./prior.js";
 
 const books = [
-  { 2019: nineteen },
+  { 2019: nineteen, recap: "https://gist.github.com/jsegal205/2d1d40a7845be0df47d4cd02df929b29" },
   { 2018: eighteen, recap: "https://gist.github.com/jsegal205/b8061446c6d887e4015362127f2db2e0" },
   { 2017: seventeen },
   { 2016: sixteen },
