@@ -1,6 +1,12 @@
-import games from "./games.js";
+(async () => {
+  const response = await fetch(
+    "https://data.heroku.com/dataclips/donygkplrgieljfwbfisudzjmirb.json"
+  );
+  const gamesJson = await response.json();
+  const games = gamesJson.values.map(game => {
+    return { title: game[0], link: game[1], image: game[2] };
+  });
 
-(() => {
   document.getElementById("game-count").innerText = games.length;
 
   const gameCardsEle = document.getElementById("game-cards");
@@ -13,15 +19,9 @@ import games from "./games.js";
   };
 
   gameCardsEle.innerHTML = null;
-  games
-    .sort((a, b) => {
-      if (a.title < b.title) return -1;
-      if (a.title > b.title) return 1;
-      return 0;
-    })
-    .forEach(game => {
-      const container = document.createElement("article");
-      container.innerHTML = gameCardTemplate(game);
-      gameCardsEle.appendChild(container);
-    });
+  games.forEach(game => {
+    const container = document.createElement("article");
+    container.innerHTML = gameCardTemplate(game);
+    gameCardsEle.appendChild(container);
+  });
 })();
