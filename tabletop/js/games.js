@@ -273,6 +273,18 @@ const games = [
     link: "https://boardgamegeek.com/boardgame/178900/codenames",
     image:
       "https://cf.geekdo-images.com/itemrep/img/j3KnNONTvPaOqyY_pwhS9C9s5bk=/fit-in/246x300/pic2582929.jpg"
+  },
+  {
+    title: "Jumanji",
+    link: "https://boardgamegeek.com/boardgame/1751/jumanji",
+    image:
+      "https://cf.geekdo-images.com/itemrep/img/v-17PzlnIXTMRWaAi7LJjOAXBhQ=/fit-in/246x300/pic6064.jpg"
+  },
+  {
+    title: "Solarquest",
+    link: "https://boardgamegeek.com/boardgame/1836/solarquest",
+    image:
+      "https://cf.geekdo-images.com/itemrep/img/CID-i1sAwPebfZmFURWuPiEqbgc=/fit-in/246x300/pic3790746.jpg"
   }
 ];
 
