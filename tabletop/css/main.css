@@ -28,3 +28,9 @@ body {
   max-height: 200px;
   max-width: 200px;
 }
+
+.sub-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
