@@ -2,7 +2,7 @@
   const gameCardsEle = document.getElementById("game-cards");
 
   const response = await fetch(
-    "https://data.heroku.com/dataclips/donygkplrgieljfwbfisudzjmirbZ.json"
+    "https://data.heroku.com/dataclips/donygkplrgieljfwbfisudzjmirb.json"
   )
     .then(response => {
       if (!response.ok) {
