@@ -42,15 +42,23 @@
   });
 
   const searchEle = document.getElementById("games-filter");
-
   const filterGames = e => {
     const filteredGames = allGames.filter(game =>
       game.title.toLowerCase().includes(e.target.value.toLowerCase())
     );
     drawGames(filteredGames);
   };
-
   searchEle.addEventListener("input", filterGames, false);
+
+  const randomGameEle = document.getElementById("random-game");
+  const randomGame = () => {
+    searchEle.value = "";
+    const randomGameIndex = Math.floor(
+      Math.random() * Math.floor(allGames.length - 1)
+    );
+    drawGames([allGames[randomGameIndex]]);
+  };
+  randomGameEle.addEventListener("click", randomGame, false);
 
   drawGames(allGames);
 })();
