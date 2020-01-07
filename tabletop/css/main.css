@@ -1,7 +1,12 @@
+:root {
+  --border-color: #444444;
+  --font: Consolas, monaco, monospace;
+}
+
 body {
   background: #efefef;
-  color: #444;
-  font-family: Consolas, monaco, monospace;
+  color: var(--border-color);
+  font-family: var(--font);
   margin: 0;
   padding: 20px;
 }
@@ -14,7 +19,7 @@ body {
 
 .card {
   align-items: center;
-  border: 3px solid #444;
+  border: 3px solid var(--border-color);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -33,4 +38,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.btn,
+.games-filter {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 14px;
 }
