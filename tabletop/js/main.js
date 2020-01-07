@@ -20,6 +20,14 @@
     }
 
     document.getElementById("game-count").innerText = games.length;
+
+    if (games.length != allGames.length) {
+      if (resetGameEle.classList.contains("hidden")) {
+        resetGameEle.classList.remove("hidden");
+      }
+    } else {
+      resetGameEle.classList.add("hidden");
+    }
   };
 
   const response = await fetch(

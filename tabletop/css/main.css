@@ -48,3 +48,8 @@ body {
   font-family: var(--font);
   font-size: 14px;
 }
+
+.btn.hidden {
+  display: none;
+  visibility: hidden;
+}
