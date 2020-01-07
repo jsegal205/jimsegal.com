@@ -60,5 +60,12 @@
   };
   randomGameEle.addEventListener("click", randomGame, false);
 
+  const resetGameEle = document.getElementById("reset-game");
+  const resetGame = () => {
+    searchEle.value = "";
+    drawGames(allGames);
+  };
+  resetGameEle.addEventListener("click", resetGame, false);
+
   drawGames(allGames);
 })();
