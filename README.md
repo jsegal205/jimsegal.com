@@ -1,7 +1,15 @@
 # [jimsegal.com](http://jimsegal.com)
 
-## Readinglist
+## Running locally
 
 Run a local webserver to not get blocked by browsers CORS policies:
 
-`python3 -m http.server`
+```bash
+  ./.dev-server
+```
+
+Getting `permission denied: ./.dev-server.sh`? Give it executable permissions:
+
+```bash
+  chmod +x .dev-server.sh
+```
