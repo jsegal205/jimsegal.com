@@ -11,5 +11,10 @@ if test ! $(which python); then
   echo
 fi
 
+if pgrep -f "Python -m http.server"; then
+  echo "=== Found running local python server, stopping that instance ==="
+  pkill -f "Python -m http.server"
+fi
+
 echo "=== Starting local server ==="
 python3 -m http.server
