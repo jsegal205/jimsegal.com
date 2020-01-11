@@ -44,9 +44,14 @@ const sethmodeSequence = ["s", "e", "t", "h", "m", "o", "d", "e"];
 
 const toggleSethMode = () => {
   const sethEle = document.getElementsByClassName("seth")[0];
-  sethEle.className = `seth${
-    sethEle.classList.contains("hidden") ? "" : " hidden"
-  }`;
+  if (sethEle) {
+    sethEle.remove();
+  } else {
+    const sethDiv = document.createElement("div");
+    sethDiv.className = "seth";
+    sethDiv.innerHTML = `<img src="css/seth.jpg" />`;
+    body.appendChild(sethDiv);
+  }
 };
 
 document.addEventListener("keydown", e => {
