@@ -18,7 +18,8 @@ import * as allSeries from "./data/series.js";
     }
   };
 
-  const listenedToCount = books => books.filter(book => book.type === "headphones").length;
+  const listenedToCount = books =>
+    books.filter(book => book.type === "headphones").length;
   const readCount = books => books.filter(book => book.type === "book").length;
 
   const listenedToTmpl = books => {
@@ -44,7 +45,9 @@ import * as allSeries from "./data/series.js";
     const books = Object.values(year)[0];
     return `
     <h2>${Object.keys(year)[0]} ${
-      year.recap ? `<a href="${year.recap}" target="_blank" rel="noopener">Reading Recap</a>` : ""
+      year.recap
+        ? `<a href="${year.recap}" target="_blank" rel="noopener">Reading Recap</a>`
+        : ""
     }</h2>
     <h3>Total: ${books.length}</h3>
     ${listenedToTmpl(books)}
@@ -60,7 +63,13 @@ import * as allSeries from "./data/series.js";
         return `
       <li class="book">
       ${anchorTmpl(book.link, book.title)}
-      ${book.type ? `<i class="fa fa-${book.type}" title="${mapBookType(book.type)}"></i>` : ""}
+      ${
+        book.type
+          ? `<i class="fa fa-${book.type}" title="${mapBookType(
+              book.type
+            )}"></i>`
+          : ""
+      }
       <span> by ${book.author}</span>
       ${book.series ? seriesTmpl(book.series) : ""}
       </li>

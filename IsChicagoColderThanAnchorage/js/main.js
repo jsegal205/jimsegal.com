@@ -82,8 +82,14 @@ function browserLocationCompare() {
     const locationTemp = await getTemp(browserLat, browserLong);
     const locationDesc = await getLocation(browserLat, browserLong);
 
-    setElementContent("location-header", `Is ${locationDesc} colder than Anchorage??`);
-    setElementContent("location-is-it", verdictText(anchorageTemp, locationTemp));
+    setElementContent(
+      "location-header",
+      `Is ${locationDesc} colder than Anchorage??`
+    );
+    setElementContent(
+      "location-is-it",
+      verdictText(anchorageTemp, locationTemp)
+    );
     setElementContent("location-temp", locationTemp);
     toggleElementVisible("location", true);
   };

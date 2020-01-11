@@ -12,7 +12,8 @@ const nineteen = [
   {
     title: "Allegiance",
     author: "Nicholas Sansbury Smith",
-    link: "https://www.audible.com/pd/Hell-Divers-VI-Allegiance-Audiobook/1538553554",
+    link:
+      "https://www.audible.com/pd/Hell-Divers-VI-Allegiance-Audiobook/1538553554",
     type: "headphones",
     duration: { hours: 11, minutes: 16 },
     narrator: "R. C. Bray",
@@ -24,7 +25,8 @@ const nineteen = [
   {
     title: "Lock In",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Lock-In-Narrated-by-Wil-Wheaton-Audiobook/B00KYUYM14",
+    link:
+      "https://www.audible.com/pd/Lock-In-Narrated-by-Wil-Wheaton-Audiobook/B00KYUYM14",
     type: "headphones",
     duration: { hours: 9, minutes: 56 },
     narrator: "Wil Wheaton",
@@ -52,7 +54,8 @@ const nineteen = [
   {
     title: "A Man on the Moon: The Voyages of the Apollo Astronauts",
     author: "Andrew Chaikin",
-    link: "https://www.audible.com/pd/A-Man-on-the-Moon-The-Voyages-of-the-Apollo-Astronauts-Audiobook/B016J1NMR6",
+    link:
+      "https://www.audible.com/pd/A-Man-on-the-Moon-The-Voyages-of-the-Apollo-Astronauts-Audiobook/B016J1NMR6",
     type: "headphones",
     duration: { hours: 23, minutes: 0 },
     narrator: "Bronson Pinchot"
@@ -60,7 +63,8 @@ const nineteen = [
   {
     title: "Captives",
     author: "Nicholas Sansbury Smith",
-    link: "https://www.audible.com/pd/Hell-Divers-V-Captives-Audiobook/1982560487",
+    link:
+      "https://www.audible.com/pd/Hell-Divers-V-Captives-Audiobook/1982560487",
     type: "headphones",
     duration: { hours: 9, minutes: 50 },
     narrator: "R. C. Bray",
@@ -128,7 +132,8 @@ const nineteen = [
   {
     title: "The Land: Founding",
     author: "Aleron Kong",
-    link: "https://www.audible.com/pd/The-Land-Founding-A-LitRPG-Saga-Audiobook/B071DNLS1F",
+    link:
+      "https://www.audible.com/pd/The-Land-Founding-A-LitRPG-Saga-Audiobook/B071DNLS1F",
     type: "headphones",
     duration: { hours: 9, minutes: 49 },
     narrator: "Nick Podehl",
@@ -168,7 +173,8 @@ const nineteen = [
   {
     title: "The Fork, the Witch, and the Worm",
     author: "Christopher Paolini",
-    link: "https://www.audible.com/pd/The-Fork-the-Witch-and-the-Worm-Audiobook/0593103629",
+    link:
+      "https://www.audible.com/pd/The-Fork-the-Witch-and-the-Worm-Audiobook/0593103629",
     type: "headphones",
     duration: { hours: 4, minutes: 54 },
     narrator: "Gerard Doyle",
@@ -180,7 +186,8 @@ const nineteen = [
   {
     title: "Wolves",
     author: "Nicholas Sansbury Smith",
-    link: "https://www.audible.com/pd/Hell-Divers-IV-Wolves-Audiobook/1538553414",
+    link:
+      "https://www.audible.com/pd/Hell-Divers-IV-Wolves-Audiobook/1538553414",
     type: "headphones",
     duration: { hours: 9, minutes: 25 },
     narrator: "R. C. Bray",
@@ -192,7 +199,8 @@ const nineteen = [
   {
     title: "Deliverance",
     author: "Nicholas Sansbury Smith",
-    link: "https://www.audible.com/pd/Hell-Divers-III-Deliverance-Audiobook/B079NS2WGZ",
+    link:
+      "https://www.audible.com/pd/Hell-Divers-III-Deliverance-Audiobook/B079NS2WGZ",
     type: "headphones",
     duration: { hours: 11, minutes: 18 },
     narrator: "R. C. Bray",
@@ -204,7 +212,8 @@ const nineteen = [
   {
     title: "Ghosts",
     author: "Nicholas Sansbury Smith",
-    link: "https://www.audible.com/pd/Hell-Divers-II-Ghosts-Audiobook/B01N5US9UJ",
+    link:
+      "https://www.audible.com/pd/Hell-Divers-II-Ghosts-Audiobook/B01N5US9UJ",
     type: "headphones",
     duration: { hours: 8, minutes: 13 },
     narrator: "R. C. Bray",

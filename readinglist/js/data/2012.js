@@ -14,19 +14,22 @@ const twelve = [
   {
     title: "Lost at Sea",
     author: "Jon Ronsom",
-    link: "http://www.amazon.com/Lost-Sea-Jon-Ronson-Mysteries-ebook/dp/B008MG1GAW/",
+    link:
+      "http://www.amazon.com/Lost-Sea-Jon-Ronson-Mysteries-ebook/dp/B008MG1GAW/",
     type: "book"
   },
   {
     title: "Abraham Lincoln Vampire Hunter",
     author: "Seth Grahame-Smith",
-    link: "http://www.amazon.com/Abraham-Lincoln-Vampire-Hunter-first/dp/B0088UM9OO/",
+    link:
+      "http://www.amazon.com/Abraham-Lincoln-Vampire-Hunter-first/dp/B0088UM9OO/",
     type: "book"
   },
   {
     title: "The Last Olympian",
     author: "Rick Riordan",
-    link: "http://www.amazon.com/Percy-Jackson-Last-Olympian-Riordan-ebook/dp/B00280LYHS/",
+    link:
+      "http://www.amazon.com/Percy-Jackson-Last-Olympian-Riordan-ebook/dp/B00280LYHS/",
     series: {
       ...percyJackson,
       bookNum: 5
@@ -36,7 +39,8 @@ const twelve = [
   {
     title: "The Battle of the Labyrinth",
     author: "Rick Riordan",
-    link: "http://www.amazon.com/Percy-Jackson-Battle-Labyrinth-Olympians-ebook/dp/B00280LYIM/",
+    link:
+      "http://www.amazon.com/Percy-Jackson-Battle-Labyrinth-Olympians-ebook/dp/B00280LYIM/",
     series: {
       ...percyJackson,
       bookNum: 4
@@ -46,7 +50,8 @@ const twelve = [
   {
     title: "The Titan's Curse",
     author: "Rick Riordan",
-    link: "http://www.amazon.com/Percy-Jackson-Titans-Curse-Riordan-ebook/dp/B00280LYI2/",
+    link:
+      "http://www.amazon.com/Percy-Jackson-Titans-Curse-Riordan-ebook/dp/B00280LYI2/",
     series: {
       ...percyJackson,
       bookNum: 3
@@ -56,7 +61,8 @@ const twelve = [
   {
     title: "The Sea of Monsters",
     author: "Rick Riordan",
-    link: "http://www.amazon.com/Percy-Jackson-Monsters-Rick-Riordan-ebook/dp/B00280LYHI/",
+    link:
+      "http://www.amazon.com/Percy-Jackson-Monsters-Rick-Riordan-ebook/dp/B00280LYHI/",
     series: {
       ...percyJackson,
       bookNum: 2
@@ -66,7 +72,8 @@ const twelve = [
   {
     title: "The Lightning Thief",
     author: "Rick Riordan",
-    link: "http://www.amazon.com/Percy-Jackson-Lightning-Thief-Olympians-ebook/dp/B00280LYIC/",
+    link:
+      "http://www.amazon.com/Percy-Jackson-Lightning-Thief-Olympians-ebook/dp/B00280LYIC/",
     series: {
       ...percyJackson,
       bookNum: 1
@@ -76,7 +83,8 @@ const twelve = [
   {
     title: "Screwjack",
     author: "Hunter S. Thompson",
-    link: "http://www.amazon.com/Screwjack-Short-Hunter-S-Thompson-ebook/dp/B000FC0TVI/",
+    link:
+      "http://www.amazon.com/Screwjack-Short-Hunter-S-Thompson-ebook/dp/B000FC0TVI/",
     type: "book"
   },
   {
@@ -88,7 +96,8 @@ const twelve = [
   {
     title: "Mockingjay",
     author: "Suzanne Collins",
-    link: "http://www.amazon.com/Mockingjay-Hunger-Games-Book-Trilogy-ebook/dp/B003XF1XOQ/",
+    link:
+      "http://www.amazon.com/Mockingjay-Hunger-Games-Book-Trilogy-ebook/dp/B003XF1XOQ/",
     series: {
       ...hungerGames,
       bookNum: 3
@@ -98,7 +107,8 @@ const twelve = [
   {
     title: "Catching Fire",
     author: "Suzanne Collins",
-    link: "http://www.amazon.com/Catching-Fire-Hunger-Games-Trilogy-ebook/dp/B003O86FMW/",
+    link:
+      "http://www.amazon.com/Catching-Fire-Hunger-Games-Trilogy-ebook/dp/B003O86FMW/",
     series: {
       ...hungerGames,
       bookNum: 2
@@ -108,7 +118,8 @@ const twelve = [
   {
     title: "The Hunger Games",
     author: "Suzanne Collins",
-    link: "http://www.amazon.com/Hunger-Games-Book-Trilogy-ebook/dp/B002MQYOFW/",
+    link:
+      "http://www.amazon.com/Hunger-Games-Book-Trilogy-ebook/dp/B002MQYOFW/",
     series: {
       ...hungerGames,
       bookNum: 1

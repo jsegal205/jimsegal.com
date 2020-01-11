@@ -25,7 +25,8 @@ const eighteen = [
     title: "Remote",
     subtitle: "Office Not Required",
     author: "Jason Fried and David Heinemeier Hansson",
-    link: "https://smile.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501",
+    link:
+      "https://smile.amazon.com/Remote-Office-Required-Jason-Fried/dp/0804137501",
     type: "book",
     pages: 256
   },
@@ -33,7 +34,8 @@ const eighteen = [
     title: "Managing Humans",
     subtitle: "Biting and Humorous Tales of a Software Engineering Manager",
     author: "Michael Lopp",
-    link: "https://smile.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575",
+    link:
+      "https://smile.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484221575",
     type: "book",
     pages: 348
   },
@@ -72,7 +74,8 @@ const eighteen = [
   {
     title: "The Singularity Trap",
     author: "Dennis E. Taylor",
-    link: "https://www.audible.com/pd/The-Singularity-Trap-Audiobook/B07BHVWFSM",
+    link:
+      "https://www.audible.com/pd/The-Singularity-Trap-Audiobook/B07BHVWFSM",
     type: "headphones",
     duration: { hours: 11, minutes: 23 },
     narrator: "Ray Porter"
@@ -104,7 +107,8 @@ const eighteen = [
   {
     title: "The Graveyard Book",
     author: "Neil Gaiman",
-    link: "https://www.audible.com/pd/The-Graveyard-Book-Full-Cast-Production-Audiobook/B00LXHQO22",
+    link:
+      "https://www.audible.com/pd/The-Graveyard-Book-Full-Cast-Production-Audiobook/B00LXHQO22",
     type: "headphones",
     duration: { hours: 8, minutes: 24 },
     narrator:
@@ -129,7 +133,8 @@ const eighteen = [
   {
     title: "Spell or High Water",
     author: "Scott Meyer",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Spell-or-High-Water-Audiobook/B00KHEK842",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Spell-or-High-Water-Audiobook/B00KHEK842",
     series: {
       ...magic20,
       bookNum: 2
@@ -141,7 +146,8 @@ const eighteen = [
   {
     title: "Off to Be the Wizard",
     author: "Scott Meyer",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Off-to-Be-the-Wizard-Audiobook/B00IIS32NI",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Off-to-Be-the-Wizard-Audiobook/B00IIS32NI",
     series: {
       ...magic20,
       bookNum: 1
@@ -153,7 +159,8 @@ const eighteen = [
   {
     title: "Dark Matter",
     author: "Blake Crouch",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Dark-Matter-Audiobook/B01CUKULGA",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Dark-Matter-Audiobook/B01CUKULGA",
     type: "headphones",
     duration: { hours: 10, minutes: 8 },
     narrator: "Jon Lindstrom"
@@ -161,7 +168,8 @@ const eighteen = [
   {
     title: "The End of All Things",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-End-of-All-Things-Audiobook/B0118MY6JE",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/The-End-of-All-Things-Audiobook/B0118MY6JE",
     series: {
       ...oldMansWar,
       bookNum: 6
@@ -173,7 +181,8 @@ const eighteen = [
   {
     title: "The Human Division",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Human-Division-Audiobook/B00CPPQZJI",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Human-Division-Audiobook/B00CPPQZJI",
     series: {
       ...oldMansWar,
       bookNum: 5
@@ -185,7 +194,8 @@ const eighteen = [
   {
     title: "Zoe's Tale",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zoes-Tale-Audiobook/B002V5D4PA",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Zoes-Tale-Audiobook/B002V5D4PA",
     series: {
       ...oldMansWar,
       bookNum: 4
@@ -197,7 +207,8 @@ const eighteen = [
   {
     title: "The Last Colony",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Last-Colony-Audiobook/B002VA9CAQ",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Last-Colony-Audiobook/B002VA9CAQ",
     series: {
       ...oldMansWar,
       bookNum: 3
@@ -209,7 +220,8 @@ const eighteen = [
   {
     title: "Will Save the Galaxy for Food",
     author: "Yahtzee Croshaw",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Will-Save-the-Galaxy-for-Food-Audiobook/B06X3QQTFH",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Will-Save-the-Galaxy-for-Food-Audiobook/B06X3QQTFH",
     type: "headphones",
     duration: { hours: 10, minutes: 20 },
     narrator: "Yahtzee Croshaw"
@@ -217,7 +229,8 @@ const eighteen = [
   {
     title: "Redshirts",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Redshirts-Audiobook/B007SP2LPM",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Redshirts-Audiobook/B007SP2LPM",
     type: "headphones",
     duration: { hours: 7, minutes: 41 },
     narrator: "Wil Wheaton"
@@ -225,7 +238,8 @@ const eighteen = [
   {
     title: "The Ghost Brigades",
     author: "John Scalzi",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Ghost-Brigades-Audiobook/B002V9ZFSK",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/The-Ghost-Brigades-Audiobook/B002V9ZFSK",
     series: {
       ...oldMansWar,
       bookNum: 2
@@ -238,14 +252,16 @@ const eighteen = [
     title: "What If?",
     subtitle: "Serious Scientific Answers to Absurd Hypothetical Questions",
     author: "Randall Munroe",
-    link: "https://smile.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994",
+    link:
+      "https://smile.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994",
     type: "book",
     pages: 320
   },
   {
     title: "Only Human",
     author: "Sylvain Neuvel",
-    link: "https://www.audible.com/pd/Mysteries-Thrillers/Only-Human-Audiobook/B07B41P3D6",
+    link:
+      "https://www.audible.com/pd/Mysteries-Thrillers/Only-Human-Audiobook/B07B41P3D6",
     series: {
       ...themisFiles,
       bookNum: 3
@@ -257,7 +273,8 @@ const eighteen = [
   {
     title: "Children of Time",
     author: "Adrian Tchaikovsky",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Children-of-Time-Audiobook/B071Y9TTHC",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Children-of-Time-Audiobook/B071Y9TTHC",
     type: "headphones",
     duration: { hours: 16, minutes: 31 },
     narrator: "Mel Hudson"
@@ -265,7 +282,8 @@ const eighteen = [
   {
     title: "Zero Hour",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Zero-Hour-Audiobook/B078RV7BWR",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Zero-Hour-Audiobook/B078RV7BWR",
     series: {
       ...expeditionaryForce,
       bookNum: 5
@@ -277,7 +295,8 @@ const eighteen = [
   {
     title: "Black Ops",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Black-Ops-Audiobook/B075NMRZTR",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Black-Ops-Audiobook/B075NMRZTR",
     series: {
       ...expeditionaryForce,
       bookNum: 4
@@ -289,7 +308,8 @@ const eighteen = [
   {
     title: "Trouble on Paradise",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Trouble-on-Paradise-Audiobook/B072YT17GJ",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Trouble-on-Paradise-Audiobook/B072YT17GJ",
     series: {
       ...expeditionaryForce,
       bookNum: 3.5
@@ -301,7 +321,8 @@ const eighteen = [
   {
     title: "Paradise",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Paradise-Audiobook/B071438NCM",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Paradise-Audiobook/B071438NCM",
     series: {
       ...expeditionaryForce,
       bookNum: 3
@@ -313,7 +334,8 @@ const eighteen = [
   {
     title: "SpecOps",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/SpecOps-Audiobook/B06W5861HP",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/SpecOps-Audiobook/B06W5861HP",
     series: {
       ...expeditionaryForce,
       bookNum: 2
@@ -325,7 +347,8 @@ const eighteen = [
   {
     title: "Columbus Day",
     author: "Craig Alanson",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Columbus-Day-Audiobook/B01N48VJFJ",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Columbus-Day-Audiobook/B01N48VJFJ",
     series: {
       ...expeditionaryForce,
       bookNum: 1
@@ -337,7 +360,8 @@ const eighteen = [
   {
     title: "Dungeon Calamity",
     author: "Dakota Krout",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Calamity-Audiobook/B0799RFCCK",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Dungeon-Calamity-Audiobook/B0799RFCCK",
     series: {
       ...divineDungeon,
       bookNum: 3
@@ -349,7 +373,8 @@ const eighteen = [
   {
     title: "Acceptance",
     author: "Jeff VanderMeer",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Acceptance-Audiobook/B00MX3Q2BS",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Acceptance-Audiobook/B00MX3Q2BS",
     series: {
       ...southernReach,
       bookNum: 3
@@ -361,7 +386,8 @@ const eighteen = [
   {
     title: "Authority",
     author: "Jeff VanderMeer",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Authority-Audiobook/B00J8KWFOM",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Authority-Audiobook/B00J8KWFOM",
     series: {
       ...southernReach,
       bookNum: 2
@@ -373,7 +399,8 @@ const eighteen = [
   {
     title: "Annihilation",
     author: "Jeff VanderMeer",
-    link: "https://www.audible.com/pd/Sci-Fi-Fantasy/Annihilation-Audiobook/B00HYG9KMC",
+    link:
+      "https://www.audible.com/pd/Sci-Fi-Fantasy/Annihilation-Audiobook/B00HYG9KMC",
     series: {
       ...southernReach,
       bookNum: 1

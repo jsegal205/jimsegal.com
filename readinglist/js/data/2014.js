@@ -4,7 +4,8 @@ const fourteen = [
   {
     title: "The Lean Startup",
     author: "Eric Ries",
-    link: "http://www.amazon.com/Lean-Startup-Innovation-Successful-Businesses-ebook/dp/B004J4XGN6/",
+    link:
+      "http://www.amazon.com/Lean-Startup-Innovation-Successful-Businesses-ebook/dp/B004J4XGN6/",
     type: "book"
   },
   {
@@ -46,7 +47,8 @@ const fourteen = [
   {
     title: "Ready Player One",
     author: "Ernest Cline",
-    link: "http://www.amazon.com/Ready-Player-One-Ernest-Cline-ebook/dp/B004J4WKUQ/",
+    link:
+      "http://www.amazon.com/Ready-Player-One-Ernest-Cline-ebook/dp/B004J4WKUQ/",
     type: "book"
   },
   {
@@ -58,7 +60,8 @@ const fourteen = [
   {
     title: "Effective Programming: More Than Writing Code",
     author: "Jeff Atwood",
-    link: "http://www.amazon.com/Effective-Programming-More-Than-Writing-ebook/dp/B008HUMTO0/",
+    link:
+      "http://www.amazon.com/Effective-Programming-More-Than-Writing-ebook/dp/B008HUMTO0/",
     type: "book"
   }
 ];
