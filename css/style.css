@@ -298,6 +298,39 @@ input:checked + .slider:after {
   content: "LIGHT?";
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.seth {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 95%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .seth > img {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* dark mode toggle */
 
 @media screen and (max-width: 740px) {
