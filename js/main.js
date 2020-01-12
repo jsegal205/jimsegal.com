@@ -31,39 +31,66 @@ const setDarkMode = shouldBeDark => {
 setDarkMode(getDarkModeCookie());
 
 const keyMap = {
-  83: "s",
+  68: "d",
   69: "e",
-  84: "t",
   72: "h",
+  73: "i",
+  74: "j",
   77: "m",
   79: "o",
-  68: "d"
+  83: "s",
+  84: "t"
 };
-let sequenceTracker = 0;
-const sethmodeSequence = ["s", "e", "t", "h", "m", "o", "d", "e"];
+const sethmode = {
+  sequence: ["s", "e", "t", "h", "m", "o", "d", "e"],
+  tracker: 0,
+  active: false
+};
+const jimmode = {
+  sequence: ["j", "i", "m", "m", "o", "d", "e"],
+  tracker: 0
+};
 
-const toggleSethMode = () => {
-  const sethEle = document.getElementsByClassName("seth")[0];
-  if (sethEle) {
+const enableJimMode = () => {
+  if (sethmode.active) {
+    sethmode.active = false;
+    const sethEle = document.getElementsByClassName("seth")[0];
     sethEle.remove();
-  } else {
+  }
+};
+
+const enableSethMode = () => {
+  if (!sethmode.active) {
     const sethDiv = document.createElement("div");
     sethDiv.className = "seth";
     sethDiv.innerHTML = `<img src="css/seth.jpg" />`;
     body.appendChild(sethDiv);
+    sethmode.active = true;
   }
 };
 
 document.addEventListener("keydown", e => {
   const key = keyMap[e.keyCode];
-  const requiredKey = sethmodeSequence[sequenceTracker];
-  if (key === requiredKey) {
-    sequenceTracker++;
-    if (sequenceTracker === sethmodeSequence.length) {
-      toggleSethMode();
-      sequenceTracker = 0;
-    }
-  } else {
-    sequenceTracker = 0;
+  const sethRequiredKey = sethmode.sequence[sethmode.tracker];
+  const jimRequiredKey = jimmode.sequence[jimmode.tracker];
+
+  switch (key) {
+    case sethRequiredKey:
+      sethmode.tracker++;
+      if (sethmode.tracker === sethmode.sequence.length) {
+        enableSethMode();
+        sethmode.tracker = 0;
+      }
+      break;
+    case jimRequiredKey:
+      jimmode.tracker++;
+      if (jimmode.tracker === jimmode.sequence.length) {
+        enableJimMode();
+        jimmode.tracker = 0;
+      }
+      break;
+    default:
+      sethmode.tracker = 0;
+      jimmode.tracker = 0;
   }
 });
