@@ -303,26 +303,37 @@ input:checked + .slider:after {
   visibility: hidden;
 }
 
-.seth {
+.seth-bg {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   background-color: #000000;
+  opacity: 95%;
+}
+
+.seth {
   display: flex;
+  height: 100%;
   justify-content: center;
   align-items: center;
-  opacity: 95%;
+}
+
+.seth-bg > .info {
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .seth > img {
-    animation: App-logo-spin infinite 20s linear;
+    animation: Seth-spin infinite 20s linear;
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes Seth-spin {
   from {
     transform: rotate(0deg);
   }

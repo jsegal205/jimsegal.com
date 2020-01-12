@@ -1,6 +1,7 @@
 const chk = document.getElementById("toggle-chk");
 const body = document.getElementsByTagName("body")[0];
 const COOKIENAME = "jimsegaldarkmode";
+const SETHMODEELE = "seth-bg";
 
 const toggleDarkMode = e => {
   const { checked } = e.target;
@@ -54,7 +55,7 @@ const jimmode = {
 const enableJimMode = () => {
   if (sethmode.active) {
     sethmode.active = false;
-    const sethEle = document.getElementsByClassName("seth")[0];
+    const sethEle = document.getElementsByClassName(SETHMODEELE)[0];
     sethEle.remove();
   }
 };
@@ -62,8 +63,13 @@ const enableJimMode = () => {
 const enableSethMode = () => {
   if (!sethmode.active) {
     const sethDiv = document.createElement("div");
-    sethDiv.className = "seth";
-    sethDiv.innerHTML = `<img src="css/seth.jpg" />`;
+    sethDiv.className = SETHMODEELE;
+    sethDiv.innerHTML = `
+      <div class="seth">
+        <img src="css/seth.jpg" />
+      </div>
+      <div class="info">Type "jimmode" to exit out of sethmode</div>
+    `;
     body.appendChild(sethDiv);
     sethmode.active = true;
   }
