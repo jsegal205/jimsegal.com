@@ -5,6 +5,10 @@ const SETHMODEELE = "seth-bg";
 
 const toggleDarkMode = e => {
   const { checked } = e.target;
+  gtag("event", "toggled", {
+    event_category: "darkmode",
+    event_label: checked
+  });
   setDarkModeCookie(checked);
   setDarkMode(checked);
 };
@@ -57,6 +61,11 @@ const enableJimMode = () => {
     sethmode.active = false;
     const sethEle = document.getElementsByClassName(SETHMODEELE)[0];
     sethEle.remove();
+
+    gtag("event", "toggled", {
+      event_category: "sethmode",
+      event_label: sethmode.active
+    });
   }
 };
 
@@ -72,6 +81,11 @@ const enableSethMode = () => {
     `;
     body.appendChild(sethDiv);
     sethmode.active = true;
+
+    gtag("event", "toggled", {
+      event_category: "sethmode",
+      event_label: sethmode.active
+    });
   }
 };
 
