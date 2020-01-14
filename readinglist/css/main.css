@@ -1,11 +1,16 @@
+:root {
+  --text-color: #444444;
+  --focus-color: #39c39c;
+}
+
 body {
   background: #efefef;
-  color: #444444;
+  color: var(--text-color);
   font-family: Consolas, monaco, monospace;
 }
 
 *:focus {
-  color: #39c39c;
+  color: var(--focus-color);
   outline-color: #c500ff;
 }
 
@@ -24,7 +29,7 @@ ul {
 }
 
 .sticky {
-  background: #444444;
+  background: var(--text-color);
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -40,7 +45,7 @@ ul {
 }
 
 .sticky a {
-  color: #39c39c;
+  color: var(--focus-color);
 }
 
 .book {
