@@ -1,14 +1,16 @@
 body {
-  font-family: sans-serif;
+  background: #efefef;
+  color: #444444;
+  font-family: Consolas, monaco, monospace;
 }
 
 *:focus {
-  color: #39c;
+  color: #39c39c;
   outline-color: #c500ff;
 }
 
 a {
-  color: #77f;
+  color: #5555ff;
 }
 
 ul {
@@ -22,21 +24,23 @@ ul {
 }
 
 .sticky {
-  background: #eef;
-  border: 2px solid #999;
+  background: #444444;
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: 20px;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
 }
 
-.github {
-  font-size: 1.5em;
-  margin-right: 40px;
+.sticky > * {
+  margin: 0 1.5em;
+}
+
+.sticky a {
+  color: #39c39c;
 }
 
 .book {
