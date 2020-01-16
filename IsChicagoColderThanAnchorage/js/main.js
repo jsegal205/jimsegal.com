@@ -81,17 +81,19 @@ function browserLocationCompare() {
     const browserLong = position.coords.longitude.toFixed(6);
     const locationTemp = await getTemp(browserLat, browserLong);
     const locationDesc = await getLocation(browserLat, browserLong);
+    const verdict = verdictText(anchorageTemp, locationTemp);
 
     setElementContent(
       "location-header",
       `Is ${locationDesc} colder than Anchorage??`
     );
-    setElementContent(
-      "location-is-it",
-      verdictText(anchorageTemp, locationTemp)
-    );
+    setElementContent("location-is-it", verdict);
     setElementContent("location-temp", locationTemp);
     toggleElementVisible("location", true);
+
+    gtag("event", `${locationDesc} - ${locationTemp} - Colder? ${verdict}`, {
+      event_category: "localTempCompare"
+    });
   };
 
   const error = () => {
