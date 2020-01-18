@@ -1,9 +1,33 @@
+:root {
+  --background: #efefef;
+  --text-color: #444444;
+  --focus-color: #39c39c;
+}
+
+.dark {
+  --background: #444444;
+  --text-color: #efefef;
+}
+
+*:focus {
+  color: var(--focus-color);
+  outline-color: #c500ff;
+}
+
 body {
-  background: #efefef;
-  color: #444;
+  background: var(--background);
+  color: var(--text-color);
   font-family: Consolas, monaco, monospace;
   margin: 0;
   padding: 20px;
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--focus-color);
 }
 
 .brief {
@@ -18,4 +42,26 @@ body {
 
 img {
   max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  .header {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
 }
