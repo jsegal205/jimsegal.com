@@ -4,6 +4,11 @@
   align-self: center;
 }
 
+.dark {
+  --background: #444444;
+  --text-color: #efefef;
+}
+
 .switch {
   position: relative;
   display: inline-block;

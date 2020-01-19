@@ -5,11 +5,6 @@
   --focus-color: #39c39c;
 }
 
-.dark {
-  --background: #444444;
-  --text-color: #efefef;
-}
-
 *:focus {
   color: var(--focus-color);
   outline-color: #c500ff;
