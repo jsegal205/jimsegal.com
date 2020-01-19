@@ -14,6 +14,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/darkmode.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -33,7 +34,15 @@
   <body>
     <a href="/">back</a>
     <main class="container">
-      <h1 class="header">My Tabletop Games</h1>
+      <div class="header">
+        <h1>My Tabletop Games</h1>
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-chk" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
       <div class="sub-header">
         <label>Number of games: <span id="game-count">0</span></label>
         <span>
@@ -50,6 +59,7 @@
         Loading...
       </section>
     </main>
+    <script type="text/javascript" src="../js/darkmode.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
