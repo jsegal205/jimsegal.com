@@ -25,6 +25,7 @@ body {
   color: var(--text-color);
   font-family: var(--font);
   margin: 0;
+  padding: 20px;
 }
 
 a {
@@ -38,11 +39,4 @@ a:hover {
 .hidden {
   display: none;
   visibility: hidden;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
