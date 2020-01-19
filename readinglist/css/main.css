@@ -1,10 +1,16 @@
 :root {
+  --background: #efefef;
   --text-color: #444444;
   --focus-color: #39c39c;
+  --anchor: #5555ff;
+}
+
+.dark {
+  --anchor: #39c39c;
 }
 
 body {
-  background: #efefef;
+  background: var(--background);
   color: var(--text-color);
   font-family: Consolas, monaco, monospace;
 }
@@ -15,7 +21,7 @@ body {
 }
 
 a {
-  color: #5555ff;
+  color: var(--anchor);
 }
 
 ul {
@@ -29,7 +35,8 @@ ul {
 }
 
 .sticky {
-  background: var(--text-color);
+  background: #444444;
+  border-bottom: 1px solid var(--text-color);
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -57,10 +64,21 @@ ul {
   padding-left: 1.5em;
 }
 
-/* phone only */
-@media only screen and (max-width: 420px) {
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
   body {
     font-size: 1.3em;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 1.5em;
   }
 
   .series {
