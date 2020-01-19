@@ -12,8 +12,8 @@
       href="https://avatars1.githubusercontent.com/u/1733595?s=16&v=5"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/darkmode.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -33,7 +33,15 @@
   <body>
     <a class="back" href="/">back</a>
     <main>
-      <h1>My Travels</h1>
+      <div class="header">
+        <h1>My Travels</h1>
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-chk" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
       <p>
         Here is places that I have traveled since graduating college in 2008.
       </p>
@@ -54,6 +62,7 @@
       </h2>
       <section id="furthest"></section>
     </main>
+    <script type="text/javascript" src="../js/darkmode.js"></script>
     <script src="js/main.js"></script>
     <script
       async

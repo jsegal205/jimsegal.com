@@ -1,22 +1,34 @@
-html,
+:root {
+  --font: Consolas, monaco, monospace;
+  --background: #efefef;
+  --text-color: #444444;
+  --focus-color: #39c39c;
+}
+
+.dark {
+  --background: #444444;
+  --text-color: #efefef;
+}
+
+*:focus {
+  color: var(--focus-color);
+  outline-color: #c500ff;
+}
+
 body {
-  height: 100%;
+  background: var(--background);
+  color: var(--text-color);
+  font-family: var(--font);
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
-main {
-  padding: 1em;
+a {
+  color: var(--text-color);
 }
 
-h1 {
-  font-size: 3em;
-  margin: 0.8em 0;
-}
-
-h2 {
-  font-size: 2.4em;
-  margin: 0.8em 0;
+a:hover {
+  color: var(--focus-color);
 }
 
 ol {
@@ -26,7 +38,7 @@ ol {
 
 small {
   display: block;
-  font-size: 0.35em;
+  font-size: 0.5em;
 }
 
 p {
@@ -34,11 +46,32 @@ p {
 }
 
 #map {
-  border: 1px solid black;
+  border: 1px solid var(--text-color);
   height: 500px;
 }
 
-.back {
-  float: left;
-  padding: 1em;
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .header {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
 }
