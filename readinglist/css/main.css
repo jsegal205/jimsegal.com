@@ -1,23 +1,9 @@
 :root {
-  --background: #efefef;
-  --text-color: #444444;
-  --focus-color: #39c39c;
   --anchor: #5555ff;
 }
 
 .dark {
   --anchor: #39c39c;
-}
-
-body {
-  background: var(--background);
-  color: var(--text-color);
-  font-family: Consolas, monaco, monospace;
-}
-
-*:focus {
-  color: var(--focus-color);
-  outline-color: #c500ff;
 }
 
 a {
@@ -31,7 +17,6 @@ ul {
 
 .container {
   margin-top: 40px;
-  padding: 20px;
 }
 
 .sticky {
