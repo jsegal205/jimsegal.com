@@ -51,9 +51,16 @@
 
   const searchEle = document.getElementById("games-filter");
   const filterGames = e => {
+    const inputVal = e.target.value.toLowerCase();
     const filteredGames = allGames.filter(game =>
-      game.title.toLowerCase().includes(e.target.value.toLowerCase())
+      game.title.toLowerCase().includes(inputVal)
     );
+
+    gtag("event", "filtered", {
+      event_category: "games",
+      event_label: inputVal
+    });
+
     drawGames(filteredGames);
   };
   searchEle.addEventListener("input", filterGames, false);
@@ -64,13 +71,25 @@
     const randomGameIndex = Math.floor(
       Math.random() * Math.floor(allGames.length - 1)
     );
-    drawGames([allGames[randomGameIndex]]);
+
+    const chosenGame = allGames[randomGameIndex];
+    gtag("event", "random picked", {
+      event_category: "games",
+      event_label: chosenGame.title
+    });
+
+    drawGames([chosenGame]);
   };
   randomGameEle.addEventListener("click", randomGame, false);
 
   const resetGameEle = document.getElementById("reset-game");
   const resetGame = () => {
     searchEle.value = "";
+
+    gtag("event", "reset", {
+      event_category: "games"
+    });
+
     drawGames(allGames);
   };
   resetGameEle.addEventListener("click", resetGame, false);
