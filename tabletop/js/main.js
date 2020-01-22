@@ -30,9 +30,7 @@
     }
   };
 
-  const response = await fetch(
-    "https://data.heroku.com/dataclips/donygkplrgieljfwbfisudzjmirb.json"
-  )
+  const response = await fetch("http://api.jimsegal.com/games")
     .then(response => {
       if (!response.ok) {
         throw new Error("Error getting games list.");
@@ -44,11 +42,7 @@
       console.log(error);
     });
 
-  const gamesJson = await response.json();
-  const allGames = gamesJson.values.map(game => {
-    return { title: game[0], link: game[1], image: game[2] };
-  });
-
+  const allGames = await response.json();
   const searchEle = document.getElementById("games-filter");
   const filterGames = e => {
     const inputVal = e.target.value.toLowerCase();
