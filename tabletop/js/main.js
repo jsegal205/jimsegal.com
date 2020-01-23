@@ -30,7 +30,7 @@
     }
   };
 
-  const response = await fetch("http://api.jimsegal.com/games")
+  const response = await fetch("https://api.jimsegal.com/games")
     .then(response => {
       if (!response.ok) {
         throw new Error("Error getting games list.");
