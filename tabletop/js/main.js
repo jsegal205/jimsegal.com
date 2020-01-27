@@ -33,13 +33,15 @@
   const response = await fetch("https://api.jimsegal.com/games")
     .then(response => {
       if (!response.ok) {
-        throw new Error("Error getting games list.");
+        throw new Error(
+          `Error getting games list. Returned ${response.statusText}`
+        );
       }
       return response;
     })
     .catch(error => {
       gameCardsEle.innerHTML = "Error getting games list.";
-      console.log(error);
+      throw new Error(error);
     });
 
   const allGames = await response.json();
