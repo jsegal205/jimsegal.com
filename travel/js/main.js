@@ -22,6 +22,23 @@ const getTravels = async () => {
   return await response.json();
 };
 
+const getTravelFrequented = async () => {
+  const response = await fetch("https://api.jimsegal.com/travel/frequented")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(
+          `Error getting travels. Returned ${response.statusText}`
+        );
+      }
+      return response;
+    })
+    .catch(error => {
+      throw new Error(error);
+    });
+
+  return await response.json();
+};
+
 async function initMap() {
   destinations = await getTravels();
 
@@ -74,35 +91,20 @@ async function initMap() {
 
   markerClick(chicagoMarker, chicagoInfo);
 
-  frequented(destinations);
+  frequented();
   furthest(destinations);
 }
 
-const frequented = destinations => {
+const frequented = async () => {
   const frequentEle = document.getElementById("frequent");
-  destinations
-    .filter(d => d.visits.length > 1)
-    .sort((curr, next) => {
-      if (
-        curr.visits.length < next.visits.length ||
-        (curr.visits.length == next.visits.length && curr.city > next.city)
-      ) {
-        return 1;
-      }
-      if (
-        curr.visits.length > next.visits.length ||
-        (curr.visits.length == next.visits.length && curr.city < next.city)
-      ) {
-        return -1;
-      }
+  const destinations = await getTravelFrequented();
 
-      return 0;
-    })
-    .map(dest => {
-      const listItem = document.createElement("li");
-      listItem.innerHTML = `${dest.city} - Visited <em>${dest.visits.length}</em> times`;
-      frequentEle.appendChild(listItem);
-    });
+  destinations.map(dest => {
+    const { city, state, visitCount } = dest;
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `${city}, ${state} - Visited <em>${visitCount}</em> times`;
+    frequentEle.appendChild(listItem);
+  });
 };
 
 const furthest = destinations => {
