@@ -5,8 +5,8 @@ const chicago = {
   content: "Current residence"
 };
 
-const getTravels = async () => {
-  const response = await fetch("https://api.jimsegal.com/travel")
+const apiFetch = async url => {
+  const response = await fetch(url)
     .then(response => {
       if (!response.ok) {
         throw new Error(
@@ -22,21 +22,12 @@ const getTravels = async () => {
   return await response.json();
 };
 
-const getTravelFrequented = async () => {
-  const response = await fetch("https://api.jimsegal.com/travel/frequented")
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(
-          `Error getting travels. Returned ${response.statusText}`
-        );
-      }
-      return response;
-    })
-    .catch(error => {
-      throw new Error(error);
-    });
+const getTravels = async () => {
+  return await apiFetch("https://api.jimsegal.com/travel");
+};
 
-  return await response.json();
+const getTravelFrequented = async () => {
+  return await apiFetch("https://api.jimsegal.com/travel/frequented");
 };
 
 async function initMap() {
