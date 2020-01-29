@@ -30,6 +30,10 @@ const getTravelFrequented = async () => {
   return await apiFetch("https://api.jimsegal.com/travel/frequented");
 };
 
+const getTravelFurthest = async () => {
+  return await apiFetch("https://api.jimsegal.com/travel/furthest");
+};
+
 async function initMap() {
   destinations = await getTravels();
 
@@ -81,9 +85,6 @@ async function initMap() {
   });
 
   markerClick(chicagoMarker, chicagoInfo);
-
-  frequented();
-  furthest(destinations);
 }
 
 const frequented = async () => {
@@ -98,34 +99,14 @@ const frequented = async () => {
   });
 };
 
-const furthest = destinations => {
+const furthest = async () => {
   const furthestEle = document.getElementById("furthest");
-  // algorithm taken from https://stackoverflow.com/a/27943/282110
-  const deg2rad = deg => deg * (Math.PI / 180);
+  const furthestByDistance = await getTravelFurthest();
 
-  const getDistance = ({ lat, lng }) => {
-    const dLat = deg2rad(lat - chicago.lat);
-    const dLon = deg2rad(lng - chicago.lng);
-    const hav =
-      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(deg2rad(chicago.lat)) *
-        Math.cos(deg2rad(lat)) *
-        Math.sin(dLon / 2) *
-        Math.sin(dLon / 2);
-    const angleRadians = 2 * Math.atan2(Math.sqrt(hav), Math.sqrt(1 - hav));
-    return 3961 * angleRadians; // 3961 is the radius of the earth in miles
-  };
-
-  const furthestByDistance = destinations
-    .map(dest => {
-      return {
-        ...dest,
-        distance: getDistance(dest)
-      };
-    })
-    .reduce((curr, next) => (curr.distance > next.distance ? curr : next));
-
-  furthestEle.innerHTML = `${
-    furthestByDistance.city
+  furthestEle.innerHTML = `${furthestByDistance.city} ${
+    furthestByDistance.country
   } at ${furthestByDistance.distance.toFixed(2)} miles from ${chicago.city}`;
 };
+
+frequented();
+furthest();
