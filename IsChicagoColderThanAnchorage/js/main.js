@@ -1,4 +1,4 @@
-const getTemperatures = async (lat, long) => {
+const getTemperatures = async (lat, long, browserCompare = false) => {
   const response = await fetch(
     `https://api.jimsegal.com/isAnchorageColderThan/${lat}/${long}`
   )
@@ -11,10 +11,16 @@ const getTemperatures = async (lat, long) => {
       return response;
     })
     .catch(error => {
-      getElementById("well-is-it").className = "error";
-      setElementContent("well-is-it", "¯\\_(ツ)_/¯");
-      setElementContent("loading", "Error getting temperatures");
-      setElementContent("location-header", "Error getting temperatures");
+      if (browserCompare) {
+        setElementContent(
+          "location-header",
+          "Error getting temperatures for your local address"
+        );
+      } else {
+        getElementById("well-is-it").className = "error";
+        setElementContent("well-is-it", "¯\\_(ツ)_/¯");
+        setElementContent("loading", "Error getting temperatures");
+      }
       throw new Error(error);
     });
 
@@ -76,10 +82,17 @@ const verdictText = (anchorageTemp, compareTemp) => {
 
 function browserLocationCompare() {
   toggleElementVisible("location-header", false);
+  setElementContent("location-header", "");
+  setElementContent("location-is-it", "");
+  setElementContent("location-temp", "");
   const success = async position => {
     const browserLat = position.coords.latitude.toFixed(6);
     const browserLong = position.coords.longitude.toFixed(6);
-    const temperatureResults = await getTemperatures(browserLat, browserLong);
+    const temperatureResults = await getTemperatures(
+      browserLat,
+      browserLong,
+      true
+    );
     const {
       anchorageDetails: { temperature: anchorageTemp },
       compareDetails: {
@@ -105,7 +118,10 @@ function browserLocationCompare() {
   };
 
   const error = () => {
-    setElementContent("location-header", "Unable to retrieve your location");
+    setElementContent(
+      "location-header",
+      "Unable to retrieve your location to compare temperatures to Anchorage"
+    );
   };
   toggleElementVisible("location-header", true);
   setElementContent("location-header", "Checking...");
