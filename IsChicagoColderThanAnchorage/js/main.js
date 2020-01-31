@@ -1,6 +1,6 @@
 const getTemperatures = async (lat, long) => {
   const response = await fetch(
-    `https://api.jimsegal.com/isAnchorageColderThan/a${lat}/${long}`
+    `https://api.jimsegal.com/isAnchorageColderThan/${lat}/${long}`
   )
     .then(response => {
       if (!response.ok) {
@@ -14,6 +14,7 @@ const getTemperatures = async (lat, long) => {
       getElementById("well-is-it").className = "error";
       setElementContent("well-is-it", "¯\\_(ツ)_/¯");
       setElementContent("loading", "Error getting temperatures");
+      setElementContent("location-header", "Error getting temperatures");
       throw new Error(error);
     });
 
@@ -48,6 +49,7 @@ const verdictText = (anchorageTemp, compareTemp) => {
   if ("geolocation" in navigator) {
     const localCompare = getElementById("check-my-location");
     localCompare.onclick = browserLocationCompare;
+    toggleElementVisible("location-header", false);
   } else {
     toggleElementVisible("browser-location", false);
   }
@@ -73,6 +75,7 @@ const verdictText = (anchorageTemp, compareTemp) => {
 })();
 
 function browserLocationCompare() {
+  toggleElementVisible("location-header", false);
   const success = async position => {
     const browserLat = position.coords.latitude.toFixed(6);
     const browserLong = position.coords.longitude.toFixed(6);
@@ -102,10 +105,9 @@ function browserLocationCompare() {
   };
 
   const error = () => {
-    debugger;
     setElementContent("location-header", "Unable to retrieve your location");
   };
-  // toggleElementVisible("location-header", true)
+  toggleElementVisible("location-header", true);
   setElementContent("location-header", "Checking...");
 
   navigator.geolocation.getCurrentPosition(success, error);
