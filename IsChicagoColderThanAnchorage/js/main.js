@@ -1,27 +1,23 @@
-const getTemp = async (lat, long) => {
-  const API_URL =
-    "https://api.openweathermap.org/data/2.5/weather?appid=9bf0ee26559265f94c44015dbce8177d&units=imperial";
-  const response = await fetch(`${API_URL}&lat=${lat}&lon=${long}`);
-  if (!response.ok) {
-    getElementById("well-is-it").className = "error";
-    setElementContent("well-is-it", "¯\\_(ツ)_/¯");
-    setElementContent("loading", "Error getting temperatures");
-    return false;
-  }
-  const json = await response.json();
+const getTemperatures = async (lat, long) => {
+  const response = await fetch(
+    `https://api.jimsegal.com/isAnchorageColderThan/a${lat}/${long}`
+  )
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(
+          `Problem retrieving temperatures. Returned ${response.statusText}`
+        );
+      }
+      return response;
+    })
+    .catch(error => {
+      getElementById("well-is-it").className = "error";
+      setElementContent("well-is-it", "¯\\_(ツ)_/¯");
+      setElementContent("loading", "Error getting temperatures");
+      throw new Error(error);
+    });
 
-  return parseFloat(json.main.temp);
-};
-
-const getLocation = async (lat, long) => {
-  const API_URL = `https://www.mapquestapi.com/geocoding/v1/reverse?key=Y3zmO0lPUXVmIoPrDpMT1H2Nuu18mF5y`;
-  const response = await fetch(`${API_URL}&location=${lat},${long}`);
-  if (!response.ok) {
-    return `${lat}, ${long}`;
-  }
-  const json = await response.json();
-  const locationResults = json.results[0].locations[0];
-  return `${locationResults.adminArea5}, ${locationResults.adminArea3}`;
+  return await response.json();
 };
 
 const getElementById = eleId => {
@@ -48,9 +44,6 @@ const verdictText = (anchorageTemp, compareTemp) => {
   return "NOPE";
 };
 
-let anchorageTemp;
-
-// page load
 (async () => {
   if ("geolocation" in navigator) {
     const localCompare = getElementById("check-my-location");
@@ -59,12 +52,16 @@ let anchorageTemp;
     toggleElementVisible("browser-location", false);
   }
 
-  const chicagoTemp = await getTemp(41.8369, -87.6847);
-  anchorageTemp = await getTemp(61.2175, -149.8584);
+  const temperatureResults = await getTemperatures(41.8369, -87.6847);
 
-  if (chicagoTemp && anchorageTemp) {
+  if (temperatureResults) {
     getElementById("well-is-it").className = "";
     toggleElementVisible("loading", false);
+
+    const {
+      anchorageDetails: { temperature: anchorageTemp },
+      compareDetails: { temperature: chicagoTemp }
+    } = temperatureResults;
 
     setElementContent("well-is-it", verdictText(anchorageTemp, chicagoTemp));
     setElementContent("chicagoTemp", chicagoTemp);
@@ -79,8 +76,16 @@ function browserLocationCompare() {
   const success = async position => {
     const browserLat = position.coords.latitude.toFixed(6);
     const browserLong = position.coords.longitude.toFixed(6);
-    const locationTemp = await getTemp(browserLat, browserLong);
-    const locationDesc = await getLocation(browserLat, browserLong);
+    const temperatureResults = await getTemperatures(browserLat, browserLong);
+    const {
+      anchorageDetails: { temperature: anchorageTemp },
+      compareDetails: {
+        city: locationCity,
+        state: locationState,
+        temperature: locationTemp
+      }
+    } = temperatureResults;
+    const locationDesc = `${locationCity}, ${locationState}`;
     const verdict = verdictText(anchorageTemp, locationTemp);
 
     setElementContent(
@@ -97,9 +102,10 @@ function browserLocationCompare() {
   };
 
   const error = () => {
+    debugger;
     setElementContent("location-header", "Unable to retrieve your location");
   };
-
+  // toggleElementVisible("location-header", true)
   setElementContent("location-header", "Checking...");
 
   navigator.geolocation.getCurrentPosition(success, error);
