@@ -16,5 +16,7 @@ if pgrep -f "Python -m http.server"; then
   pkill -f "Python -m http.server"
 fi
 
+open http://localhost:8000/
+
 echo "=== Starting local server ==="
 python3 -m http.server
