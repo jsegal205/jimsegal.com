@@ -1,14 +1,14 @@
-import {
-  chaosSeeds,
-  divineDungeon,
-  expeditionaryForce,
-  hellDivers,
-  lockIn,
-  steamborn,
-  talesFromAlagaesia
-} from "./series.js";
+import { lockIn } from "./series.js";
 
 const twenty = [
+  {
+    title: "Recursion",
+    author: "Blake Crouch",
+    link: "https://www.audible.com/pd/Recursion-Audiobook/1984886878",
+    type: "headphones",
+    duration: { hours: 10, minutes: 47 },
+    narrator: "Jon Lindstrom, Abby Craden"
+  },
   {
     title: "Head On",
     author: "John Scalzi",
