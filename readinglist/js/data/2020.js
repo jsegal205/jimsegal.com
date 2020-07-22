@@ -1,6 +1,19 @@
-import { lockIn } from "./series.js";
+import { interdependency, lockIn } from "./series.js";
 
 const twenty = [
+  {
+    title: "The Collapsing Empire",
+    author: "John Scalzi",
+    link:
+      "https://www.audible.com/pd/The-Collapsing-Empire-Audiobook/B01L2PE1XI",
+    type: "headphones",
+    duration: { hours: 9, minutes: 24 },
+    narrator: "Wil Wheaton",
+    series: {
+      ...interdependency,
+      bookNum: 1,
+    },
+  },
   {
     title: "The First Fifteen Lives of Harry August",
     author: "Claire North",
