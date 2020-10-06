@@ -33,7 +33,7 @@
     ></script>
     <script>
       Sentry.init({
-        dsn: "https://48e5943e5858448a846aab5fffefd076@sentry.io/1989564"
+        dsn: "https://48e5943e5858448a846aab5fffefd076@sentry.io/1989564",
       });
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -46,17 +46,172 @@
   </head>
 
   <body>
-    <div class="container">
-      <img
-        alt="me"
-        class="avatar not-found"
-        src="https://avatars1.githubusercontent.com/u/1733595?v=4"
-      />
-      <div class="wrapper">
-        <h1 class="title">Not Found</h1>
-        <p>Looks like I couldn't find what you were looking for.</p>
-        <p>Let's go somewhere I know about: <a href="/">home</a></p>
+    <div class="container not-found">
+      <h1 class="title">Page Not Found</h1>
+      <p>
+        Please enjoy this game of SNAKE or return back <a href="/">home</a>.
+      </p>
+      <p class="game-instructions">
+        Use arrow keys to move green snake to eat as many red apples as
+        possible. Hitting the wall or the tail of the snake will cause the game
+        to reset.
+      </p>
+      <div class="game-wrapper">
+        <canvas id="snake" height="400" width="400" class="game"></canvas>
+        <div class="game-score">
+          <h3>
+            <label>SCORE:</label>
+            <label id="score">0</label>
+          </h3>
+          <button onclick="resetGame()">RESET</button>
+        </div>
       </div>
     </div>
+    <script>
+      window.onload = () => {
+        resetGame();
+        setInterval(game, 1000 / 5);
+      };
+
+      const gridSize = 20;
+      const tileCount = 20;
+
+      let playerX, playerY;
+      let velocityX, velocityY;
+      let appleX, appleY;
+
+      let trail, tail;
+      let score = 0;
+
+      const game = () => {
+        playerX += velocityX;
+        playerY += velocityY;
+
+        if (
+          playerX < 0 ||
+          playerY < 0 ||
+          playerX > tileCount - 1 ||
+          playerY > tileCount - 1
+        ) {
+          // collide with walls
+          lose();
+          updateScore();
+        }
+
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, canv.width, canv.height);
+
+        ctx.fillStyle = "green";
+        for (var i = 0; i < trail.length; i++) {
+          ctx.fillRect(
+            trail[i].x * gridSize,
+            trail[i].y * gridSize,
+            gridSize,
+            gridSize
+          );
+          if (
+            velocityX !== 0 &&
+            velocityY !== 0 &&
+            trail[i].x === playerX &&
+            trail[i].y === playerY
+          ) {
+            // collide with self
+            lose();
+            updateScore();
+          }
+        }
+
+        trail.push({ x: playerX, y: playerY });
+        while (trail.length > tail) {
+          trail.shift();
+        }
+
+        if (playerX === appleX && playerY === appleY) {
+          tail++;
+          score++;
+          updateScore();
+          resetApple();
+        }
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(appleX * gridSize, appleY * gridSize, gridSize, gridSize);
+      };
+
+      const lose = () => {
+        tail = 5;
+        trail = [];
+        velocityX = 0;
+        velocityY = 0;
+        playerX = 10;
+        playerY = 10;
+        score = 0;
+      };
+
+      const updateScore = () => {
+        scoreEl.innerText = score.toString();
+      };
+
+      const resetApple = () => {
+        appleX = Math.floor(Math.random() * tileCount);
+        appleY = Math.floor(Math.random() * tileCount);
+      };
+
+      const resetGame = () => {
+        canv = document.getElementById("snake");
+        ctx = canv.getContext("2d");
+        scoreEl = document.getElementById("score");
+        document.addEventListener("keydown", keyPush);
+        lose();
+        updateScore();
+        resetApple();
+      };
+
+      const keyPush = (evt) => {
+        switch (evt.keyCode) {
+          case 37: //left
+          case 65: //a
+            if (
+              (velocityX === 0 && velocityY === 0) ||
+              (velocityX != -1 && velocityY != 0)
+            ) {
+              velocityX = -1;
+              velocityY = 0;
+            }
+            break;
+          case 38: //up
+          case 87: //w
+            if (
+              (velocityX === 0 && velocityY === 0) ||
+              (velocityX != 0 && velocityY != -1)
+            ) {
+              velocityX = 0;
+              velocityY = -1;
+            }
+            break;
+          case 39: //right
+          case 68: //d
+            if (
+              (velocityX === 0 && velocityY === 0) ||
+              (velocityX != 1 && velocityY != 0)
+            ) {
+              velocityX = 1;
+              velocityY = 0;
+            }
+
+            break;
+          case 40: //down
+          case 83: //s
+            if (
+              (velocityX === 0 && velocityY === 0) ||
+              (velocityX != 0 && velocityY != 1)
+            ) {
+              velocityX = 0;
+              velocityY = 1;
+            }
+
+            break;
+        }
+      };
+    </script>
   </body>
 </html>

@@ -38,9 +38,6 @@ body {
   border-radius: 35%/20%;
   border: 2px solid var(--text-color);
 }
-.avatar.not-found {
-  transform: rotate(180deg);
-}
 
 .link-row {
   margin-bottom: 20px;
@@ -69,6 +66,28 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.container.not-found {
+  flex-direction: column;
+}
+
+.game-wrapper {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.game-score {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+.game {
+  border: 0.5em solid #888888;
 }
 
 .seth-bg {
