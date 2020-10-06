@@ -73,6 +73,11 @@ ul {
 }
 
 .game-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.game-canvas {
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -86,8 +91,20 @@ ul {
   margin-left: 1em;
 }
 
+.game-score button {
+  padding: 1em;
+}
+
 .game {
   border: 0.5em solid #888888;
+}
+
+.game-controls {
+  margin: 0.5em 0;
+}
+.game-controls button {
+  padding: 1em;
+  font-size: 2em;
 }
 
 .seth-bg {
@@ -159,5 +176,16 @@ ul {
     font-size: 1.8em;
     margin-right: 0;
     padding: 10px;
+  }
+
+  .container.not-found {
+    flex-direction: row;
+  }
+  .game-canvas {
+    flex-direction: column;
+  }
+  .game-score {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }

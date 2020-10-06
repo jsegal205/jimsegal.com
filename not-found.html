@@ -13,12 +13,6 @@
       href="https://avatars1.githubusercontent.com/u/1733595?s=16&v=4"
       type="image/x-icon"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" type="text/css" href="css/site.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script
@@ -52,18 +46,26 @@
         Please enjoy this game of SNAKE or return back <a href="/">home</a>.
       </p>
       <p class="game-instructions">
-        Use arrow keys to move green snake to eat as many red apples as
-        possible. Hitting the wall or the tail of the snake will cause the game
-        to reset.
+        Use the arrow keys or buttons below to move the green snake to eat as
+        many red apples as possible. Hitting the wall or the tail of the snake
+        will cause the game to reset.
       </p>
       <div class="game-wrapper">
-        <canvas id="snake" height="400" width="400" class="game"></canvas>
-        <div class="game-score">
-          <h3>
-            <label>SCORE:</label>
-            <label id="score">0</label>
-          </h3>
-          <button onclick="resetGame()">RESET</button>
+        <div class="game-canvas">
+          <canvas id="snake" height="400" width="400" class="game"></canvas>
+          <div class="game-score">
+            <h3>
+              <label>SCORE:</label>
+              <label id="score">0</label>
+            </h3>
+            <button onclick="resetGame()">RESET</button>
+          </div>
+        </div>
+        <div class="game-controls">
+          <button onclick="triggerLeft()">&#8592;</button>
+          <button onclick="triggerUp()">&#8593;</button>
+          <button onclick="triggerDown()">&#8595;</button>
+          <button onclick="triggerRight()">&#8594;</button>
         </div>
       </div>
     </div>
@@ -166,6 +168,10 @@
         resetApple();
       };
 
+      const triggerLeft = () => keyPush({ keyCode: 37 });
+      const triggerUp = () => keyPush({ keyCode: 38 });
+      const triggerRight = () => keyPush({ keyCode: 39 });
+      const triggerDown = () => keyPush({ keyCode: 40 });
       const keyPush = (evt) => {
         switch (evt.keyCode) {
           case 37: //left
