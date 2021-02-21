@@ -9,9 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: checkout
+        uses: actions/checkout@v2
       - name: sync s3
-      - uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete --exclude ".git/*" --exclude ".github/*" --exclude ".deploy/*" --exclude ".gitignore" --exclude "README.md" --exclude ".DS_Store" --exclude ".dev-server.sh"
         env:
