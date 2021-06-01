@@ -9,7 +9,7 @@ import * as allSeries from "./data/series.js";
     return `<a href="${link}" target="_blank" rel="noopener">${desc}</a>`;
   };
 
-  const mapBookType = type => {
+  const mapBookType = (type) => {
     switch (type) {
       case "headphones":
         return "audiobook";
@@ -18,11 +18,12 @@ import * as allSeries from "./data/series.js";
     }
   };
 
-  const listenedToCount = books =>
-    books.filter(book => book.type === "headphones").length;
-  const readCount = books => books.filter(book => book.type === "book").length;
+  const listenedToCount = (books) =>
+    books.filter((book) => book.type === "headphones").length;
+  const readCount = (books) =>
+    books.filter((book) => book.type === "book").length;
 
-  const listenedToTmpl = books => {
+  const listenedToTmpl = (books) => {
     const audioCount = listenedToCount(books);
     const bookCount = readCount(books);
 
@@ -41,7 +42,7 @@ import * as allSeries from "./data/series.js";
     return "";
   };
 
-  const yearTmpl = year => {
+  const yearTmpl = (year) => {
     const books = Object.values(year)[0];
     return `
     <h2>${Object.keys(year)[0]} ${
@@ -57,9 +58,9 @@ import * as allSeries from "./data/series.js";
     `;
   };
 
-  const bookTmpl = books => {
+  const bookTmpl = (books) => {
     return books
-      .map(book => {
+      .map((book) => {
         return `
       <li class="book">
       ${anchorTmpl(book.link, book.title)}
@@ -78,7 +79,7 @@ import * as allSeries from "./data/series.js";
       .join("");
   };
 
-  const seriesTmpl = series => {
+  const seriesTmpl = (series) => {
     return `
     <div class="series">
     <span>Book ${series.bookNum} of </span>
@@ -87,7 +88,7 @@ import * as allSeries from "./data/series.js";
     `;
   };
 
-  Object.keys(allSeries).forEach(key => {
+  Object.keys(allSeries).forEach((key) => {
     const series = allSeries[key];
     const seriesItem = document.createElement("li");
     seriesItem.className = "book";
@@ -95,7 +96,7 @@ import * as allSeries from "./data/series.js";
     seriesListEle.appendChild(seriesItem);
   });
 
-  books.forEach(year => {
+  books.forEach((year) => {
     const container = document.createElement("article");
     container.innerHTML = yearTmpl(year);
     bookListEle.appendChild(container);

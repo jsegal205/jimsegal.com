@@ -50,8 +50,7 @@ export const inheritanceCycle = {
 
 export const interdependency = {
   title: "The Interdependency",
-  link:
-    "https://www.audible.com/series/The-Interdependency-Audiobooks/B06XKNK664",
+  link: "https://www.audible.com/series/The-Interdependency-Audiobooks/B06XKNK664",
 };
 
 export const lockIn = {

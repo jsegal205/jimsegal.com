@@ -12,11 +12,11 @@ const books = [
   { 2020: twenty },
   {
     2019: nineteen,
-    recap: "https://gist.github.com/jsegal205/2d1d40a7845be0df47d4cd02df929b29"
+    recap: "https://gist.github.com/jsegal205/2d1d40a7845be0df47d4cd02df929b29",
   },
   {
     2018: eighteen,
-    recap: "https://gist.github.com/jsegal205/b8061446c6d887e4015362127f2db2e0"
+    recap: "https://gist.github.com/jsegal205/b8061446c6d887e4015362127f2db2e0",
   },
   { 2017: seventeen },
   { 2016: sixteen },
@@ -24,7 +24,7 @@ const books = [
   { 2014: fourteen },
   { 2013: thirteen },
   { 2012: twelve },
-  { "2011 and prior": prior }
+  { "2011 and prior": prior },
 ];
 
 export default books;

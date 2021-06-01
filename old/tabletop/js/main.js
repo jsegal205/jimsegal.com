@@ -1,15 +1,15 @@
 (async () => {
   const gameCardsEle = document.getElementById("game-cards");
-  const gameCardTemplate = game => {
+  const gameCardTemplate = (game) => {
     return `<a class="card" href="${game.link}" target="_blank" rel="noopener">
     <img src="${game.image}" />
     <h3>${game.title}</h3>
     </a>`;
   };
 
-  const drawGames = games => {
+  const drawGames = (games) => {
     gameCardsEle.innerHTML = null;
-    games.forEach(game => {
+    games.forEach((game) => {
       const container = document.createElement("article");
       container.innerHTML = gameCardTemplate(game);
       gameCardsEle.appendChild(container);
@@ -31,7 +31,7 @@
   };
 
   const response = await fetch("https://api.jimsegal.com/games")
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error(
           `Error getting games list. Returned ${response.statusText}`
@@ -39,22 +39,22 @@
       }
       return response;
     })
-    .catch(error => {
+    .catch((error) => {
       gameCardsEle.innerHTML = "Error getting games list.";
       throw new Error(error);
     });
 
   const allGames = await response.json();
   const searchEle = document.getElementById("games-filter");
-  const filterGames = e => {
+  const filterGames = (e) => {
     const inputVal = e.target.value.toLowerCase();
-    const filteredGames = allGames.filter(game =>
+    const filteredGames = allGames.filter((game) =>
       game.title.toLowerCase().includes(inputVal)
     );
 
     gtag("event", "filtered", {
       event_category: "games",
-      event_label: inputVal
+      event_label: inputVal,
     });
 
     drawGames(filteredGames);
@@ -71,7 +71,7 @@
     const chosenGame = allGames[randomGameIndex];
     gtag("event", "random picked", {
       event_category: "games",
-      event_label: chosenGame.title
+      event_label: chosenGame.title,
     });
 
     drawGames([chosenGame]);
@@ -83,7 +83,7 @@
     searchEle.value = "";
 
     gtag("event", "reset", {
-      event_category: "games"
+      event_category: "games",
     });
 
     drawGames(allGames);

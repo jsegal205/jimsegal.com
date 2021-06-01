@@ -9,16 +9,16 @@ const keyMap = {
   77: "m",
   79: "o",
   83: "s",
-  84: "t"
+  84: "t",
 };
 const sethmode = {
   sequence: ["s", "e", "t", "h", "m", "o", "d", "e"],
   tracker: 0,
-  active: false
+  active: false,
 };
 const jimmode = {
   sequence: ["j", "i", "m", "m", "o", "d", "e"],
-  tracker: 0
+  tracker: 0,
 };
 
 const enableJimMode = () => {
@@ -29,7 +29,7 @@ const enableJimMode = () => {
 
     gtag("event", "toggled", {
       event_category: "sethmode",
-      event_label: sethmode.active
+      event_label: sethmode.active,
     });
   }
 };
@@ -49,12 +49,12 @@ const enableSethMode = () => {
 
     gtag("event", "toggled", {
       event_category: "sethmode",
-      event_label: sethmode.active
+      event_label: sethmode.active,
     });
   }
 };
 
-document.addEventListener("keydown", e => {
+document.addEventListener("keydown", (e) => {
   const key = keyMap[e.keyCode];
   const sethRequiredKey = sethmode.sequence[sethmode.tracker];
   const jimRequiredKey = jimmode.sequence[jimmode.tracker];

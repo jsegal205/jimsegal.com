@@ -2,12 +2,12 @@ const chicago = {
   lat: 41.878114,
   lng: -87.629798,
   city: "Chicago, IL",
-  content: "Current residence"
+  content: "Current residence",
 };
 
-const apiFetch = async url => {
+const apiFetch = async (url) => {
   const response = await fetch(url)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error(
           `Error getting travels. Returned ${response.statusText}`
@@ -15,7 +15,7 @@ const apiFetch = async url => {
       }
       return response;
     })
-    .catch(error => {
+    .catch((error) => {
       throw new Error(error);
     });
 
@@ -41,36 +41,36 @@ async function initMap() {
     zoom: 3,
     center: window.matchMedia("(min-width: 420px)").matches
       ? { lat: 39.594096, lng: -52.767187 }
-      : chicago
+      : chicago,
   });
 
   let activeInfoWindow = null;
   const markerClick = (marker, infoWindow) => {
-    marker.addListener("click", function() {
+    marker.addListener("click", function () {
       activeInfoWindow && activeInfoWindow.close();
       infoWindow.open(map, marker);
       activeInfoWindow = infoWindow;
     });
   };
 
-  destinations.forEach(dest => {
+  destinations.forEach((dest) => {
     const destInfo = new google.maps.InfoWindow({
       content: `<div>${dest.city}</div>${dest.visits
-        .map(visit => `<div>${visit}</div>`)
-        .join("")}`
+        .map((visit) => `<div>${visit}</div>`)
+        .join("")}`,
     });
 
     const marker = new google.maps.Marker({
       position: dest,
       map,
-      title: dest.city
+      title: dest.city,
     });
 
     markerClick(marker, destInfo);
   });
 
   const chicagoInfo = new google.maps.InfoWindow({
-    content: `<div>${chicago.city}</div><div>${chicago.content}</div>`
+    content: `<div>${chicago.city}</div><div>${chicago.content}</div>`,
   });
 
   const chicagoMarker = new google.maps.Marker({
@@ -80,8 +80,8 @@ async function initMap() {
     icon: {
       path: google.maps.SymbolPath.CIRCLE,
       strokeColor: "green",
-      scale: 8
-    }
+      scale: 8,
+    },
   });
 
   markerClick(chicagoMarker, chicagoInfo);
@@ -91,7 +91,7 @@ const frequented = async () => {
   const frequentEle = document.getElementById("frequent");
   const destinations = await getTravelFrequented();
 
-  destinations.map(dest => {
+  destinations.map((dest) => {
     const { city, state, visitCount } = dest;
     const listItem = document.createElement("li");
     listItem.innerHTML = `${city}, ${state} - Visited <em>${visitCount}</em> times`;

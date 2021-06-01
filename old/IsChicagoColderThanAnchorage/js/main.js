@@ -2,7 +2,7 @@ const getTemperatures = async (lat, long, browserCompare = false) => {
   const response = await fetch(
     `https://api.jimsegal.com/isAnchorageColderThan/${lat}/${long}`
   )
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error(
           `Problem retrieving temperatures. Returned ${response.statusText}`
@@ -10,7 +10,7 @@ const getTemperatures = async (lat, long, browserCompare = false) => {
       }
       return response;
     })
-    .catch(error => {
+    .catch((error) => {
       if (browserCompare) {
         setElementContent(
           "location-header",
@@ -27,7 +27,7 @@ const getTemperatures = async (lat, long, browserCompare = false) => {
   return await response.json();
 };
 
-const getElementById = eleId => {
+const getElementById = (eleId) => {
   return document.getElementById(eleId);
 };
 
@@ -68,7 +68,7 @@ const verdictText = (anchorageTemp, compareTemp) => {
 
     const {
       anchorageDetails: { temperature: anchorageTemp },
-      compareDetails: { temperature: chicagoTemp }
+      compareDetails: { temperature: chicagoTemp },
     } = temperatureResults;
 
     setElementContent("well-is-it", verdictText(anchorageTemp, chicagoTemp));
@@ -85,7 +85,7 @@ function browserLocationCompare() {
   setElementContent("location-header", "");
   setElementContent("location-is-it", "");
   setElementContent("location-temp", "");
-  const success = async position => {
+  const success = async (position) => {
     const browserLat = position.coords.latitude.toFixed(6);
     const browserLong = position.coords.longitude.toFixed(6);
     const temperatureResults = await getTemperatures(
@@ -98,8 +98,8 @@ function browserLocationCompare() {
       compareDetails: {
         city: locationCity,
         state: locationState,
-        temperature: locationTemp
-      }
+        temperature: locationTemp,
+      },
     } = temperatureResults;
     const locationDesc = `${locationCity}, ${locationState}`;
     const verdict = verdictText(anchorageTemp, locationTemp);
@@ -113,7 +113,7 @@ function browserLocationCompare() {
     toggleElementVisible("location", true);
 
     gtag("event", `${locationDesc} - ${locationTemp} - Colder? ${verdict}`, {
-      event_category: "localTempCompare"
+      event_category: "localTempCompare",
     });
   };
 
