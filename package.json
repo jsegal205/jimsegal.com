@@ -8,8 +8,8 @@
     "watch:server": "nodemon dist/server.js",
     "dev": "npm-run-all --parallel watch:*",
     "start": "node dist/server.js",
-    "prettier": "prettier --write '**/*.{js,css,html}'",
-    "check-prettier": "prettier --check '**/*.{js,css,html}'"
+    "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
+    "check-prettier": "prettier --check '**/*.{js,css,html,tsx,scss}'"
   },
   "keywords": [],
   "author": "",
