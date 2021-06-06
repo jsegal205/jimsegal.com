@@ -1,15 +1,24 @@
-# [jimsegal.com](http://jimsegal.com)
+# Jim Segal portfolio site
 
-## Running locally
+This repo was cloned from https://github.com/covalence-io/barebones-react-typescript-expres
 
-Run a local webserver to not get blocked by browsers CORS policies:
+## Why is this a thing?
 
-```bash
-  ./.dev-server
-```
+I currently have many different repos that some where live around https://jimsegal.com that live in varying repos and varying flavors of javascript and hosted in different places.
 
-Getting `permission denied: ./.dev-server.sh`? Give it executable permissions:
+- jimsegal.com
+  - vanilla js html css
+  - hosted on static s3 bucket
+- jimsegal projects
+  - vanilla js create-react-app
+  - hosted on github pages
+- jimsegal api
+  - vanilla js express
+  - hosted on heroku
+- jimsegal admin
+  - vanilla js strapijs
+  - hosted on separate heroku
 
-```bash
-  chmod +x .dev-server.sh
-```
+This all leads to a lot of complicated flows when I want to add or remove things, it also adds extra cost through the different hosting options.
+
+Another why of this project is I wanted to go deep on TypeScript. I had always been adverse to TypeScript because I liked the dynamic wild west feel of JavaScript. I decided to give a internal talk on TypeScript to get better knowledge surrounding it and it opened my eyes to the benefits of it.

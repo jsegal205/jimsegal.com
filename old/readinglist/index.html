@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reading List - Jim Segal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="A semi chronological list of books that I have consumed either by reading or listening to the audio book."
+    />
+    <link
+      rel="shortcut icon"
+      href="https://avatars1.githubusercontent.com/u/1733595?s=16&v=5"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/darkmode.css" />
+    <script
+      src="https://browser.sentry-cdn.com/5.15.4/bundle.min.js"
+      integrity="sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-45142145-1"
+    ></script>
+    <script>
+      Sentry.init({
+        dsn: "https://48e5943e5858448a846aab5fffefd076@sentry.io/1989564",
+      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-45142145-1");
+    </script>
+  </head>
+
+  <body>
+    <div class="sticky">
+      <a href="/">back</a>
+      <div>
+        <a href="#books">#Books</a>
+        <a href="#series">#Series</a>
+      </div>
+    </div>
+    <main class="container">
+      <div class="header">
+        <h1 id="books" class="top">Reading list</h1>
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-chk" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+      <hr />
+      <section id="book-list"></section>
+      <hr />
+      <section id="series">
+        <h2>Series</h2>
+        <hr />
+        <article><ul id="series-list"></ul></article>
+      </section>
+    </main>
+    <script type="text/javascript" src="../js/darkmode.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
