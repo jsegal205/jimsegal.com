@@ -61,41 +61,52 @@ const Home = ({}: HomeProps) => {
           <ul>
             {/* make map for these links and iterate over them */}
             <li>
-              <a href="printer/" title="3D Printer">
+              <ExternalLink
+                link="https://jimsegal.com/printer/"
+                title="3D Printer"
+              >
                 3D Printer
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a
-                href="IsChicagoColderThanAnchorage/"
+              <ExternalLink
+                link="https://jimsegal.com/IsChicagoColderThanAnchorage/"
                 title="Is Chicago colder than Anchorage"
               >
                 Is Chicago colder than Anchorage?
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a
-                href="https://projects.jimsegal.com/"
-                rel="noopener"
-                target="_blank"
+              <ExternalLink
+                link="https://projects.jimsegal.com/"
+                title="Jim Segal projects page"
               >
                 My Projects
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a href="readinglist/" title="Reading List">
+              <ExternalLink
+                link="https://jimsegal.com/readinglist/"
+                title="Reading List"
+              >
                 My Reading List
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a href="tabletop/" title="Tabletop Games">
+              <ExternalLink
+                link="https://jimsegal.com/tabletop/"
+                title="Tabletop Games"
+              >
                 My Tabletop Games
-              </a>
+              </ExternalLink>
             </li>
             <li>
-              <a href="travel/" title="My Travels">
+              <ExternalLink
+                link="https://jimsegal.com/travel/"
+                title="My Travels"
+              >
                 My Travels
-              </a>
+              </ExternalLink>
             </li>
           </ul>
         </div>
