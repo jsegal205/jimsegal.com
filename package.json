@@ -9,7 +9,8 @@
     "dev": "npm-run-all --parallel watch:*",
     "start": "node dist/server.js",
     "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
-    "check-prettier": "prettier --check '**/*.{js,css,html,tsx,scss}'"
+    "check-prettier": "prettier --check '**/*.{js,css,html,tsx,scss}'",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
