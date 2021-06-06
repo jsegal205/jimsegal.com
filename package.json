@@ -4,13 +4,14 @@
   "description": "",
   "main": "dist/server.js",
   "scripts": {
-    "watch:build": "webpack -w",
-    "watch:server": "nodemon dist/server.js",
-    "dev": "npm-run-all --parallel watch:*",
-    "start": "node dist/server.js",
-    "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
+    "build": "webpack --mode production",
     "check-prettier": "prettier --check '**/*.{js,css,html,tsx,scss}'",
-    "build": "webpack --mode production"
+    "dev": "npm-run-all --parallel watch:*",
+    "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
+    "start": "node dist/server.js",
+    "test": "jest",
+    "watch:build": "webpack -w",
+    "watch:server": "nodemon dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -40,6 +41,7 @@
     "webpack-node-externals": "^2.5.2"
   },
   "devDependencies": {
+    "jest": "^27.0.4",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.0"
