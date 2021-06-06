@@ -9,7 +9,8 @@
     "dev": "npm-run-all --parallel watch:*",
     "prettier": "prettier --write '**/*.{js,css,html,tsx,scss}'",
     "start": "node dist/server.js",
-    "test": "jest",
+    "test": "jest --colors --verbose --no-cache -u",
+    "ci-test": "jest --colors --verbose --no-cache --ci",
     "watch:build": "webpack -w",
     "watch:server": "nodemon dist/server.js"
   },
@@ -54,6 +55,10 @@
     "prettier": "^2.3.0"
   },
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.(ts|tsx)"
+    ],
     "moduleFileExtensions": [
       "js",
       "ts",
@@ -69,7 +74,8 @@
       }
     },
     "coveragePathIgnorePatterns": [
-      "/node_modules/"
+      "/node_modules/",
+      "src/client/index.tsx"
     ],
     "coverageReporters": [
       "json",
