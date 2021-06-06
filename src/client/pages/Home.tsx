@@ -59,6 +59,7 @@ const Home = ({}: HomeProps) => {
         <div className="projects">
           <h2 className="projects-banner">Projects</h2>
           <ul>
+            {/* make map for these links and iterate over them */}
             <li>
               <a href="printer/" title="3D Printer">
                 3D Printer
