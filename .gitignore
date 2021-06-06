@@ -7,6 +7,7 @@ dist/
 .env
 .deploy/
 .git/
+public/js/
 
 .vscode/*
 !.vscode/settings.json
@@ -57,3 +58,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+

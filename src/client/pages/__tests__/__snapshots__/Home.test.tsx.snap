@@ -168,7 +168,9 @@ exports[`renders correct structure 1`] = `
         <ul>
           <li>
             <a
-              href="printer/"
+              href="https://jimsegal.com/printer/"
+              rel="noopener noreferrer"
+              target="_blank"
               title="3D Printer"
             >
               3D Printer
@@ -176,7 +178,9 @@ exports[`renders correct structure 1`] = `
           </li>
           <li>
             <a
-              href="IsChicagoColderThanAnchorage/"
+              href="https://jimsegal.com/IsChicagoColderThanAnchorage/"
+              rel="noopener noreferrer"
+              target="_blank"
               title="Is Chicago colder than Anchorage"
             >
               Is Chicago colder than Anchorage?
@@ -185,15 +189,18 @@ exports[`renders correct structure 1`] = `
           <li>
             <a
               href="https://projects.jimsegal.com/"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
+              title="Jim Segal projects page"
             >
               My Projects
             </a>
           </li>
           <li>
             <a
-              href="readinglist/"
+              href="https://jimsegal.com/readinglist/"
+              rel="noopener noreferrer"
+              target="_blank"
               title="Reading List"
             >
               My Reading List
@@ -201,7 +208,9 @@ exports[`renders correct structure 1`] = `
           </li>
           <li>
             <a
-              href="tabletop/"
+              href="https://jimsegal.com/tabletop/"
+              rel="noopener noreferrer"
+              target="_blank"
               title="Tabletop Games"
             >
               My Tabletop Games
@@ -209,7 +218,9 @@ exports[`renders correct structure 1`] = `
           </li>
           <li>
             <a
-              href="travel/"
+              href="https://jimsegal.com/travel/"
+              rel="noopener noreferrer"
+              target="_blank"
               title="My Travels"
             >
               My Travels
