@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cleanup, render } from "@testing-library/react";
 
-const Home = require("../Home").default;
+import Home from "../Home";
 
 beforeAll(() => {
   // fix bug with font-awesome icon title
