@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import ExternalLink from "../components/ExternalLink";
-import DarkModeToggle from "../components/DarkModeToggle";
+import DarkmodeToggle from "../components/DarkmodeToggle";
 
 type HomeProps = {};
 
@@ -22,7 +22,7 @@ const Home = ({}: HomeProps) => {
           className="avatar"
           src="img/jim.jpg"
         />
-        <DarkModeToggle />
+        <DarkmodeToggle />
       </div>
       <div className="wrapper">
         <h1 className="title">Jim Segal</h1>

@@ -3,7 +3,7 @@ import { useDarkModeContext } from "../contexts/DarkmodeContext";
 
 type DarkmodeToggleProps = {};
 
-const DarkModeToggle: FunctionComponent<DarkmodeToggleProps> =
+const DarkmodeToggle: FunctionComponent<DarkmodeToggleProps> =
   ({}: DarkmodeToggleProps) => {
     const { darkmode, toggleDarkmode } = useDarkModeContext();
 
@@ -24,4 +24,4 @@ const DarkModeToggle: FunctionComponent<DarkmodeToggleProps> =
     );
   };
 
-export default DarkModeToggle;
+export default DarkmodeToggle;
