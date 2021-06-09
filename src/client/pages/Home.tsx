@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -9,25 +9,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import ExternalLink from "../components/ExternalLink";
+import DarkModeToggle from "../components/DarkModeToggle";
 
 type HomeProps = {};
 
 const Home = ({}: HomeProps) => {
   return (
-    <main className="home container">
+    <section className="home container">
       <div>
         <img
           alt="profile picture of me, Jim"
           className="avatar"
           src="img/jim.jpg"
         />
-        {/* TODO: make component
-         <div className="toggle">
-          <label className="switch">
-            <input type="checkbox" id="toggle-chk" />
-            <div className="slider round"></div>
-          </label>
-        </div> */}
+        <DarkModeToggle />
       </div>
       <div className="wrapper">
         <h1 className="title">Jim Segal</h1>
@@ -111,7 +106,7 @@ const Home = ({}: HomeProps) => {
           </ul>
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
