@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correct structure 1`] = `
+exports[`<Home /> renders correct structure 1`] = `
 <div>
-  <main
+  <section
     class="home container"
   >
     <div>
@@ -11,6 +11,22 @@ exports[`renders correct structure 1`] = `
         class="avatar"
         src="img/jim.jpg"
       />
+      <div
+        class="toggle"
+      >
+        <label
+          class="switch"
+        >
+          <input
+            type="checkbox"
+          />
+          <div
+            class="slider round"
+          >
+            DARK?
+          </div>
+        </label>
+      </div>
     </div>
     <div
       class="wrapper"
@@ -229,6 +245,6 @@ exports[`renders correct structure 1`] = `
         </ul>
       </div>
     </div>
-  </main>
+  </section>
 </div>
 `;

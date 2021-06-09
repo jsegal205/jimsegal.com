@@ -1,19 +1,22 @@
-import * as React from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { DarkmodeProvider } from "./contexts/DarkmodeContext";
 import Home from "./pages/Home";
+
+interface AppProps {}
 
 const App = (props: AppProps) => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
+    <DarkmodeProvider>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    </DarkmodeProvider>
   );
 };
-
-interface AppProps {}
 
 export default App;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correct structure with HTML children 1`] = `
+exports[`<ExternalLink /> renders correct structure with HTML children 1`] = `
 <div>
   <a
     href="#"
@@ -15,7 +15,7 @@ exports[`renders correct structure with HTML children 1`] = `
 </div>
 `;
 
-exports[`renders correct structure with text children 1`] = `
+exports[`<ExternalLink /> renders correct structure with text children 1`] = `
 <div>
   <a
     href="#"
