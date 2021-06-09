@@ -11,6 +11,9 @@
 
   a {
     color: $light-grey;
+    &:hover {
+      color: $focus-color;
+    }
   }
 }
 
