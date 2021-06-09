@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Travels - Jim Segal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A display of all of my travels since graduating college in 2008"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://avatars1.githubusercontent.com/u/1733595?s=16&v=5"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/darkmode.css" />
+    <script
+      src="https://browser.sentry-cdn.com/5.15.4/bundle.min.js"
+      integrity="sha384-Nrg+xiw+qRl3grVrxJtWazjeZmUwoSt0FAVsbthlJ5OMpx0G08bqIq3b/v0hPjhB"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-45142145-1"
+    ></script>
+    <script>
+      Sentry.init({
+        dsn: "https://48e5943e5858448a846aab5fffefd076@sentry.io/1989564",
+      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-45142145-1");
+    </script>
+  </head>
+
+  <body>
+    <a class="back" href="/">back</a>
+    <main>
+      <div class="header">
+        <h1>My Travels</h1>
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" id="toggle-chk" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+      <p>
+        Here is places that I have traveled since graduating college in 2008.
+      </p>
+      <div id="map"></div>
+      <span>Click the pins for more information.</span>
+      <h2>Most Frequented</h2>
+      <ol id="frequent"></ol>
+      <h2>
+        Furthest Travel
+        <small
+          >As the crow flies.
+          <a
+            href="https://stackoverflow.com/a/27943/282110"
+            target="_blank"
+            rel="noopener"
+            >Distance Algorithm Credit</a
+          ></small
+        >
+      </h2>
+      <section id="furthest"></section>
+    </main>
+    <script type="text/javascript" src="../js/darkmode.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApJ6FjrwmXWR2BcFPCCg169CuClmn5Hyc&callback=initMap"
+    ></script>
+  </body>
+</html>
