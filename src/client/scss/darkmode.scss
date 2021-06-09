@@ -8,6 +8,10 @@
 .dark {
   background: $grey;
   color: $light-grey;
+
+  a {
+    color: $light-grey;
+  }
 }
 
 .switch {
@@ -34,6 +38,7 @@
   border-radius: 34px;
   border: 2px solid $grey;
   padding-top: 5px;
+  text-align: center;
 }
 
 .slider:before {
