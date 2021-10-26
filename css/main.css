@@ -12,6 +12,7 @@ body {
   margin-bottom: 10px;
   margin-top: 0;
   line-height: 1em;
+  text-align: center;
 }
 
 .projects-banner {
@@ -42,12 +43,12 @@ body {
 .link-row {
   margin-bottom: 20px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .link-row > a {
   font-size: 2.1em;
   text-decoration: none;
-  margin-right: 1.4em;
 }
 
 .link-row > a:last-child {
@@ -151,7 +152,6 @@ ul {
     -webkit-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1em 0;
     text-align: center;
   }
 
@@ -168,14 +168,12 @@ ul {
     font-size: 2em;
   }
 
-  .link-row {
-    justify-content: space-between;
-  }
-
   .link-row > a {
     font-size: 1.8em;
-    margin-right: 0;
     padding: 10px;
+  }
+  .about {
+    margin-bottom: 15px;
   }
 
   .container.not-found {
