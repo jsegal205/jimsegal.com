@@ -78,6 +78,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
 .game-canvas {
   align-content: center;
   display: flex;
@@ -103,6 +104,7 @@ ul {
 .game-controls {
   margin: 0.5em 0;
 }
+
 .game-controls button {
   padding: 1em;
   font-size: 1.5em;
@@ -172,6 +174,7 @@ ul {
     font-size: 1.8em;
     padding: 10px;
   }
+
   .about {
     margin-bottom: 15px;
   }
@@ -179,9 +182,11 @@ ul {
   .container.not-found {
     flex-direction: row;
   }
+
   .game-canvas {
     flex-direction: column;
   }
+
   .game-score {
     flex-direction: row;
     justify-content: space-evenly;
